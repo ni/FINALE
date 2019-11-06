@@ -1,0 +1,44 @@
+{
+    "topPath": "referenceAssets",
+    "inputPath": "testAssets/enabled/Event_structures",
+    "outputPath": "Event_structures",
+    "preloadedFiles": "",
+    "expectedOutput": [
+        {
+            "expectedPath": "referenceAssets/Event_structures/file.json",
+            "expectedContent": "referenceAssets/Event_structures/file.json"
+        },
+        {
+            "expectedPath": "referenceAssets/Event_structures/Event_structures/Event_structures.vi/metadata.json",
+            "expectedContent": "referenceAssets/Event_structures/Event_structures/Event_structures.vi/metadata.json"
+        },
+        {
+            "expectedPath": "referenceAssets/Event_structures/Event_structures/Event_structures.vi/description.txt",
+            "expectedContent": "referenceAssets/Event_structures/Event_structures/Event_structures.vi/description.txt"
+        },
+        {
+            "expectedPath": "referenceAssets/Event_structures/Event_structures/Event_structures.vi/connpane.png",
+            "expectedContent": "referenceAssets/Event_structures/Event_structures/Event_structures.vi/connpane.png"
+        },
+        {
+            "expectedPath": "referenceAssets/Event_structures/Event_structures/Event_structures.vi/panel/panel.png",
+            "expectedContent": "referenceAssets/Event_structures/Event_structures/Event_structures.vi/panel/panel.png"
+        },
+        {
+            "expectedPath": "referenceAssets/Event_structures/Event_structures/Event_structures.vi/diagram/bd.png",
+            "expectedContent": "referenceAssets/Event_structures/Event_structures/Event_structures.vi/diagram/bd.png"
+        },
+        {
+            "expectedPath": "referenceAssets/Event_structures/Event_structures/Event_structures.vi/diagram/1.png",
+            "expectedContent": "referenceAssets/Event_structures/Event_structures/Event_structures.vi/diagram/1.png"
+        },
+        {
+            "expectedPath": "referenceAssets/Event_structures/Event_structures/Event_structures.vi/diagram/2.png",
+            "expectedContent": "referenceAssets/Event_structures/Event_structures/Event_structures.vi/diagram/2.png"
+        },
+        {
+            "expectedPath": "referenceAssets/Event_structures/Event_structures/Event_structures.vi/diagram/3.png",
+            "expectedContent": "referenceAssets/Event_structures/Event_structures/Event_structures.vi/diagram/3.png"
+        }
+    ]
+}

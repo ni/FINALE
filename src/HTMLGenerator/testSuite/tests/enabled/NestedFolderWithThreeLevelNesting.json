@@ -1,0 +1,80 @@
+{
+    "topPath": "referenceAssets",
+    "inputPath": "testAssets/enabled/Nested_folder",
+    "outputPath": "Nested_folder",
+    "preloadedFiles": "",
+    "expectedOutput": [
+        {
+            "expectedPath": "referenceAssets/Nested_folder/file.json",
+            "expectedContent": "referenceAssets/Nested_folder/file.json"
+        },
+        {
+            "expectedPath": "referenceAssets/Nested_folder/Nested_folder/Fibonacci/Fibonacci.vi/metadata.json",
+            "expectedContent": "referenceAssets/Nested_folder/Nested_folder/Fibonacci/Fibonacci.vi/metadata.json"
+        },
+        {
+            "expectedPath": "referenceAssets/Nested_folder/Nested_folder/Waveform/waveformChart/waveformChart.vi/metadata.json",
+            "expectedContent": "referenceAssets/Nested_folder/Nested_folder/Waveform/waveformChart/waveformChart.vi/metadata.json"
+        },
+        {
+            "expectedPath": "referenceAssets/Nested_folder/Nested_folder/Waveform/waveformGraph/waveformGraph.vi/metadata.json",
+            "expectedContent": "referenceAssets/Nested_folder/Nested_folder/Waveform/waveformGraph/waveformGraph.vi/metadata.json"
+        },
+        {
+            "expectedPath": "referenceAssets/Nested_folder/Nested_folder/Fibonacci/Fibonacci.vi/description.txt",
+            "expectedContent": "referenceAssets/Nested_folder/Nested_folder/Fibonacci/Fibonacci.vi/description.txt"
+        },
+        {
+            "expectedPath": "referenceAssets/Nested_folder/Nested_folder/Waveform/waveformChart/waveformChart.vi/description.txt",
+            "expectedContent": "referenceAssets/Nested_folder/Nested_folder/Waveform/waveformChart/waveformChart.vi/description.txt"
+        },
+        {
+            "expectedPath": "referenceAssets/Nested_folder/Nested_folder/Waveform/waveformGraph/waveformGraph.vi/description.txt",
+            "expectedContent": "referenceAssets/Nested_folder/Nested_folder/Waveform/waveformGraph/waveformGraph.vi/description.txt"
+        },
+        {
+            "expectedPath": "referenceAssets/Nested_folder/Nested_folder/Fibonacci/Fibonacci.vi/diagram/bd.png",
+            "expectedContent": "referenceAssets/Nested_folder/Nested_folder/Fibonacci/Fibonacci.vi/diagram/bd.png"
+        },
+        {
+            "expectedPath": "referenceAssets/Nested_folder/Nested_folder/Fibonacci/Fibonacci.vi/diagram/1.png",
+            "expectedContent": "referenceAssets/Nested_folder/Nested_folder/Fibonacci/Fibonacci.vi/diagram/1.png"
+        },
+        {
+            "expectedPath": "referenceAssets/Nested_folder/Nested_folder/Fibonacci/Fibonacci.vi/diagram/2.png",
+            "expectedContent": "referenceAssets/Nested_folder/Nested_folder/Fibonacci/Fibonacci.vi/diagram/2.png"
+        },
+        {
+            "expectedPath": "referenceAssets/Nested_folder/Nested_folder/Fibonacci/Fibonacci.vi/connpane.png",
+            "expectedContent": "referenceAssets/Nested_folder/Nested_folder/Fibonacci/Fibonacci.vi/connpane.png"
+        },
+        {
+            "expectedPath": "referenceAssets/Nested_folder/Nested_folder/Fibonacci/Fibonacci.vi/panel/panel.png",
+            "expectedContent": "referenceAssets/Nested_folder/Nested_folder/Fibonacci/Fibonacci.vi/panel/panel.png"
+        },
+        {
+            "expectedPath": "referenceAssets/Nested_folder/Nested_folder/Waveform/waveformChart/waveformChart.vi/connpane.png",
+            "expectedContent": "referenceAssets/Nested_folder/Nested_folder/Waveform/waveformChart/waveformChart.vi/connpane.png"
+        },
+        {
+            "expectedPath": "referenceAssets/Nested_folder/Nested_folder/Waveform/waveformChart/waveformChart.vi/diagram/bd.png",
+            "expectedContent": "referenceAssets/Nested_folder/Nested_folder/Waveform/waveformChart/waveformChart.vi/diagram/bd.png"
+        },
+        {
+            "expectedPath": "referenceAssets/Nested_folder/Nested_folder/Waveform/waveformChart/waveformChart.vi/panel/panel.png",
+            "expectedContent": "referenceAssets/Nested_folder/Nested_folder/Waveform/waveformChart/waveformChart.vi/panel/panel.png"
+        },
+        {
+            "expectedPath": "referenceAssets/Nested_folder/Nested_folder/Waveform/waveformGraph/waveformGraph.vi/connpane.png",
+            "expectedContent": "referenceAssets/Nested_folder/Nested_folder/Waveform/waveformGraph/waveformGraph.vi/connpane.png"
+        },
+        {
+            "expectedPath": "referenceAssets/Nested_folder/Nested_folder/Waveform/waveformGraph/waveformGraph.vi/diagram/bd.png",
+            "expectedContent": "referenceAssets/Nested_folder/Nested_folder/Waveform/waveformGraph/waveformGraph.vi/diagram/bd.png"
+        },
+        {
+            "expectedPath": "referenceAssets/Nested_folder/Nested_folder/Waveform/waveformGraph/waveformGraph.vi/panel/panel.png",
+            "expectedContent": "referenceAssets/Nested_folder/Nested_folder/Waveform/waveformGraph/waveformGraph.vi/panel/panel.png"
+        }
+    ]
+}

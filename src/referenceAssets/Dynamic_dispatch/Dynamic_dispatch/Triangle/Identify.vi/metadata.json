@@ -1,0 +1,9 @@
+{	"NIDocument": {"ID": "Triangle.lvclass:Identify.vi",
+"Type": "VirtualInstrument",
+"Components": [{
+"ID":"FrontPanel",
+"Type": "Diagram",
+"Image": "/referenceAssets/Dynamic_dispatch/Dynamic_dispatch/Triangle/Identify.vi/panel/panel.png",
+"Bounds":{"x":0,"y":0,"w":578,"h":449},
+"Components": []
+},{"ID":"BlockDiagram", "Type": "Diagram","Image": "/referenceAssets/Dynamic_dispatch/Dynamic_dispatch/Triangle/Identify.vi/diagram/bd.png",  "Bounds":{"x":0,"y":0,"w":297,"h":270},"Components": []}]}}

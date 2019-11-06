@@ -1,0 +1,14 @@
+{	"NIDocument": {"ID": "Convert C to F.vi",
+"Type": "VirtualInstrument",
+"Components": [{
+"ID":"FrontPanel",
+"Type": "Diagram",
+"Image": "/referenceAssets/Sub_VI/Sub_VI/Convert C to F.vi/panel/panel.png",
+"Bounds":{"x":0,"y":0,"w":241,"h":55},
+"Components": []
+},{"ID":"BlockDiagram", "Type": "Diagram","Image": "/referenceAssets/Sub_VI/Sub_VI/Convert C to F.vi/diagram/bd.png",  "Bounds":{"x":0,"y":0,"w":392,"h":81},"Components": [{"ID":"Add",
+"Type":"Function",
+"Bounds":{"x":215,"y":25,"w":21,"h":21}},{"ID":"Multiply",
+"Type":"Function",
+"Bounds":{"x":139,"y":20,"w":21,"h":21}}
+]}]}}

@@ -1,0 +1,28 @@
+{	"NIDocument": {"ID": "Enum_case.vi",
+"Type": "VirtualInstrument",
+"Components": [{
+"ID":"FrontPanel",
+"Type": "Diagram",
+"Image": "/referenceAssets/Enum_case/Enum_case/Enum_case.vi/panel/panel.png",
+"Bounds":{"x":0,"y":0,"w":637,"h":234},
+"Components": [{"ID":"",
+"Type":"Enum",
+"Bounds":{"x":11,"y":114,"w":110,"h":25},
+"Values":["add","subtract","divide","multiply"]}
+]
+},{"ID":"BlockDiagram", "Type": "Diagram","Image": "/referenceAssets/Enum_case/Enum_case/Enum_case.vi/diagram/bd.png",  "Bounds":{"x":0,"y":0,"w":232,"h":225},"Components": [{"ID": "WhileLoop" , "Type": "Structure", "Bounds":{"x":0,"y":0,"w":232,"h":225}, "Components":[{"ID":"", "Type": "Diagram","Image": "",  "Bounds":{"x":0,"y":0,"w":232,"h":225},"Components": [{"ID": "CaseStructure" , "Type": "MultiFrameStructure", "Bounds":{"x":80,"y":30,"w":66,"h":128}, "SelectorBounds": {"x":0,"y":0,"w":66,"h":17}, "Components":[{"ID":" \"add\" ", "Type": "Diagram","Image": "/referenceAssets/Enum_case/Enum_case/Enum_case.vi/diagram/1.png",  "Bounds":{"x":0,"y":0,"w":66,"h":128},"Components": [{"ID":"Add",
+"Type":"Function",
+"Bounds":{"x":19,"y":86,"w":21,"h":21}}
+]},{"ID":" \"subtract\" ", "Type": "Diagram","Image": "/referenceAssets/Enum_case/Enum_case/Enum_case.vi/diagram/2.png",  "Bounds":{"x":0,"y":0,"w":66,"h":128},"Components": [{"ID":"Subtract",
+"Type":"Function",
+"Bounds":{"x":19,"y":86,"w":21,"h":21}}
+]},{"ID":" \"divide\" ", "Type": "Diagram","Image": "/referenceAssets/Enum_case/Enum_case/Enum_case.vi/diagram/3.png",  "Bounds":{"x":0,"y":0,"w":66,"h":128},"Components": [{"ID":"Divide",
+"Type":"Function",
+"Bounds":{"x":19,"y":86,"w":21,"h":21}}
+]},{"ID":" \"multiply\" ", "Type": "Diagram","Image": "/referenceAssets/Enum_case/Enum_case/Enum_case.vi/diagram/4.png",  "Bounds":{"x":0,"y":0,"w":66,"h":128},"Components": [{"ID":"Multiply",
+"Type":"Function",
+"Bounds":{"x":19,"y":86,"w":21,"h":21}}
+]}
+]}
+]}]}
+]}]}}

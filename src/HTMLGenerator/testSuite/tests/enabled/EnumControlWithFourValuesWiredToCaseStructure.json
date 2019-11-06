@@ -1,0 +1,48 @@
+{
+    "topPath": "referenceAssets",
+    "inputPath": "testAssets/enabled/Enum_case",
+    "outputPath": "Enum_case",
+    "preloadedFiles": "",
+    "expectedOutput": [
+        {
+            "expectedPath": "referenceAssets/Enum_case/file.json",
+            "expectedContent": "referenceAssets/Enum_case/file.json"
+        },
+        {
+            "expectedPath": "referenceAssets/Enum_case/file.json",
+            "expectedContent": "referenceAssets/Enum_case/file.json"
+        },
+        {
+            "expectedPath": "referenceAssets/Enum_case/Enum_case/Enum_case.vi/description.txt",
+            "expectedContent": "referenceAssets/Enum_case/Enum_case/Enum_case.vi/description.txt"
+        },
+        {
+            "expectedPath": "referenceAssets/Enum_case/Enum_case/Enum_case.vi/connpane.png",
+            "expectedContent": "referenceAssets/Enum_case/Enum_case/Enum_case.vi/connpane.png"
+        },
+        {
+            "expectedPath": "referenceAssets/Enum_case/Enum_case/Enum_case.vi/panel/panel.png",
+            "expectedContent": "referenceAssets/Enum_case/Enum_case/Enum_case.vi/panel/panel.png"
+        },
+        {
+            "expectedPath": "referenceAssets/Enum_case/Enum_case/Enum_case.vi/diagram/bd.png",
+            "expectedContent": "referenceAssets/Enum_case/Enum_case/Enum_case.vi/diagram/bd.png"
+        },
+        {
+            "expectedPath": "referenceAssets/Enum_case/Enum_case/Enum_case.vi/diagram/1.png",
+            "expectedContent": "referenceAssets/Enum_case/Enum_case/Enum_case.vi/diagram/1.png"
+        },
+        {
+            "expectedPath": "referenceAssets/Enum_case/Enum_case/Enum_case.vi/diagram/2.png",
+            "expectedContent": "referenceAssets/Enum_case/Enum_case/Enum_case.vi/diagram/2.png"
+        },
+        {
+            "expectedPath": "referenceAssets/Enum_case/Enum_case/Enum_case.vi/diagram/3.png",
+            "expectedContent": "referenceAssets/Enum_case/Enum_case/Enum_case.vi/diagram/3.png"
+        },
+        {
+            "expectedPath": "referenceAssets/Enum_case/Enum_case/Enum_case.vi/diagram/4.png",
+            "expectedContent": "referenceAssets/Enum_case/Enum_case/Enum_case.vi/diagram/4.png"
+        }
+    ]
+}

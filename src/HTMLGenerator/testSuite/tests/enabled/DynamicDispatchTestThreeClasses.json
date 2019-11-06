@@ -1,0 +1,144 @@
+{
+    "topPath": "referenceAssets",
+    "inputPath": "testAssets/enabled/Dynamic_dispatch",
+    "outputPath": "Dynamic_dispatch",
+    "preloadedFiles": "",
+    "expectedOutput": [
+        {
+            "expectedPath": "referenceAssets/Dynamic_dispatch/file.json",
+            "expectedContent": "referenceAssets/Dynamic_dispatch/file.json"
+        },
+        {
+            "expectedPath": "referenceAssets/Dynamic_dispatch/Dynamic_dispatch/Dynamic_dispatch.lvproj/metadata.json",
+            "expectedContent": "referenceAssets/Dynamic_dispatch/Dynamic_dispatch/Dynamic_dispatch.lvproj/metadata.json"
+        },
+        {
+            "expectedPath": "referenceAssets/Dynamic_dispatch/Dynamic_dispatch/Dynamic_dispatch.vi/metadata.json",
+            "expectedContent": "referenceAssets/Dynamic_dispatch/Dynamic_dispatch/Dynamic_dispatch.vi/metadata.json"
+        },
+        {
+            "expectedPath": "referenceAssets/Dynamic_dispatch/Dynamic_dispatch/Shape/Identify.vi/metadata.json",
+            "expectedContent": "referenceAssets/Dynamic_dispatch/Dynamic_dispatch/Shape/Identify.vi/metadata.json"
+        },
+        {
+            "expectedPath": "referenceAssets/Dynamic_dispatch/Dynamic_dispatch/Shape/Shape.lvclass/metadata.json",
+            "expectedContent": "referenceAssets/Dynamic_dispatch/Dynamic_dispatch/Shape/Shape.lvclass/metadata.json"
+        },
+        {
+            "expectedPath": "referenceAssets/Dynamic_dispatch/Dynamic_dispatch/Shape/Shape.lvclass/control/metadata.json",
+            "expectedContent": "referenceAssets/Dynamic_dispatch/Dynamic_dispatch/Shape/Shape.lvclass/control/metadata.json"
+        },
+        {
+            "expectedPath": "referenceAssets/Dynamic_dispatch/Dynamic_dispatch/Square/Identify.vi/metadata.json",
+            "expectedContent": "referenceAssets/Dynamic_dispatch/Dynamic_dispatch/Square/Identify.vi/metadata.json"
+        },
+        {
+            "expectedPath": "referenceAssets/Dynamic_dispatch/Dynamic_dispatch/Square/Square.lvclass/metadata.json",
+            "expectedContent": "referenceAssets/Dynamic_dispatch/Dynamic_dispatch/Square/Square.lvclass/metadata.json"
+        },
+        {
+            "expectedPath": "referenceAssets/Dynamic_dispatch/Dynamic_dispatch/Square/Square.lvclass/control/metadata.json",
+            "expectedContent": "referenceAssets/Dynamic_dispatch/Dynamic_dispatch/Square/Square.lvclass/control/metadata.json"
+        },
+        {
+            "expectedPath": "referenceAssets/Dynamic_dispatch/Dynamic_dispatch/Triangle/Identify.vi/metadata.json",
+            "expectedContent": "referenceAssets/Dynamic_dispatch/Dynamic_dispatch/Triangle/Identify.vi/metadata.json"
+        },
+        {
+            "expectedPath": "referenceAssets/Dynamic_dispatch/Dynamic_dispatch/Triangle/Triangle.lvclass/metadata.json",
+            "expectedContent": "referenceAssets/Dynamic_dispatch/Dynamic_dispatch/Triangle/Triangle.lvclass/metadata.json"
+        },
+        {
+            "expectedPath": "referenceAssets/Dynamic_dispatch/Dynamic_dispatch/Triangle/Triangle.lvclass/control/metadata.json",
+            "expectedContent": "referenceAssets/Dynamic_dispatch/Dynamic_dispatch/Triangle/Triangle.lvclass/control/metadata.json"
+        },
+        {
+            "expectedPath": "referenceAssets/Dynamic_dispatch/Dynamic_dispatch/Dynamic_dispatch.vi/description.txt",
+            "expectedContent": "referenceAssets/Dynamic_dispatch/Dynamic_dispatch/Dynamic_dispatch.vi/description.txt"
+        },
+        {
+            "expectedPath": "referenceAssets/Dynamic_dispatch/Dynamic_dispatch/Shape/Identify.vi/description.txt",
+            "expectedContent": "referenceAssets/Dynamic_dispatch/Dynamic_dispatch/Shape/Identify.vi/description.txt"
+        },
+        {
+            "expectedPath": "referenceAssets/Dynamic_dispatch/Dynamic_dispatch/Shape/Shape.lvclass/control/description.txt",
+            "expectedContent": "referenceAssets/Dynamic_dispatch/Dynamic_dispatch/Shape/Shape.lvclass/control/description.txt"
+        },
+        {
+            "expectedPath": "referenceAssets/Dynamic_dispatch/Dynamic_dispatch/Square/Identify.vi/description.txt",
+            "expectedContent": "referenceAssets/Dynamic_dispatch/Dynamic_dispatch/Square/Identify.vi/description.txt"
+        },
+        {
+            "expectedPath": "referenceAssets/Dynamic_dispatch/Dynamic_dispatch/Square/Square.lvclass/control/description.txt",
+            "expectedContent": "referenceAssets/Dynamic_dispatch/Dynamic_dispatch/Square/Square.lvclass/control/description.txt"
+        },
+        {
+            "expectedPath": "referenceAssets/Dynamic_dispatch/Dynamic_dispatch/Triangle/Identify.vi/description.txt",
+            "expectedContent": "referenceAssets/Dynamic_dispatch/Dynamic_dispatch/Triangle/Identify.vi/description.txt"
+        },
+        {
+            "expectedPath": "referenceAssets/Dynamic_dispatch/Dynamic_dispatch/Triangle/Triangle.lvclass/control/description.txt",
+            "expectedContent": "referenceAssets/Dynamic_dispatch/Dynamic_dispatch/Triangle/Triangle.lvclass/control/description.txt"
+        },
+        {
+            "expectedPath": "referenceAssets/Dynamic_dispatch/Dynamic_dispatch/Dynamic_dispatch.vi/connpane.png",
+            "expectedContent": "referenceAssets/Dynamic_dispatch/Dynamic_dispatch/Dynamic_dispatch.vi/connpane.png"
+        },
+        {
+            "expectedPath": "referenceAssets/Dynamic_dispatch/Dynamic_dispatch/Dynamic_dispatch.vi/diagram/bd.png",
+            "expectedContent": "referenceAssets/Dynamic_dispatch/Dynamic_dispatch/Dynamic_dispatch.vi/diagram/bd.png"
+        },
+        {
+            "expectedPath": "referenceAssets/Dynamic_dispatch/Dynamic_dispatch/Dynamic_dispatch.vi/panel/panel.png",
+            "expectedContent": "referenceAssets/Dynamic_dispatch/Dynamic_dispatch/Dynamic_dispatch.vi/panel/panel.png"
+        },
+        {
+            "expectedPath": "referenceAssets/Dynamic_dispatch/Dynamic_dispatch/Shape/Identify.vi/connpane.png",
+            "expectedContent": "referenceAssets/Dynamic_dispatch/Dynamic_dispatch/Shape/Identify.vi/connpane.png"
+        },
+        {
+            "expectedPath": "referenceAssets/Dynamic_dispatch/Dynamic_dispatch/Shape/Identify.vi/diagram/bd.png",
+            "expectedContent": "referenceAssets/Dynamic_dispatch/Dynamic_dispatch/Shape/Identify.vi/diagram/bd.png"
+        },
+        {
+            "expectedPath": "referenceAssets/Dynamic_dispatch/Dynamic_dispatch/Shape/Identify.vi/panel/panel.png",
+            "expectedContent": "referenceAssets/Dynamic_dispatch/Dynamic_dispatch/Shape/Identify.vi/panel/panel.png"
+        },
+        {
+            "expectedPath": "referenceAssets/Dynamic_dispatch/Dynamic_dispatch/Shape/Shape.lvclass/control/panel/panel.png",
+            "expectedContent": "referenceAssets/Dynamic_dispatch/Dynamic_dispatch/Shape/Shape.lvclass/control/panel/panel.png"
+        },
+        {
+            "expectedPath": "referenceAssets/Dynamic_dispatch/Dynamic_dispatch/Square/Identify.vi/connpane.png",
+            "expectedContent": "referenceAssets/Dynamic_dispatch/Dynamic_dispatch/Square/Identify.vi/connpane.png"
+        },
+        {
+            "expectedPath": "referenceAssets/Dynamic_dispatch/Dynamic_dispatch/Square/Identify.vi/diagram/bd.png",
+            "expectedContent": "referenceAssets/Dynamic_dispatch/Dynamic_dispatch/Square/Identify.vi/diagram/bd.png"
+        },
+        {
+            "expectedPath": "referenceAssets/Dynamic_dispatch/Dynamic_dispatch/Square/Identify.vi/panel/panel.png",
+            "expectedContent": "referenceAssets/Dynamic_dispatch/Dynamic_dispatch/Square/Identify.vi/panel/panel.png"
+        },
+        {
+            "expectedPath": "referenceAssets/Dynamic_dispatch/Dynamic_dispatch/Square/Square.lvclass/control/panel/panel.png",
+            "expectedContent": "referenceAssets/Dynamic_dispatch/Dynamic_dispatch/Square/Square.lvclass/control/panel/panel.png"
+        },
+        {
+            "expectedPath": "referenceAssets/Dynamic_dispatch/Dynamic_dispatch/Triangle/Identify.vi/connpane.png",
+            "expectedContent": "referenceAssets/Dynamic_dispatch/Dynamic_dispatch/Triangle/Identify.vi/connpane.png"
+        },
+        {
+            "expectedPath": "referenceAssets/Dynamic_dispatch/Dynamic_dispatch/Triangle/Identify.vi/diagram/bd.png",
+            "expectedContent": "referenceAssets/Dynamic_dispatch/Dynamic_dispatch/Triangle/Identify.vi/diagram/bd.png"
+        },
+        {
+            "expectedPath": "referenceAssets/Dynamic_dispatch/Dynamic_dispatch/Triangle/Identify.vi/panel/panel.png",
+            "expectedContent": "referenceAssets/Dynamic_dispatch/Dynamic_dispatch/Triangle/Identify.vi/panel/panel.png"
+        },
+        {
+            "expectedPath": "referenceAssets/Dynamic_dispatch/Dynamic_dispatch/Triangle/Triangle.lvclass/control/panel/panel.png",
+            "expectedContent": "referenceAssets/Dynamic_dispatch/Dynamic_dispatch/Triangle/Triangle.lvclass/control/panel/panel.png"
+        }
+    ]
+}

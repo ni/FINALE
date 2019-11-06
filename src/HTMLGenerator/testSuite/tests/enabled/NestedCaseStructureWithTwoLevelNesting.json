@@ -1,0 +1,47 @@
+{   "topPath":"referenceAssets",
+    "inputPath": "testAssets/enabled/Nested_case_structure",
+    "outputPath": "Nested_case_structure",
+    "preloadedFiles": "",
+    "expectedOutput": [
+        {
+            "expectedPath": "referenceAssets/Nested_case_structure/file.json",
+            "expectedContent": "referenceAssets/Nested_case_structure/file.json"
+        },
+        {
+            "expectedPath": "referenceAssets/Nested_case_structure/Nested_case_structure/Nested_Case_structure.vi/metadata.json",
+            "expectedContent": "referenceAssets/Nested_case_structure/Nested_case_structure/Nested_Case_structure.vi/metadata.json"
+        },
+        {
+            "expectedPath": "referenceAssets/Nested_case_structure/Nested_case_structure/Nested_Case_structure.vi/description.txt",
+            "expectedContent": "referenceAssets/Nested_case_structure/Nested_case_structure/Nested_Case_structure.vi/description.txt"
+        },
+        {
+            "expectedPath": "referenceAssets/Nested_case_structure/Nested_case_structure/Nested_Case_structure.vi/connpane.png",
+            "expectedContent": "referenceAssets/Nested_case_structure/Nested_case_structure/Nested_Case_structure.vi/connpane.png"
+        },
+        {
+            "expectedPath": "referenceAssets/Nested_case_structure/Nested_case_structure/Nested_Case_structure.vi/panel/panel.png",
+            "expectedContent": "referenceAssets/Nested_case_structure/Nested_case_structure/Nested_Case_structure.vi/panel/panel.png"
+        },
+        {
+            "expectedPath": "referenceAssets/Nested_case_structure/Nested_case_structure/Nested_Case_structure.vi/diagram/bd.png",
+            "expectedContent": "referenceAssets/Nested_case_structure/Nested_case_structure/Nested_Case_structure.vi/diagram/bd.png"
+        },
+        {
+            "expectedPath": "referenceAssets/Nested_case_structure/Nested_case_structure/Nested_Case_structure.vi/diagram/1.png",
+            "expectedContent": "referenceAssets/Nested_case_structure/Nested_case_structure/Nested_Case_structure.vi/diagram/1.png"
+        },
+        {
+            "expectedPath": "referenceAssets/Nested_case_structure/Nested_case_structure/Nested_Case_structure.vi/diagram/2.png",
+            "expectedContent": "referenceAssets/Nested_case_structure/Nested_case_structure/Nested_Case_structure.vi/diagram/2.png"
+        },
+        {
+            "expectedPath": "referenceAssets/Nested_case_structure/Nested_case_structure/Nested_Case_structure.vi/diagram/3.png",
+            "expectedContent": "referenceAssets/Nested_case_structure/Nested_case_structure/Nested_Case_structure.vi/diagram/3.png"
+        },
+        {
+            "expectedPath": "referenceAssets/Nested_case_structure/Nested_case_structure/Nested_Case_structure.vi/diagram/4.png",
+            "expectedContent": "referenceAssets/Nested_case_structure/Nested_case_structure/Nested_Case_structure.vi/diagram/4.png"
+        }
+    ]
+}

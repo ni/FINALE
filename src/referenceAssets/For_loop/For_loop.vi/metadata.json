@@ -1,0 +1,15 @@
+{	"NIDocument": {"ID": "For_loop.vi",
+"Type": "VirtualInstrument",
+"Components": [{
+"ID":"FrontPanel",
+"Type": "Diagram",
+"Image": "/referenceAssets/For_loop/For_loop.vi/panel/panel.png",
+"Bounds":{"x":0,"y":0,"w":719,"h":97},
+"Components": []
+},{"ID":"BlockDiagram", "Type": "Diagram","Image": "/referenceAssets/For_loop/For_loop.vi/diagram/bd.png",  "Bounds":{"x":0,"y":0,"w":250,"h":127},"Components": [{"ID": "ForLoop" , "Type": "Structure", "Bounds":{"x":56,"y":16,"w":102,"h":111}, "Components":[{"ID":"", "Type": "Diagram","Image": "",  "Bounds":{"x":0,"y":0,"w":102,"h":111},"Components": [{"ID":"Multiply",
+"Type":"Function",
+"Bounds":{"x":62,"y":38,"w":21,"h":21}},{"ID":"Random Number (0-1)",
+"Type":"Function",
+"Bounds":{"x":27,"y":20,"w":19,"h":21}}
+]}]}
+]}]}}

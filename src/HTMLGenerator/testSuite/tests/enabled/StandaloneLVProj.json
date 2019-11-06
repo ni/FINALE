@@ -1,0 +1,73 @@
+{
+    "topPath": "referenceAssets",
+    "inputPath": "testAssets/enabled/Sub_VI/Temperature Monitor.lvproj",
+    "outputPath": "LVProj",
+    "preloadedFiles": "",
+    "expectedOutput": [
+        {
+            "expectedPath": "referenceAssets/LVProj/file.json",
+            "expectedContent": "referenceAssets/LVProj/file.json"
+        },
+        {
+            "expectedPath": "referenceAssets/LVProj/Temperature Monitor/My Computer/Dependencies/Convert C to F.vi/metadata.json",
+            "expectedContent": "referenceAssets/LVProj/Temperature Monitor/My Computer/Dependencies/Convert C to F.vi/metadata.json"
+        },
+        {
+            "expectedPath": "referenceAssets/LVProj/Temperature Monitor/My Computer/Dependencies/Convert C to F.vi/connpane.png",
+            "expectedContent": "referenceAssets/LVProj/Temperature Monitor/My Computer/Dependencies/Convert C to F.vi/connpane.png"
+        },
+        {
+            "expectedPath": "referenceAssets/LVProj/Temperature Monitor/My Computer/Dependencies/Convert C to F.vi/description.txt",
+            "expectedContent": "referenceAssets/LVProj/Temperature Monitor/My Computer/Dependencies/Convert C to F.vi/description.txt"
+        },
+        {
+            "expectedPath": "referenceAssets/LVProj/Temperature Monitor/My Computer/Dependencies/Convert C to F.vi/diagram/bd.png",
+            "expectedContent": "referenceAssets/LVProj/Temperature Monitor/My Computer/Dependencies/Convert C to F.vi/diagram/bd.png"
+        },
+        {
+            "expectedPath": "referenceAssets/LVProj/Temperature Monitor/My Computer/Dependencies/Convert C to F.vi/panel/panel.png",
+            "expectedContent": "referenceAssets/LVProj/Temperature Monitor/My Computer/Dependencies/Convert C to F.vi/panel/panel.png"
+        },
+        {
+            "expectedPath": "referenceAssets/LVProj/Temperature Monitor/My Computer/Dependencies/Thermometer (Demo).vi/metadata.json",
+            "expectedContent": "referenceAssets/LVProj/Temperature Monitor/My Computer/Dependencies/Thermometer (Demo).vi/metadata.json"
+        },
+        {
+            "expectedPath": "referenceAssets/LVProj/Temperature Monitor/My Computer/Dependencies/Thermometer (Demo).vi/connpane.png",
+            "expectedContent": "referenceAssets/LVProj/Temperature Monitor/My Computer/Dependencies/Thermometer (Demo).vi/connpane.png"
+        },
+        {
+            "expectedPath": "referenceAssets/LVProj/Temperature Monitor/My Computer/Dependencies/Thermometer (Demo).vi/description.txt",
+            "expectedContent": "referenceAssets/LVProj/Temperature Monitor/My Computer/Dependencies/Thermometer (Demo).vi/description.txt"
+        },
+        {
+            "expectedPath": "referenceAssets/LVProj/Temperature Monitor/My Computer/Dependencies/Thermometer (Demo).vi/diagram/bd.png",
+            "expectedContent": "referenceAssets/LVProj/Temperature Monitor/My Computer/Dependencies/Thermometer (Demo).vi/diagram/bd.png"
+        },
+        {
+            "expectedPath": "referenceAssets/LVProj/Temperature Monitor/My Computer/Dependencies/Thermometer (Demo).vi/panel/panel.png",
+            "expectedContent": "referenceAssets/LVProj/Temperature Monitor/My Computer/Dependencies/Thermometer (Demo).vi/panel/panel.png"
+        },
+        {
+            "expectedPath": "referenceAssets/LVProj/Temperature Monitor/My Computer/Temperature Monitor.vi/metadata.json",
+            "expectedContent": "referenceAssets/LVProj/Temperature Monitor/My Computer/Temperature Monitor.vi/metadata.json"
+        },
+        {
+            "expectedPath": "referenceAssets/LVProj/Temperature Monitor/My Computer/Temperature Monitor.vi/connpane.png",
+            "expectedContent": "referenceAssets/LVProj/Temperature Monitor/My Computer/Temperature Monitor.vi/connpane.png"
+        },
+        {
+            "expectedPath": "referenceAssets/LVProj/Temperature Monitor/My Computer/Temperature Monitor.vi/description.txt",
+            "expectedContent": "referenceAssets/LVProj/Temperature Monitor/My Computer/Temperature Monitor.vi/description.txt"
+        },
+        {
+            "expectedPath": "referenceAssets/LVProj/Temperature Monitor/My Computer/Temperature Monitor.vi/panel/panel.png",
+            "expectedContent": "referenceAssets/LVProj/Temperature Monitor/My Computer/Temperature Monitor.vi/panel/panel.png"
+        },
+        {
+            "expectedPath": "referenceAssets/LVProj/Temperature Monitor/My Computer/Temperature Monitor.vi/diagram/bd.png",
+            "expectedContent": "referenceAssets/LVProj/Temperature Monitor/My Computer/Temperature Monitor.vi/diagram/bd.png"
+        }
+
+    ]
+}

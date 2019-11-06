@@ -1,0 +1,32 @@
+{
+    "topPath": "referenceAssets",
+    "inputPath": "testAssets/enabled/Simple_functionnode",
+    "outputPath": "Simple_functionnode",
+    "preloadedFiles": "",
+    "expectedOutput": [
+        {
+            "expectedPath": "referenceAssets/Simple_functionnode/file.json",
+            "expectedContent": "referenceAssets/Simple_functionnode/file.json"
+        },
+        {
+            "expectedPath": "referenceAssets/Simple_functionnode/Simple_functionnode/Simple_functionnode.vi/metadata.json",
+            "expectedContent": "referenceAssets/Simple_functionnode/Simple_functionnode/Simple_functionnode.vi/metadata.json"
+        },
+        {
+            "expectedPath": "referenceAssets/Simple_functionnode/Simple_functionnode/Simple_functionnode.vi/description.txt",
+            "expectedContent": "referenceAssets/Simple_functionnode/Simple_functionnode/Simple_functionnode.vi/description.txt"
+        },
+        {
+            "expectedPath": "referenceAssets/Simple_functionnode/Simple_functionnode/Simple_functionnode.vi/connpane.png",
+            "expectedContent": "referenceAssets/Simple_functionnode/Simple_functionnode/Simple_functionnode.vi/connpane.png"
+        },
+        {
+            "expectedPath": "referenceAssets/Simple_functionnode/Simple_functionnode/Simple_functionnode.vi/panel/panel.png",
+            "expectedContent": "referenceAssets/Simple_functionnode/Simple_functionnode/Simple_functionnode.vi/panel/panel.png"
+        },
+        {
+            "expectedPath": "referenceAssets/Simple_functionnode/Simple_functionnode/Simple_functionnode.vi/diagram/bd.png",
+            "expectedContent": "referenceAssets/Simple_functionnode/Simple_functionnode/Simple_functionnode.vi/diagram/bd.png"
+        }
+    ]
+}

@@ -1,0 +1,114 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-size: 100%;
+	font-family: 'Segoe UI', Helvetica, Arial, freesans;
+	display: flex;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+#header-layout {
+	width: 100%;
+	height: 5%;
+	background-color: white;
+	color: black;
+}
+
+#tab-layout {
+	width: 70%;
+	float: left
+}
+
+.tab-content.card {
+	padding: 10px;
+}
+
+.tab-element {
+	padding: 2%;
+	background-color: white;
+	color: black;
+	display: inline;
+	border-top-left-radius: 25px;
+	border-top-right-radius: 25px;
+}
+
+#workspace {
+	height: 85%;
+	width: 100%
+}
+
+#panel-fp {
+	background-color: rgb(221, 221, 221);
+	height: 100%;
+	width: 100%;
+}
+
+#panel-bd {
+	width: 100%;
+	height: 100%;
+}
+
+#fp-panel {
+	overflow: auto;
+	width: 100%;
+	height: 100%;
+	background-color: rgb(221, 221, 221)
+}
+
+#FrontPanel {
+	background-color: rgb(221, 221, 221)
+}
+
+#bd-panel {
+	overflow: auto;
+	width: 100%;
+	height: 100%;
+}
+
+.flexi {
+	list-style: none;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	justify-content: space-around;
+}
+
+div {
+	background-repeat: no-repeat
+}
+
+#divLog {
+	width: 100%;
+	height: 100%;
+	/* overflow: scroll; */
+	padding: 10px;
+	vertical-align: top;
+	display: inline-block;
+	/* border: 1px solid gray; */
+	font: 10px Verdana, sans-serif;
+	line-height: 16px;
+}
+
+/*
+.loader {
+    border: 16px solid #f3f3f3; /* Light grey 
+    border-top: 16px solid #3498db; /* Blue 
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+} 
+*/

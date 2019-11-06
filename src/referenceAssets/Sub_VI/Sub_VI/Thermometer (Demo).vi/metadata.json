@@ -1,0 +1,25 @@
+{	"NIDocument": {"ID": "Thermometer (Demo).vi",
+"Type": "VirtualInstrument",
+"Components": [{
+"ID":"FrontPanel",
+"Type": "Diagram",
+"Image": "/referenceAssets/Sub_VI/Sub_VI/Thermometer (Demo).vi/panel/panel.png",
+"Bounds":{"x":0,"y":0,"w":326,"h":151},
+"Components": [{"ID":"",
+"Type":"Enum",
+"Bounds":{"x":0,"y":35,"w":120,"h":37},
+"Values":["Celsius","Fahrenheit"]}
+]
+},{"ID":"BlockDiagram", "Type": "Diagram","Image": "/referenceAssets/Sub_VI/Sub_VI/Thermometer (Demo).vi/diagram/bd.png",  "Bounds":{"x":0,"y":0,"w":286,"h":148},"Components": [{"ID":"Random Number (0-1)",
+"Type":"Function",
+"Bounds":{"x":34,"y":48,"w":19,"h":21}},{"ID":"Equal To 0?",
+"Type":"Function",
+"Bounds":{"x":109,"y":80,"w":21,"h":21}},{"ID":"Convert C to F.vi",
+"Type":"SubVI",
+"Bounds":{"x":104,"y":116,"w":32,"h":32},
+"Path": "/referenceAssets/Sub_VI/Sub_VI/Convert C to F.vi"},{"ID":"Multiply",
+"Type":"Function",
+"Bounds":{"x":69,"y":66,"w":21,"h":21}},{"ID":"Select",
+"Type":"Function",
+"Bounds":{"x":146,"y":72,"w":27,"h":27}}
+]}]}}

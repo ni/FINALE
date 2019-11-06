@@ -1,0 +1,16 @@
+{	"NIDocument": {"ID": "Temperature Monitor.vi",
+"Type": "VirtualInstrument",
+"Components": [{
+"ID":"FrontPanel",
+"Type": "Diagram",
+"Image": "/referenceAssets/LVProj/Temperature Monitor/My Computer/Temperature Monitor.vi/panel/panel.png",
+"Bounds":{"x":0,"y":0,"w":504,"h":253},
+"Components": []
+},{"ID":"BlockDiagram", "Type": "Diagram","Image": "/referenceAssets/LVProj/Temperature Monitor/My Computer/Temperature Monitor.vi/diagram/bd.png",  "Bounds":{"x":0,"y":0,"w":476,"h":231},"Components": [{"ID": "WhileLoop" , "Type": "Structure", "Bounds":{"x":0,"y":0,"w":476,"h":231}, "Components":[{"ID":"", "Type": "Diagram","Image": "",  "Bounds":{"x":0,"y":0,"w":476,"h":231},"Components": [{"ID":"Thermometer (Demo).vi",
+"Type":"SubVI",
+"Bounds":{"x":65,"y":41,"w":32,"h":32},
+"Path": "/referenceAssets/LVProj/Temperature Monitor/My Computer/Dependencies/Thermometer (Demo).vi"},{"ID":"Wait Until Next ms Multiple",
+"Type":"Function",
+"Bounds":{"x":193,"y":163,"w":32,"h":32}}
+]}]}
+]}]}}

@@ -1,0 +1,32 @@
+{
+    "topPath": "referenceAssets",
+    "inputPath": "testAssets/enabled/Flat_sequence",
+    "outputPath": "Flat_sequence",
+    "preloadedFiles": "",
+    "expectedOutput": [
+        {
+            "expectedPath": "referenceAssets/Flat_sequence/file.json",
+            "expectedContent": "referenceAssets/Flat_sequence/file.json"
+        },
+        {
+            "expectedPath": "referenceAssets/Flat_sequence/Flat_sequence/Flat_sequence.vi/metadata.json",
+            "expectedContent": "referenceAssets/Flat_sequence/Flat_sequence/Flat_sequence.vi/metadata.json"
+        },
+        {
+            "expectedPath": "referenceAssets/Flat_sequence/Flat_sequence/Flat_sequence.vi/description.txt",
+            "expectedContent": "referenceAssets/Flat_sequence/Flat_sequence/Flat_sequence.vi/description.txt"
+        },
+        {
+            "expectedPath": "referenceAssets/Flat_sequence/Flat_sequence/Flat_sequence.vi/connpane.png",
+            "expectedContent": "referenceAssets/Flat_sequence/Flat_sequence/Flat_sequence.vi/connpane.png"
+        },
+        {
+            "expectedPath": "referenceAssets/Flat_sequence/Flat_sequence/Flat_sequence.vi/panel/panel.png",
+            "expectedContent": "referenceAssets/Flat_sequence/Flat_sequence/Flat_sequence.vi/panel/panel.png"
+        },
+        {
+            "expectedPath": "referenceAssets/Flat_sequence/Flat_sequence/Flat_sequence.vi/diagram/bd.png",
+            "expectedContent": "referenceAssets/Flat_sequence/Flat_sequence/Flat_sequence.vi/diagram/bd.png"
+        }
+    ]
+}

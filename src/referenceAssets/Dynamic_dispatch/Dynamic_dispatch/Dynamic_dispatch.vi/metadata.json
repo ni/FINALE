@@ -1,0 +1,20 @@
+{	"NIDocument": {"ID": "Dynamic_dispatch.vi",
+"Type": "VirtualInstrument",
+"Components": [{
+"ID":"FrontPanel",
+"Type": "Diagram",
+"Image": "/referenceAssets/Dynamic_dispatch/Dynamic_dispatch/Dynamic_dispatch.vi/panel/panel.png",
+"Bounds":{"x":0,"y":0,"w":616,"h":219},
+"Components": []
+},{"ID":"BlockDiagram", "Type": "Diagram","Image": "/referenceAssets/Dynamic_dispatch/Dynamic_dispatch/Dynamic_dispatch.vi/diagram/bd.png",  "Bounds":{"x":0,"y":0,"w":600,"h":414},"Components": [{"ID": "ForLoop" , "Type": "Structure", "Bounds":{"x":217,"y":106,"w":154,"h":92}, "Components":[{"ID":"", "Type": "Diagram","Image": "",  "Bounds":{"x":0,"y":0,"w":154,"h":92},"Components": [{"ID" : "Shape.lvclass:Identify.vi",
+"Type" : "DynamicDispatchSubVI",
+"Bounds":{"x":43,"y":34,"w":32,"h":32},
+"Implementations":{"Nearest":"/referenceAssets/Dynamic_dispatch/Dynamic_dispatch/Shape/Identify.vi","Hierarchy":[{"VIName":"Shape.lvclass:Identify.vi","Path":"/referenceAssets/Dynamic_dispatch/Dynamic_dispatch/Shape/Identify.vi","Disabled":"false","Children":[{"VIName":"Square.lvclass:Identify.vi","Path":"/referenceAssets/Dynamic_dispatch/Dynamic_dispatch/Square/Identify.vi","Disabled":"false","Children":[]
+},{"VIName":"Triangle.lvclass:Identify.vi","Path":"/referenceAssets/Dynamic_dispatch/Dynamic_dispatch/Triangle/Identify.vi","Disabled":"false","Children":[]
+}
+]
+}
+]
+}}
+]}]}
+]}]}}

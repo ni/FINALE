@@ -1,0 +1,23 @@
+{	"NIDocument": {"ID": "waveformChart.vi",
+"Type": "VirtualInstrument",
+"Components": [{
+"ID":"FrontPanel",
+"Type": "Diagram",
+"Image": "/referenceAssets/Nested_folder/Nested_folder/Waveform/waveformChart/waveformChart.vi/panel/panel.png",
+"Bounds":{"x":0,"y":0,"w":685,"h":241},
+"Components": []
+},{"ID":"BlockDiagram", "Type": "Diagram","Image": "/referenceAssets/Nested_folder/Nested_folder/Waveform/waveformChart/waveformChart.vi/diagram/bd.png",  "Bounds":{"x":0,"y":0,"w":444,"h":139},"Components": [{"ID":"To Double Precision Float",
+"Type":"Function",
+"Bounds":{"x":27,"y":72,"w":26,"h":11}},{"ID":"Divide",
+"Type":"Function",
+"Bounds":{"x":89,"y":62,"w":21,"h":21}},{"ID": "WhileLoop" , "Type": "Structure", "Bounds":{"x":120,"y":0,"w":324,"h":139}, "Components":[{"ID":"", "Type": "Diagram","Image": "",  "Bounds":{"x":0,"y":0,"w":324,"h":139},"Components": [{"ID":"Sine & Cosine",
+"Type":"Function",
+"Bounds":{"x":118,"y":61,"w":32,"h":32}},{"ID":"To Double Precision Float",
+"Type":"Function",
+"Bounds":{"x":45,"y":79,"w":26,"h":11}},{"ID":"Wait (ms)",
+"Type":"Function",
+"Bounds":{"x":65,"y":20,"w":32,"h":32}},{"ID":"Multiply",
+"Type":"Function",
+"Bounds":{"x":83,"y":67,"w":21,"h":21}}
+]}]}
+]}]}}

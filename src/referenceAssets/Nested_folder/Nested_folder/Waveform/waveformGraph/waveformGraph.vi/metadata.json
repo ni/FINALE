@@ -1,0 +1,17 @@
+{	"NIDocument": {"ID": "waveformGraph.vi",
+"Type": "VirtualInstrument",
+"Components": [{
+"ID":"FrontPanel",
+"Type": "Diagram",
+"Image": "/referenceAssets/Nested_folder/Nested_folder/Waveform/waveformGraph/waveformGraph.vi/panel/panel.png",
+"Bounds":{"x":0,"y":0,"w":328,"h":243},
+"Components": []
+},{"ID":"BlockDiagram", "Type": "Diagram","Image": "/referenceAssets/Nested_folder/Nested_folder/Waveform/waveformGraph/waveformGraph.vi/diagram/bd.png",  "Bounds":{"x":0,"y":0,"w":594,"h":179},"Components": [{"ID":"Divide",
+"Type":"Function",
+"Bounds":{"x":37,"y":54,"w":21,"h":21}},{"ID": "ForLoop" , "Type": "Structure", "Bounds":{"x":81,"y":0,"w":344,"h":179}, "Components":[{"ID":"", "Type": "Diagram","Image": "",  "Bounds":{"x":0,"y":0,"w":344,"h":179},"Components": [{"ID":"Multiply",
+"Type":"Function",
+"Bounds":{"x":26,"y":53,"w":21,"h":21}},{"ID":"Sine & Cosine",
+"Type":"Function",
+"Bounds":{"x":67,"y":11,"w":32,"h":32}}
+]}]}
+]}]}}

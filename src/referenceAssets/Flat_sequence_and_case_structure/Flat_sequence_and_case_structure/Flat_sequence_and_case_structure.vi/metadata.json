@@ -1,0 +1,26 @@
+{	"NIDocument": {"ID": "Flat_sequence_and_case_structure.vi",
+"Type": "VirtualInstrument",
+"Components": [{
+"ID":"FrontPanel",
+"Type": "Diagram",
+"Image": "/referenceAssets/Flat_sequence_and_case_structure/Flat_sequence_and_case_structure/Flat_sequence_and_case_structure.vi/panel/panel.png",
+"Bounds":{"x":0,"y":0,"w":421,"h":231},
+"Components": []
+},{"ID":"BlockDiagram", "Type": "Diagram","Image": "/referenceAssets/Flat_sequence_and_case_structure/Flat_sequence_and_case_structure/Flat_sequence_and_case_structure.vi/diagram/bd.png",  "Bounds":{"x":0,"y":0,"w":892,"h":351},"Components": [{"ID":"", "Type": "FlatSequence",  "Bounds":{"x":0,"y":0,"w":892,"h":351},"Components": [{"ID":"", "Type": "FlatSequenceFrame",  "Bounds":{"x":6,"y":10,"w":680,"h":351},"Components": [{"ID":"", "Type": "Diagram","Image": "",  "Bounds":{"x":0,"y":0,"w":670,"h":331},"Components": [{"ID": "WhileLoop" , "Type": "Structure", "Bounds":{"x":36,"y":23,"w":470,"h":272}, "Components":[{"ID":"", "Type": "Diagram","Image": "",  "Bounds":{"x":0,"y":0,"w":470,"h":272},"Components": [{"ID": "CaseStructure" , "Type": "MultiFrameStructure", "Bounds":{"x":165,"y":45,"w":148,"h":158}, "SelectorBounds": {"x":42,"y":0,"w":63,"h":17}, "Components":[{"ID":" False ", "Type": "Diagram","Image": "/referenceAssets/Flat_sequence_and_case_structure/Flat_sequence_and_case_structure/Flat_sequence_and_case_structure.vi/diagram/1.png",  "Bounds":{"x":0,"y":0,"w":148,"h":158},"Components": [{"ID":"Decrement",
+"Type":"Function",
+"Bounds":{"x":19,"y":21,"w":21,"h":21}},{"ID": "ForLoop" , "Type": "Structure", "Bounds":{"x":50,"y":22,"w":74,"h":111}, "Components":[{"ID":"", "Type": "Diagram","Image": "",  "Bounds":{"x":0,"y":0,"w":74,"h":111},"Components": [{"ID":"Add",
+"Type":"Function",
+"Bounds":{"x":27,"y":36,"w":21,"h":21}}
+]}]}
+]},{"ID":" True ", "Type": "Diagram","Image": "/referenceAssets/Flat_sequence_and_case_structure/Flat_sequence_and_case_structure/Flat_sequence_and_case_structure.vi/diagram/2.png",  "Bounds":{"x":0,"y":0,"w":148,"h":158},"Components": []}
+]},{"ID":"Less Or Equal?",
+"Type":"Function",
+"Bounds":{"x":134,"y":112,"w":21,"h":21}},{"ID":"Wait (ms)",
+"Type":"Function",
+"Bounds":{"x":135,"y":218,"w":32,"h":32}},{"ID":"Random Number (0-1)",
+"Type":"Function",
+"Bounds":{"x":56,"y":154,"w":19,"h":21}}
+]}]}
+]}]},{"ID":"", "Type": "FlatSequenceFrame",  "Bounds":{"x":683,"y":10,"w":213,"h":351},"Components": [{"ID":"", "Type": "Diagram","Image": "",  "Bounds":{"x":0,"y":0,"w":203,"h":331},"Components": []}]}
+]}
+]}]}}

@@ -1,0 +1,9 @@
+{	"NIDocument": {"ID": "Ctl_file.ctl",
+"Type": "VirtualInstrument",
+"Components": [{
+"ID":"FrontPanel",
+"Type": "Diagram",
+"Image": "/referenceAssets/Ctl_file/Ctl_file/Ctl_file.ctl/panel/panel.png",
+"Bounds":{"x":0,"y":0,"w":231,"h":92},
+"Components": []
+}]}}

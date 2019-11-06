@@ -1,0 +1,17 @@
+{	"NIDocument": {"ID": "While_loop.vi",
+"Type": "VirtualInstrument",
+"Components": [{
+"ID":"FrontPanel",
+"Type": "Diagram",
+"Image": "/referenceAssets/While_loop/While_loop.vi/panel/panel.png",
+"Bounds":{"x":0,"y":0,"w":215,"h":42},
+"Components": []
+},{"ID":"BlockDiagram", "Type": "Diagram","Image": "/referenceAssets/While_loop/While_loop.vi/diagram/bd.png",  "Bounds":{"x":0,"y":0,"w":214,"h":163},"Components": [{"ID": "WhileLoop" , "Type": "Structure", "Bounds":{"x":0,"y":0,"w":214,"h":163}, "Components":[{"ID":"", "Type": "Diagram","Image": "",  "Bounds":{"x":0,"y":0,"w":214,"h":163},"Components": [{"ID":"Wait Until Next ms Multiple",
+"Type":"Function",
+"Bounds":{"x":73,"y":20,"w":32,"h":32}},{"ID":"Multiply",
+"Type":"Function",
+"Bounds":{"x":102,"y":76,"w":21,"h":21}},{"ID":"Random Number (0-1)",
+"Type":"Function",
+"Bounds":{"x":73,"y":67,"w":19,"h":21}}
+]}]}
+]}]}}

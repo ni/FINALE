@@ -1,0 +1,14 @@
+{	"NIDocument": {"ID": "Add and sub.vi",
+"Type": "VirtualInstrument",
+"Components": [{
+"ID":"FrontPanel",
+"Type": "Diagram",
+"Image": "/referenceAssets/StaticVI_reference/StaticVI_reference/Add and sub.vi/panel/panel.png",
+"Bounds":{"x":0,"y":0,"w":468,"h":156},
+"Components": []
+},{"ID":"BlockDiagram", "Type": "Diagram","Image": "/referenceAssets/StaticVI_reference/StaticVI_reference/Add and sub.vi/diagram/bd.png",  "Bounds":{"x":0,"y":0,"w":416,"h":139},"Components": [{"ID":"Subtract",
+"Type":"Function",
+"Bounds":{"x":212,"y":116,"w":21,"h":21}},{"ID":"Add",
+"Type":"Function",
+"Bounds":{"x":212,"y":15,"w":21,"h":21}}
+]}]}}

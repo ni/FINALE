@@ -1,0 +1,35 @@
+{	"NIDocument": {"ID": "Tab_constant.vi",
+"Type": "VirtualInstrument",
+"Components": [{
+"ID":"FrontPanel",
+"Type": "Diagram",
+"Image": "/referenceAssets/Tab_constant/Tab_constant/Tab_constant.vi/panel/panel.png",
+"Bounds":{"x":0,"y":0,"w":300,"h":252},
+"Components": [{"ID":"Outer Tab","Type":"TabControl","Bounds":{"x":0,"y":25,"w":300,"h":209},
+"TabLocation":"Top",
+"Components":[{"ID":"",
+"Type":"Diagram","Bounds":{"x":0,"y":0,"w":300,"h":209},
+"Image":"/referenceAssets/Tab_constant/Tab_constant/Tab_constant.vi/panel/1.png","pageLabel":"Page 1","selectorBounds":{"Width":55,"Height":23},
+"Components":[{"ID":"Inner Tab","Type":"TabControl","Bounds":{"x":102,"y":60,"w":171,"h":126},
+"TabLocation":"Top",
+"Components":[{"ID":"",
+"Type":"Diagram","Bounds":{"x":0,"y":0,"w":171,"h":126},
+"Image":"/referenceAssets/Tab_constant/Tab_constant/Tab_constant.vi/panel/2.png","pageLabel":"Page 1","selectorBounds":{"Width":55,"Height":23},
+"Components":[]},{"ID":"",
+"Type":"Diagram","Bounds":{"x":0,"y":0,"w":171,"h":126},
+"Image":"/referenceAssets/Tab_constant/Tab_constant/Tab_constant.vi/panel/3.png","pageLabel":"Page 2","selectorBounds":{"Width":55,"Height":23},
+"Components":[]}
+]}
+]},{"ID":"",
+"Type":"Diagram","Bounds":{"x":0,"y":0,"w":300,"h":209},
+"Image":"/referenceAssets/Tab_constant/Tab_constant/Tab_constant.vi/panel/4.png","pageLabel":"Page 2","selectorBounds":{"Width":55,"Height":23},
+"Components":[{"ID":"",
+"Type":"Enum",
+"Bounds":{"x":106,"y":131,"w":50,"h":25},
+"Values":["Apple","Oranges","Pears"]}
+]}
+]}
+]
+},{"ID":"BlockDiagram", "Type": "Diagram","Image": "/referenceAssets/Tab_constant/Tab_constant/Tab_constant.vi/diagram/bd.png",  "Bounds":{"x":0,"y":0,"w":173,"h":165},"Components": [{"ID":"Enum", "Type":"Enum", "Bounds":{"x":0,"y":146,"w":58,"h":19}, "Values": ["Apple","Oranges","Pears"
+]}
+]}]}}

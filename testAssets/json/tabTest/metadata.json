@@ -1,0 +1,227 @@
+{
+	"NIDocument": {
+		"ID": "tabTest.vi",
+		"Type": "VirtualInstrument",
+		"Components": [{
+			"ID": "FrontPanel",
+			"Type": "Diagram",
+			"Image": "\\get tabs\\tabTest\\fpanel\\fp.png",
+			"Bounds": {
+				"x": 0,
+				"y": 0,
+				"w": 675,
+				"h": 954
+			},
+			"Components": [{
+				"ID": "Tab Control",
+				"Type": "TabControl",
+				"Bounds": {
+					"x": 0,
+					"y": 138,
+					"w": 675,
+					"h": 412
+				},
+				"TabLocation": "Top",
+				"Components": [{
+					"ID": "",
+					"Type": "Diagram",
+					"Bounds": {
+						"x": 0,
+						"y": 0,
+						"w": 675,
+						"h": 412
+					},
+					"Image": "\\get tabs\\tabTest\\fpanel\\c0\\d0\\d.png",
+					"pageLabel": "Page 1",
+					"selectorBounds": {
+						"Width": 55,
+						"Height": 23
+					},
+					"Components": [{
+						"ID": "Tab Control 2",
+						"Type": "TabControl",
+						"Bounds": {
+							"x": 201,
+							"y": 72,
+							"w": 401,
+							"h": 281
+						},
+						"TabLocation": "Top",
+						"Components": [{
+							"ID": "",
+							"Type": "Diagram",
+							"Bounds": {
+								"x": 0,
+								"y": 0,
+								"w": 401,
+								"h": 281
+							},
+							"Image": "\\get tabs\\tabTest\\fpanel\\c0\\d0\\c0\\d0\\d.png",
+							"pageLabel": "Page 11",
+							"selectorBounds": {
+								"Width": 61,
+								"Height": 23
+							},
+							"Components": []
+						}, {
+							"ID": "",
+							"Type": "Diagram",
+							"Bounds": {
+								"x": 0,
+								"y": 0,
+								"w": 401,
+								"h": 281
+							},
+							"Image": "\\get tabs\\tabTest\\fpanel\\c0\\d0\\c0\\d1\\d.png",
+							"pageLabel": "Page 12",
+							"selectorBounds": {
+								"Width": 61,
+								"Height": 23
+							},
+							"Components": []
+						}, {
+							"ID": "",
+							"Type": "Diagram",
+							"Bounds": {
+								"x": 0,
+								"y": 0,
+								"w": 401,
+								"h": 281
+							},
+							"Image": "\\get tabs\\tabTest\\fpanel\\c0\\d0\\c0\\d2\\d.png",
+							"pageLabel": "Page 13",
+							"selectorBounds": {
+								"Width": 61,
+								"Height": 23
+							},
+							"Components": [{
+								"ID": "",
+								"Type": "Enum",
+								"Bounds": {
+									"x": 303,
+									"y": 120,
+									"w": 50,
+									"h": 25
+								},
+								"Values": [""]
+							}, {
+								"ID": "Tab Control 3",
+								"Type": "TabControl",
+								"Bounds": {
+									"x": 32,
+									"y": 60,
+									"w": 225,
+									"h": 150
+								},
+								"TabLocation": "Top",
+								"Components": [{
+									"ID": "",
+									"Type": "Diagram",
+									"Bounds": {
+										"x": 0,
+										"y": 0,
+										"w": 225,
+										"h": 150
+									},
+									"Image": "\\get tabs\\tabTest\\fpanel\\c0\\d0\\c0\\d2\\c1\\d0\\d.png",
+									"pageLabel": "Page 131",
+									"selectorBounds": {
+										"Width": 67,
+										"Height": 23
+									},
+									"Components": []
+								}, {
+									"ID": "",
+									"Type": "Diagram",
+									"Bounds": {
+										"x": 0,
+										"y": 0,
+										"w": 225,
+										"h": 150
+									},
+									"Image": "\\get tabs\\tabTest\\fpanel\\c0\\d0\\c0\\d2\\c1\\d1\\d.png",
+									"pageLabel": "Page 132",
+									"selectorBounds": {
+										"Width": 67,
+										"Height": 23
+									},
+									"Components": []
+								}]
+							}]
+						}]
+					}]
+				}, {
+					"ID": "",
+					"Type": "Diagram",
+					"Bounds": {
+						"x": 0,
+						"y": 0,
+						"w": 675,
+						"h": 412
+					},
+					"Image": "\\get tabs\\tabTest\\fpanel\\c0\\d1\\d.png",
+					"pageLabel": "aslkdfjksdfjkjafksdjfdjfk 2",
+					"selectorBounds": {
+						"Width": 152,
+						"Height": 23
+					},
+					"Components": []
+				}]
+			}, {
+				"ID": "Tab Control 4",
+				"Type": "TabControl",
+				"Bounds": {
+					"x": 65,
+					"y": 786,
+					"w": 225,
+					"h": 150
+				},
+				"TabLocation": "Top",
+				"Components": [{
+					"ID": "",
+					"Type": "Diagram",
+					"Bounds": {
+						"x": 0,
+						"y": 0,
+						"w": 225,
+						"h": 150
+					},
+					"Image": "\\get tabs\\tabTest\\fpanel\\c2\\d0\\d.png",
+					"pageLabel": "Page 1",
+					"selectorBounds": {
+						"Width": 55,
+						"Height": 23
+					},
+					"Components": []
+				}, {
+					"ID": "",
+					"Type": "Diagram",
+					"Bounds": {
+						"x": 0,
+						"y": 0,
+						"w": 225,
+						"h": 150
+					},
+					"Image": "\\get tabs\\tabTest\\fpanel\\c2\\d1\\d.png",
+					"pageLabel": "Page 2",
+					"selectorBounds": {
+						"Width": 55,
+						"Height": 23
+					},
+					"Components": []
+				}]
+			}]
+		}, {
+			"ID": "BlockDiagram",
+			"Type": "Diagram",
+			"Image": "\\get tabs\\tabTest\\bdiagram\\bd.png",
+			"Bounds": {
+				"x": 0,
+				"y": 0,
+				"w": 329,
+				"h": 561
+			},
+			"Components": []
+		}]
+	}
+}

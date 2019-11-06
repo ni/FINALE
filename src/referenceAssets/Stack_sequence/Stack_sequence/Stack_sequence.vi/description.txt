@@ -1,0 +1,4 @@
+This VI is used to determine the string to output to the weather station based on the current temperature and limit settings.
+
+Inputs: Current Temperature (DBL), Minimum Temperature (DBL), and Maximum Temperature (DBL).
+Outputs: Warning Text (string) and Warning? (Boolean).

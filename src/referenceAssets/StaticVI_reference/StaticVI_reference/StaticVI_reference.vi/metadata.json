@@ -1,0 +1,12 @@
+{	"NIDocument": {"ID": "StaticVI_reference.vi",
+"Type": "VirtualInstrument",
+"Components": [{
+"ID":"FrontPanel",
+"Type": "Diagram",
+"Image": "/referenceAssets/StaticVI_reference/StaticVI_reference/StaticVI_reference.vi/panel/panel.png",
+"Bounds":{"x":0,"y":0,"w":204,"h":163},
+"Components": []
+},{"ID":"BlockDiagram", "Type": "Diagram","Image": "/referenceAssets/StaticVI_reference/StaticVI_reference/StaticVI_reference.vi/diagram/bd.png",  "Bounds":{"x":0,"y":0,"w":180,"h":89},"Components": [{"ID":"Open VI Reference",
+"Type":"Function",
+"Bounds":{"x":86,"y":53,"w":32,"h":32}}
+]}]}}

@@ -1,0 +1,60 @@
+{
+    "topPath": "referenceAssets",
+    "inputPath": "testAssets/enabled/Poly_VI",
+    "outputPath": "Poly_VI",
+    "preloadedFiles": "",
+    "expectedOutput": [
+        {
+            "expectedPath": "referenceAssets/Poly_VI/file.json",
+            "expectedContent": "referenceAssets/Poly_VI/file.json"
+        },
+        {
+            "expectedPath": "referenceAssets/Poly_VI/Poly_VI/numericArrayInput.vi/metadata.json",
+            "expectedContent": "referenceAssets/Poly_VI/Poly_VI/numericArrayInput.vi/metadata.json"
+        },
+        {
+            "expectedPath": "referenceAssets/Poly_VI/Poly_VI/PolyVI.vi/metadata.json",
+            "expectedContent": "referenceAssets/Poly_VI/Poly_VI/PolyVI.vi/metadata.json"
+        },
+        {
+            "expectedPath": "referenceAssets/Poly_VI/Poly_VI/stringArrayInput.vi/metadata.json",
+            "expectedContent": "referenceAssets/Poly_VI/Poly_VI/stringArrayInput.vi/metadata.json"
+        },
+        {
+            "expectedPath": "referenceAssets/Poly_VI/Poly_VI/numericArrayInput.vi/description.txt",
+            "expectedContent": "referenceAssets/Poly_VI/Poly_VI/numericArrayInput.vi/description.txt"
+        },
+        {
+            "expectedPath": "referenceAssets/Poly_VI/Poly_VI/PolyVI.vi/description.txt",
+            "expectedContent": "referenceAssets/Poly_VI/Poly_VI/PolyVI.vi/description.txt"
+        },
+        {
+            "expectedPath": "referenceAssets/Poly_VI/Poly_VI/stringArrayInput.vi/description.txt",
+            "expectedContent": "referenceAssets/Poly_VI/Poly_VI/stringArrayInput.vi/description.txt"
+        },
+        {
+            "expectedPath": "referenceAssets/Poly_VI/Poly_VI/numericArrayInput.vi/connpane.png",
+            "expectedContent": "referenceAssets/Poly_VI/Poly_VI/numericArrayInput.vi/connpane.png"
+        },
+        {
+            "expectedPath": "referenceAssets/Poly_VI/Poly_VI/stringArrayInput.vi/connpane.png",
+            "expectedContent": "referenceAssets/Poly_VI/Poly_VI/stringArrayInput.vi/connpane.png"
+        },
+        {
+            "expectedPath": "referenceAssets/Poly_VI/Poly_VI/numericArrayInput.vi/diagram/bd.png",
+            "expectedContent": "referenceAssets/Poly_VI/Poly_VI/numericArrayInput.vi/diagram/bd.png"
+        },
+        {
+            "expectedPath": "referenceAssets/Poly_VI/Poly_VI/numericArrayInput.vi/panel/panel.png",
+            "expectedContent": "referenceAssets/Poly_VI/Poly_VI/numericArrayInput.vi/panel/panel.png"
+        },
+        {
+            "expectedPath": "referenceAssets/Poly_VI/Poly_VI/stringArrayInput.vi/diagram/bd.png",
+            "expectedContent": "referenceAssets/Poly_VI/Poly_VI/stringArrayInput.vi/diagram/bd.png"
+        },
+        {
+            "expectedPath": "referenceAssets/Poly_VI/Poly_VI/stringArrayInput.vi/panel/panel.png",
+            "expectedContent": "referenceAssets/Poly_VI/Poly_VI/stringArrayInput.vi/panel/panel.png"
+        }
+    ]
+}

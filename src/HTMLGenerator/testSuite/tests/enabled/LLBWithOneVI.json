@@ -1,0 +1,32 @@
+{
+    "topPath": "referenceAssets",
+    "inputPath": "testAssets/enabled/LLB",
+    "outputPath": "LLB",
+    "preloadedFiles": "",
+    "expectedOutput": [
+        {
+            "expectedPath": "referenceAssets/LLB/file.json",
+            "expectedContent": "referenceAssets/LLB/file.json"
+        },
+        {
+            "expectedPath": "referenceAssets/LLB/LLB/LLB_with_function_node.llb/LLB_with_function_node.vi/metadata.json",
+            "expectedContent": "referenceAssets/LLB/LLB/LLB_with_function_node.llb/LLB_with_function_node.vi/metadata.json"
+        },
+        {
+            "expectedPath": "referenceAssets/LLB/LLB/LLB_with_function_node.llb/LLB_with_function_node.vi/description.txt",
+            "expectedContent": "referenceAssets/LLB/LLB/LLB_with_function_node.llb/LLB_with_function_node.vi/description.txt"
+        },
+        {
+            "expectedPath": "referenceAssets/LLB/LLB/LLB_with_function_node.llb/LLB_with_function_node.vi/connpane.png",
+            "expectedContent": "referenceAssets/LLB/LLB/LLB_with_function_node.llb/LLB_with_function_node.vi/connpane.png"
+        },
+        {
+            "expectedPath": "referenceAssets/LLB/LLB/LLB_with_function_node.llb/LLB_with_function_node.vi/diagram/bd.png",
+            "expectedContent": "referenceAssets/LLB/LLB/LLB_with_function_node.llb/LLB_with_function_node.vi/diagram/bd.png"
+        },
+        {
+            "expectedPath": "referenceAssets/LLB/LLB/LLB_with_function_node.llb/LLB_with_function_node.vi/panel/panel.png",
+            "expectedContent": "referenceAssets/LLB/LLB/LLB_with_function_node.llb/LLB_with_function_node.vi/panel/panel.png"
+        }
+    ]
+}

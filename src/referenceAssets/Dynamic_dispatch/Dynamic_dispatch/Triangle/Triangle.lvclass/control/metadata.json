@@ -1,0 +1,9 @@
+{	"NIDocument": {"ID": "Triangle.lvclass:Triangle.ctl",
+"Type": "VirtualInstrument",
+"Components": [{
+"ID":"FrontPanel",
+"Type": "Diagram",
+"Image": "/referenceAssets/Dynamic_dispatch/Dynamic_dispatch/Triangle/Triangle.lvclass/control/panel/panel.png",
+"Bounds":{"x":0,"y":0,"w":147,"h":117},
+"Components": []
+}]}}

@@ -1,0 +1,55 @@
+dialog {
+    display: none;
+    position: absolute;
+    margin: 0 auto;
+    /* should center it, but not working in Safari */
+    max-width: 80vw;
+    background-color: white;
+    padding: 0;
+    border: 0;
+    border-radius: 0.6rem;
+    box-shadow: 0 0 1em black;
+}
+
+dialog[open] {
+    display: block;
+}
+
+.dialog-header {
+    margin: 0;
+    padding: 5px;
+    padding-bottom: 0.6em;
+    background-color: hsl(211, 90%, 93%);
+    border-top-left-radius: 0.6rem;
+    border-top-right-radius: 0.6rem;
+    border-bottom: 1px solid hsl(211, 51%, 65%);
+}
+
+ol, ul {
+    padding: 0 10px;
+}
+
+.dialog-item {
+    cursor: pointer;
+}
+
+.dialog-body li {
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+.dialog-item {
+    padding-left: 20px;
+    cursor: pointer;
+    background: url("/images/vi.png") no-repeat 0px 5px;
+    display: block;
+}
+
+.nearestImplementation {
+    background: url("/images/nearestImp.png") no-repeat -3px 5px;
+}
+
+.disabled {
+    color: gray;
+    cursor: not-allowed;
+}

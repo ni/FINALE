@@ -1,0 +1,40 @@
+{
+    "topPath": "referenceAssets",
+    "inputPath": "testAssets/enabled/Flat_sequence_and_case_structure",
+    "outputPath": "Flat_sequence_and_case_structure",
+    "preloadedFiles": "",
+    "expectedOutput": [
+        {
+            "expectedPath": "referenceAssets/Flat_sequence_and_case_structure/file.json",
+            "expectedContent": "referenceAssets/Flat_sequence_and_case_structure/file.json"
+        },
+        {
+            "expectedPath": "referenceAssets/Flat_sequence_and_case_structure/Flat_sequence_and_case_structure/Flat_sequence_and_case_structure.vi/metadata.json",
+            "expectedContent": "referenceAssets/Flat_sequence_and_case_structure/Flat_sequence_and_case_structure/Flat_sequence_and_case_structure.vi/metadata.json"
+        },
+        {
+            "expectedPath": "referenceAssets/Flat_sequence_and_case_structure/Flat_sequence_and_case_structure/Flat_sequence_and_case_structure.vi/description.txt",
+            "expectedContent": "referenceAssets/Flat_sequence_and_case_structure/Flat_sequence_and_case_structure/Flat_sequence_and_case_structure.vi/description.txt"
+        },
+        {
+            "expectedPath": "referenceAssets/Flat_sequence_and_case_structure/Flat_sequence_and_case_structure/Flat_sequence_and_case_structure.vi/connpane.png",
+            "expectedContent": "referenceAssets/Flat_sequence_and_case_structure/Flat_sequence_and_case_structure/Flat_sequence_and_case_structure.vi/connpane.png"
+        },
+        {
+            "expectedPath": "referenceAssets/Flat_sequence_and_case_structure/Flat_sequence_and_case_structure/Flat_sequence_and_case_structure.vi/panel/panel.png",
+            "expectedContent": "referenceAssets/Flat_sequence_and_case_structure/Flat_sequence_and_case_structure/Flat_sequence_and_case_structure.vi/panel/panel.png"
+        },
+        {
+            "expectedPath": "referenceAssets/Flat_sequence_and_case_structure/Flat_sequence_and_case_structure/Flat_sequence_and_case_structure.vi/diagram/bd.png",
+            "expectedContent": "referenceAssets/Flat_sequence_and_case_structure/Flat_sequence_and_case_structure/Flat_sequence_and_case_structure.vi/diagram/bd.png"
+        },
+        {
+            "expectedPath": "referenceAssets/Flat_sequence_and_case_structure/Flat_sequence_and_case_structure/Flat_sequence_and_case_structure.vi/diagram/1.png",
+            "expectedContent": "referenceAssets/Flat_sequence_and_case_structure/Flat_sequence_and_case_structure/Flat_sequence_and_case_structure.vi/diagram/1.png"
+        },
+        {
+            "expectedPath": "referenceAssets/Flat_sequence_and_case_structure/Flat_sequence_and_case_structure/Flat_sequence_and_case_structure.vi/diagram/2.png",
+            "expectedContent": "referenceAssets/Flat_sequence_and_case_structure/Flat_sequence_and_case_structure/Flat_sequence_and_case_structure.vi/diagram/2.png"
+        }
+    ]
+}

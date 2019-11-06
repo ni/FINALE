@@ -1,0 +1,9 @@
+{	"NIDocument": {"ID": "Class.lvclass:vehicle.vi",
+"Type": "VirtualInstrument",
+"Components": [{
+"ID":"FrontPanel",
+"Type": "Diagram",
+"Image": "/referenceAssets/Class/Class/vehicle.vi/panel/panel.png",
+"Bounds":{"x":0,"y":0,"w":156,"h":150},
+"Components": []
+},{"ID":"BlockDiagram", "Type": "Diagram","Image": "/referenceAssets/Class/Class/vehicle.vi/diagram/bd.png",  "Bounds":{"x":0,"y":0,"w":496,"h":342},"Components": []}]}}

@@ -1,0 +1,32 @@
+{
+    "topPath": "referenceAssets",
+    "inputPath": "testAssets/enabled/While_loop.vi",
+    "outputPath": "While_loop",
+    "preloadedFiles": "",
+    "expectedOutput": [
+        {
+            "expectedPath": "referenceAssets/While_loop/file.json",
+            "expectedContent": "referenceAssets/While_loop/file.json"
+        },
+        {
+            "expectedPath": "referenceAssets/While_loop/While_loop.vi/metadata.json",
+            "expectedContent": "referenceAssets/While_loop/While_loop.vi/metadata.json"
+        },
+        {
+            "expectedPath": "referenceAssets/While_loop/While_loop.vi/description.txt",
+            "expectedContent": "referenceAssets/While_loop/While_loop.vi/description.txt"
+        },
+        {
+            "expectedPath": "referenceAssets/While_loop/While_loop.vi/connpane.png",
+            "expectedContent": "referenceAssets/While_loop/While_loop.vi/connpane.png"
+        },
+        {
+            "expectedPath": "referenceAssets/While_loop/While_loop.vi/diagram/bd.png",
+            "expectedContent": "referenceAssets/While_loop/While_loop.vi/diagram/bd.png"
+        },
+        {
+            "expectedPath": "referenceAssets/While_loop/While_loop.vi/panel/panel.png",
+            "expectedContent": "referenceAssets/While_loop/While_loop.vi/panel/panel.png"
+        }
+    ]
+}

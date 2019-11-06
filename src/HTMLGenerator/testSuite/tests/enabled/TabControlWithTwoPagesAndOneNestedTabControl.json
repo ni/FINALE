@@ -1,0 +1,48 @@
+{
+    "topPath": "referenceAssets",
+    "inputPath": "testAssets/enabled/Tab_constant",
+    "outputPath": "Tab_constant",
+    "preloadedFiles": "",
+    "expectedOutput": [
+        {
+            "expectedPath": "referenceAssets/Tab_constant/file.json",
+            "expectedContent": "referenceAssets/Tab_constant/file.json"
+        },
+        {
+            "expectedPath": "referenceAssets/Tab_constant/Tab_constant/Tab_constant.vi/metadata.json",
+            "expectedContent": "referenceAssets/Tab_constant/Tab_constant/Tab_constant.vi/metadata.json"
+        },
+        {
+            "expectedPath": "referenceAssets/Tab_constant/Tab_constant/Tab_constant.vi/description.txt",
+            "expectedContent": "referenceAssets/Tab_constant/Tab_constant/Tab_constant.vi/description.txt"
+        },
+        {
+            "expectedPath": "referenceAssets/Tab_constant/Tab_constant/Tab_constant.vi/connpane.png",
+            "expectedContent": "referenceAssets/Tab_constant/Tab_constant/Tab_constant.vi/connpane.png"
+        },
+        {
+            "expectedPath": "referenceAssets/Tab_constant/Tab_constant/Tab_constant.vi/diagram/bd.png",
+            "expectedContent": "referenceAssets/Tab_constant/Tab_constant/Tab_constant.vi/diagram/bd.png"
+        },
+        {
+            "expectedPath": "referenceAssets/Tab_constant/Tab_constant/Tab_constant.vi/panel/panel.png",
+            "expectedContent": "referenceAssets/Tab_constant/Tab_constant/Tab_constant.vi/panel/panel.png"
+        },
+        {
+            "expectedPath": "referenceAssets/Tab_constant/Tab_constant/Tab_constant.vi/panel/1.png",
+            "expectedContent": "referenceAssets/Tab_constant/Tab_constant/Tab_constant.vi/panel/1.png"
+        },
+        {
+            "expectedPath": "referenceAssets/Tab_constant/Tab_constant/Tab_constant.vi/panel/2.png",
+            "expectedContent": "referenceAssets/Tab_constant/Tab_constant/Tab_constant.vi/panel/2.png"
+        },
+        {
+            "expectedPath": "referenceAssets/Tab_constant/Tab_constant/Tab_constant.vi/panel/3.png",
+            "expectedContent": "referenceAssets/Tab_constant/Tab_constant/Tab_constant.vi/panel/3.png"
+        },
+        {
+            "expectedPath": "referenceAssets/Tab_constant/Tab_constant/Tab_constant.vi/panel/4.png",
+            "expectedContent": "referenceAssets/Tab_constant/Tab_constant/Tab_constant.vi/panel/4.png"
+        }
+    ]
+}

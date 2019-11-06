@@ -1,0 +1,32 @@
+{
+    "topPath": "referenceAssets",
+    "inputPath": "testAssets/enabled/For_loop.vi",
+    "outputPath": "For_loop",
+    "preloadedFiles": "",
+    "expectedOutput": [
+        {
+            "expectedPath": "referenceAssets/For_loop/file.json",
+            "expectedContent": "referenceAssets/For_loop/file.json"
+        },
+        {
+            "expectedPath": "referenceAssets/For_loop/For_loop.vi/metadata.json",
+            "expectedContent": "referenceAssets/For_loop/For_loop.vi/metadata.json"
+        },
+        {
+            "expectedPath": "referenceAssets/For_loop/For_loop.vi/description.txt",
+            "expectedContent": "referenceAssets/For_loop/For_loop.vi/description.txt"
+        },
+        {
+            "expectedPath": "referenceAssets/For_loop/For_loop.vi/connpane.png",
+            "expectedContent": "referenceAssets/For_loop/For_loop.vi/connpane.png"
+        },
+        {
+            "expectedPath": "referenceAssets/For_loop/For_loop.vi/diagram/bd.png",
+            "expectedContent": "referenceAssets/For_loop/For_loop.vi/diagram/bd.png"
+        },
+        {
+            "expectedPath": "referenceAssets/For_loop/For_loop.vi/panel/panel.png",
+            "expectedContent": "referenceAssets/For_loop/For_loop.vi/panel/panel.png"
+        }
+    ]
+}

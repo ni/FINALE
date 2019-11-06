@@ -1,0 +1,44 @@
+.headerBodyNI {
+    background-color: #065FA3;
+    margin: 0px;
+    padding: 0px;
+    border-width: 0px;
+}
+
+#syncTimeText {   
+    color: white;
+    font-size: 15px;
+    margin-top: 20px;
+    margin-left: 0px;
+    display: inline-block;
+}
+#headerMenuNI {
+   float: right;
+   top: 0px;
+   padding-top:18px;
+}
+#syncTimeText a {
+   color: white;
+   text-decoration: underline
+}
+#changeSetText {   
+    font-size: 8px;
+    margin-top: 15px;
+    padding: 10px;
+    display: inline-block;
+}
+#homeButtonLink {
+    color: white;
+    margin: 8px;
+}
+    #homeButtonLink:hover {
+        text-decoration: underline;
+    }
+#generatedBy
+{
+    margin: 10px 20px 20px; 
+    border-radius: 5px; 
+    border: 1px solid #AAAAAA; 
+    background-color: #BBDDEE;
+    display: inline-block;
+}

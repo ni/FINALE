@@ -1,0 +1,52 @@
+{
+    "topPath": "referenceAssets",
+    "inputPath": "testAssets/enabled/Stack_sequence",
+    "outputPath": "Stack_sequence",
+    "preloadedFiles": "",
+    "expectedOutput": [
+        {
+            "expectedPath": "referenceAssets/Stack_sequence/file.json",
+            "expectedContent": "referenceAssets/Stack_sequence/file.json"
+        },
+        {
+            "expectedPath": "referenceAssets/Stack_sequence/Stack_sequence/Stack_sequence.vi/metadata.json",
+            "expectedContent": "referenceAssets/Stack_sequence/Stack_sequence/Stack_sequence.vi/metadata.json"
+        },
+        {
+            "expectedPath": "referenceAssets/Stack_sequence/Stack_sequence/Stack_sequence.vi/description.txt",
+            "expectedContent": "referenceAssets/Stack_sequence/Stack_sequence/Stack_sequence.vi/description.txt"
+        },
+        {
+            "expectedPath": "referenceAssets/Stack_sequence/Stack_sequence/Stack_sequence.vi/connpane.png",
+            "expectedContent": "referenceAssets/Stack_sequence/Stack_sequence/Stack_sequence.vi/connpane.png"
+        },
+        {
+            "expectedPath": "referenceAssets/Stack_sequence/Stack_sequence/Stack_sequence.vi/panel/panel.png",
+            "expectedContent": "referenceAssets/Stack_sequence/Stack_sequence/Stack_sequence.vi/panel/panel.png"
+        },
+        {
+            "expectedPath": "referenceAssets/Stack_sequence/Stack_sequence/Stack_sequence.vi/diagram/bd.png",
+            "expectedContent": "referenceAssets/Stack_sequence/Stack_sequence/Stack_sequence.vi/diagram/bd.png"
+        },
+        {
+            "expectedPath": "referenceAssets/Stack_sequence/Stack_sequence/Stack_sequence.vi/diagram/1.png",
+            "expectedContent": "referenceAssets/Stack_sequence/Stack_sequence/Stack_sequence.vi/diagram/1.png"
+        },
+        {
+            "expectedPath": "referenceAssets/Stack_sequence/Stack_sequence/Stack_sequence.vi/diagram/2.png",
+            "expectedContent": "referenceAssets/Stack_sequence/Stack_sequence/Stack_sequence.vi/diagram/2.png"
+        },
+        {
+            "expectedPath": "referenceAssets/Stack_sequence/Stack_sequence/Stack_sequence.vi/diagram/3.png",
+            "expectedContent": "referenceAssets/Stack_sequence/Stack_sequence/Stack_sequence.vi/diagram/3.png"
+        },
+        {
+            "expectedPath": "referenceAssets/Stack_sequence/Stack_sequence/Stack_sequence.vi/diagram/4.png",
+            "expectedContent": "referenceAssets/Stack_sequence/Stack_sequence/Stack_sequence.vi/diagram/4.png"
+        },
+        {
+            "expectedPath": "referenceAssets/Stack_sequence/Stack_sequence/Stack_sequence.vi/diagram/5.png",
+            "expectedContent": "referenceAssets/Stack_sequence/Stack_sequence/Stack_sequence.vi/diagram/5.png"
+        }
+    ]
+}

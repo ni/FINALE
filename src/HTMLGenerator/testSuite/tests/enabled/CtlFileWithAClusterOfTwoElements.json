@@ -1,0 +1,24 @@
+{
+    "topPath": "referenceAssets",
+    "inputPath": "testAssets/enabled/Ctl_file",
+    "outputPath": "Ctl_file",
+    "preloadedFiles": "",
+    "expectedOutput": [
+        {
+            "expectedPath": "referenceAssets/Ctl_file/file.json",
+            "expectedContent": "referenceAssets/Ctl_file/file.json"
+        },
+        {
+            "expectedPath": "referenceAssets/Ctl_file/Ctl_file/Ctl_file.ctl/metadata.json",
+            "expectedContent": "referenceAssets/Ctl_file/Ctl_file/Ctl_file.ctl/metadata.json"
+        },
+        {
+            "expectedPath": "referenceAssets/Ctl_file/Ctl_file/Ctl_file.ctl/description.txt",
+            "expectedContent": "referenceAssets/Ctl_file/Ctl_file/Ctl_file.ctl/description.txt"
+        },
+        {
+            "expectedPath": "referenceAssets/Ctl_file/Ctl_file/Ctl_file.ctl/panel/panel.png",
+            "expectedContent": "referenceAssets/Ctl_file/Ctl_file/Ctl_file.ctl/panel/panel.png"
+        }
+    ]
+}

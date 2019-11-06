@@ -1,0 +1,80 @@
+{
+    "topPath": "referenceAssets",
+    "inputPath": "testAssets/enabled/Sub_VI",
+    "outputPath": "Sub_VI",
+    "preloadedFiles": "",
+    "expectedOutput": [
+        {
+            "expectedPath": "referenceAssets/Sub_VI/file.json",
+            "expectedContent": "referenceAssets/Sub_VI/file.json"
+        },
+        {
+            "expectedPath": "referenceAssets/Sub_VI/Sub_VI/Convert C to F.vi/metadata.json",
+            "expectedContent": "referenceAssets/Sub_VI/Sub_VI/Convert C to F.vi/metadata.json"
+        },
+        {
+            "expectedPath": "referenceAssets/Sub_VI/Sub_VI/Temperature Monitor.lvproj/metadata.json",
+            "expectedContent": "referenceAssets/Sub_VI/Sub_VI/Temperature Monitor.lvproj/metadata.json"
+        },
+        {
+            "expectedPath": "referenceAssets/Sub_VI/Sub_VI/Temperature Monitor.aliases/metadata.json",
+            "expectedContent": "referenceAssets/Sub_VI/Sub_VI/Temperature Monitor.aliases/metadata.json"
+        },
+        {
+            "expectedPath": "referenceAssets/Sub_VI/Sub_VI/Temperature Monitor.vi/metadata.json",
+            "expectedContent": "referenceAssets/Sub_VI/Sub_VI/Temperature Monitor.vi/metadata.json"
+        },
+        {
+            "expectedPath": "referenceAssets/Sub_VI/Sub_VI/Thermometer (Demo).vi/metadata.json",
+            "expectedContent": "referenceAssets/Sub_VI/Sub_VI/Thermometer (Demo).vi/metadata.json"
+        },
+        {
+            "expectedPath": "referenceAssets/Sub_VI/Sub_VI/Convert C to F.vi/description.txt",
+            "expectedContent": "referenceAssets/Sub_VI/Sub_VI/Convert C to F.vi/description.txt"
+        },
+        {
+            "expectedPath": "referenceAssets/Sub_VI/Sub_VI/Temperature Monitor.vi/description.txt",
+            "expectedContent": "referenceAssets/Sub_VI/Sub_VI/Temperature Monitor.vi/description.txt"
+        },
+        {
+            "expectedPath": "referenceAssets/Sub_VI/Sub_VI/Thermometer (Demo).vi/description.txt",
+            "expectedContent": "referenceAssets/Sub_VI/Sub_VI/Thermometer (Demo).vi/description.txt"
+        },
+        {
+            "expectedPath": "referenceAssets/Sub_VI/Sub_VI/Convert C to F.vi/connpane.png",
+            "expectedContent": "referenceAssets/Sub_VI/Sub_VI/Convert C to F.vi/connpane.png"
+        },
+        {
+            "expectedPath": "referenceAssets/Sub_VI/Sub_VI/Convert C to F.vi/diagram/bd.png",
+            "expectedContent": "referenceAssets/Sub_VI/Sub_VI/Convert C to F.vi/diagram/bd.png"
+        },
+        {
+            "expectedPath": "referenceAssets/Sub_VI/Sub_VI/Convert C to F.vi/panel/panel.png",
+            "expectedContent": "referenceAssets/Sub_VI/Sub_VI/Convert C to F.vi/panel/panel.png"
+        },
+        {
+            "expectedPath": "referenceAssets/Sub_VI/Sub_VI/Temperature Monitor.vi/connpane.png",
+            "expectedContent": "referenceAssets/Sub_VI/Sub_VI/Temperature Monitor.vi/connpane.png"
+        },
+        {
+            "expectedPath": "referenceAssets/Sub_VI/Sub_VI/Temperature Monitor.vi/diagram/bd.png",
+            "expectedContent": "referenceAssets/Sub_VI/Sub_VI/Temperature Monitor.vi/diagram/bd.png"
+        },
+        {
+            "expectedPath": "referenceAssets/Sub_VI/Sub_VI/Temperature Monitor.vi/panel/panel.png",
+            "expectedContent": "referenceAssets/Sub_VI/Sub_VI/Temperature Monitor.vi/panel/panel.png"
+        },
+        {
+            "expectedPath": "referenceAssets/Sub_VI/Sub_VI/Thermometer (Demo).vi/connpane.png",
+            "expectedContent": "referenceAssets/Sub_VI/Sub_VI/Thermometer (Demo).vi/connpane.png"
+        },
+        {
+            "expectedPath": "referenceAssets/Sub_VI/Sub_VI/Thermometer (Demo).vi/diagram/bd.png",
+            "expectedContent": "referenceAssets/Sub_VI/Sub_VI/Thermometer (Demo).vi/diagram/bd.png"
+        },
+        {
+            "expectedPath": "referenceAssets/Sub_VI/Sub_VI/Thermometer (Demo).vi/panel/panel.png",
+            "expectedContent": "referenceAssets/Sub_VI/Sub_VI/Thermometer (Demo).vi/panel/panel.png"
+        }
+    ]
+}

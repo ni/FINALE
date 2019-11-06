@@ -1,0 +1,49 @@
+{
+    "topPath": "referenceAssets",
+    "inputPath": "testAssets/enabled/Class",
+    "outputPath": "Class",
+    "preloadedFiles": "",
+    "expectedOutput": [
+        {
+            "expectedPath": "referenceAssets/Class/file.json",
+            "expectedContent": "referenceAssets/Class/file.json"
+        },
+        {
+            "expectedPath": "referenceAssets/Class/Class/Class.lvclass/metadata.json",
+            "expectedContent": "referenceAssets/Class/Class/Class.lvclass/metadata.json"
+        },
+        {
+            "expectedPath": "referenceAssets/Class/Class/Class.lvclass/control/metadata.json",
+            "expectedContent": "referenceAssets/Class/Class/Class.lvclass/control/metadata.json"
+        },
+        {
+            "expectedPath": "referenceAssets/Class/Class/vehicle.vi/metadata.json",
+            "expectedContent": "referenceAssets/Class/Class/vehicle.vi/metadata.json"
+        },
+        {
+            "expectedPath": "referenceAssets/Class/Class/Class.lvclass/control/description.txt",
+            "expectedContent": "referenceAssets/Class/Class/Class.lvclass/control/description.txt"
+        },
+        {
+            "expectedPath": "referenceAssets/Class/Class/vehicle.vi/description.txt",
+            "expectedContent": "referenceAssets/Class/Class/vehicle.vi/description.txt"
+        },
+        
+        {
+            "expectedPath": "referenceAssets/Class/Class/Class.lvclass/control/panel/panel.png",
+            "expectedContent": "referenceAssets/Class/Class/Class.lvclass/control/panel/panel.png"
+        },
+        {
+            "expectedPath": "referenceAssets/Class/Class/vehicle.vi/diagram/bd.png",
+            "expectedContent": "referenceAssets/Class/Class/vehicle.vi/diagram/bd.png"
+        },
+        {
+            "expectedPath": "referenceAssets/Class/Class/vehicle.vi/panel/panel.png",
+            "expectedContent": "referenceAssets/Class/Class/vehicle.vi/panel/panel.png"
+        },
+        {
+            "expectedPath": "referenceAssets/Class/Class/vehicle.vi/connpane.png",
+            "expectedContent": "referenceAssets/Class/Class/vehicle.vi/connpane.png"
+        }
+    ]
+}

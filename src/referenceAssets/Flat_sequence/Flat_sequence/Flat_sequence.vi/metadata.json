@@ -1,0 +1,16 @@
+{	"NIDocument": {"ID": "Flat_sequence.vi",
+"Type": "VirtualInstrument",
+"Components": [{
+"ID":"FrontPanel",
+"Type": "Diagram",
+"Image": "/referenceAssets/Flat_sequence/Flat_sequence/Flat_sequence.vi/panel/panel.png",
+"Bounds":{"x":0,"y":0,"w":334,"h":137},
+"Components": []
+},{"ID":"BlockDiagram", "Type": "Diagram","Image": "/referenceAssets/Flat_sequence/Flat_sequence/Flat_sequence.vi/diagram/bd.png",  "Bounds":{"x":0,"y":0,"w":646,"h":383},"Components": [{"ID": "WhileLoop" , "Type": "Structure", "Bounds":{"x":0,"y":17,"w":353,"h":207}, "Components":[{"ID":"", "Type": "Diagram","Image": "",  "Bounds":{"x":0,"y":0,"w":353,"h":207},"Components": [{"ID":"Power Of 2",
+"Type":"Function",
+"Bounds":{"x":164,"y":97,"w":32,"h":32}},{"ID":"Wait (ms)",
+"Type":"Function",
+"Bounds":{"x":71,"y":20,"w":32,"h":32}}
+]}]},{"ID":"", "Type": "FlatSequence",  "Bounds":{"x":495,"y":70,"w":151,"h":98},"Components": [{"ID":"", "Type": "FlatSequenceFrame",  "Bounds":{"x":6,"y":10,"w":151,"h":98},"Components": [{"ID":"", "Type": "Diagram","Image": "",  "Bounds":{"x":0,"y":0,"w":139,"h":78},"Components": []}]}
+]}
+]}]}}

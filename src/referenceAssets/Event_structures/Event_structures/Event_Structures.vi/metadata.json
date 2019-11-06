@@ -1,0 +1,14 @@
+{	"NIDocument": {"ID": "Event_Structures.vi",
+"Type": "VirtualInstrument",
+"Components": [{
+"ID":"FrontPanel",
+"Type": "Diagram",
+"Image": "/referenceAssets/Event_structures/Event_structures/Event_Structures.vi/panel/panel.png",
+"Bounds":{"x":0,"y":0,"w":364,"h":115},
+"Components": []
+},{"ID":"BlockDiagram", "Type": "Diagram","Image": "/referenceAssets/Event_structures/Event_structures/Event_Structures.vi/diagram/bd.png",  "Bounds":{"x":0,"y":0,"w":406,"h":332},"Components": [{"ID": "WhileLoop" , "Type": "Structure", "Bounds":{"x":0,"y":0,"w":406,"h":332}, "Components":[{"ID":"", "Type": "Diagram","Image": "",  "Bounds":{"x":0,"y":0,"w":406,"h":332},"Components": [{"ID": "EventStructure" , "Type": "MultiFrameStructure", "Bounds":{"x":80,"y":66,"w":232,"h":186}, "SelectorBounds": {"x":28,"y":0,"w":175,"h":17}, "Components":[{"ID":" Timeout ", "Type": "Diagram","Image": "/referenceAssets/Event_structures/Event_structures/Event_Structures.vi/diagram/1.png",  "Bounds":{"x":0,"y":0,"w":232,"h":186},"Components": []},{"ID":" \"RESET\": Value Change ", "Type": "Diagram","Image": "/referenceAssets/Event_structures/Event_structures/Event_Structures.vi/diagram/2.png",  "Bounds":{"x":0,"y":0,"w":232,"h":186},"Components": []},{"ID":" \"String\": Value Change ", "Type": "Diagram","Image": "/referenceAssets/Event_structures/Event_structures/Event_Structures.vi/diagram/3.png",  "Bounds":{"x":0,"y":0,"w":232,"h":186},"Components": []}
+]},{"ID":"Wait (ms)",
+"Type":"Function",
+"Bounds":{"x":71,"y":20,"w":32,"h":32}}
+]}]}
+]}]}}

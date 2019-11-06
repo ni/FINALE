@@ -1,0 +1,16 @@
+{	"NIDocument": {"ID": "Case_structures.vi",
+"Type": "VirtualInstrument",
+"Components": [{
+"ID":"FrontPanel",
+"Type": "Diagram",
+"Image": "/referenceAssets/Case_structures/Case_structures/Case_structures.vi/panel/panel.png",
+"Bounds":{"x":0,"y":0,"w":397,"h":104},
+"Components": []
+},{"ID":"BlockDiagram", "Type": "Diagram","Image": "/referenceAssets/Case_structures/Case_structures/Case_structures.vi/diagram/bd.png",  "Bounds":{"x":0,"y":0,"w":557,"h":137},"Components": [{"ID": "CaseStructure" , "Type": "MultiFrameStructure", "Bounds":{"x":239,"y":0,"w":216,"h":137}, "SelectorBounds": {"x":76,"y":0,"w":63,"h":17}, "Components":[{"ID":" False ", "Type": "Diagram","Image": "/referenceAssets/Case_structures/Case_structures/Case_structures.vi/diagram/1.png",  "Bounds":{"x":0,"y":0,"w":216,"h":137},"Components": []},{"ID":" True ", "Type": "Diagram","Image": "/referenceAssets/Case_structures/Case_structures/Case_structures.vi/diagram/2.png",  "Bounds":{"x":0,"y":0,"w":216,"h":137},"Components": [{"ID":"Multiply",
+"Type":"Function",
+"Bounds":{"x":114,"y":44,"w":21,"h":21}},{"ID":"Random Number (0-1)",
+"Type":"Function",
+"Bounds":{"x":65,"y":34,"w":19,"h":21}}
+]}
+]}
+]}]}}

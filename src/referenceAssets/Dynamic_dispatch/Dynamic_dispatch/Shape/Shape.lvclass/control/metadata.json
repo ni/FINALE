@@ -1,0 +1,9 @@
+{	"NIDocument": {"ID": "Shape.lvclass:Shape.ctl",
+"Type": "VirtualInstrument",
+"Components": [{
+"ID":"FrontPanel",
+"Type": "Diagram",
+"Image": "/referenceAssets/Dynamic_dispatch/Dynamic_dispatch/Shape/Shape.lvclass/control/panel/panel.png",
+"Bounds":{"x":0,"y":0,"w":147,"h":69},
+"Components": []
+}]}}

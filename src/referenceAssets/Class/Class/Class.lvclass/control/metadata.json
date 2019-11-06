@@ -1,0 +1,9 @@
+{	"NIDocument": {"ID": "Class.lvclass:Class.ctl",
+"Type": "VirtualInstrument",
+"Components": [{
+"ID":"FrontPanel",
+"Type": "Diagram",
+"Image": "/referenceAssets/Class/Class/Class.lvclass/control/panel/panel.png",
+"Bounds":{"x":0,"y":0,"w":180,"h":235},
+"Components": []
+}]}}

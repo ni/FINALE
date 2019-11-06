@@ -1,0 +1,25 @@
+{	"NIDocument": {"ID": "Stack_sequence.vi",
+"Type": "VirtualInstrument",
+"Components": [{
+"ID":"FrontPanel",
+"Type": "Diagram",
+"Image": "/referenceAssets/Stack_sequence/Stack_sequence/Stack_sequence.vi/panel/panel.png",
+"Bounds":{"x":0,"y":0,"w":417,"h":388},
+"Components": []
+},{"ID":"BlockDiagram", "Type": "Diagram","Image": "/referenceAssets/Stack_sequence/Stack_sequence/Stack_sequence.vi/diagram/bd.png",  "Bounds":{"x":0,"y":0,"w":335,"h":417},"Components": [{"ID": "Sequence" , "Type": "MultiFrameStructure", "Bounds":{"x":21,"y":0,"w":200,"h":217}, "SelectorBounds": {"x":64,"y":0,"w":72,"h":17}, "Components":[{"ID":"0 [0..4]", "Type": "Diagram","Image": "/referenceAssets/Stack_sequence/Stack_sequence/Stack_sequence.vi/diagram/1.png",  "Bounds":{"x":0,"y":0,"w":200,"h":217},"Components": []},{"ID":"1 [0..4]", "Type": "Diagram","Image": "/referenceAssets/Stack_sequence/Stack_sequence/Stack_sequence.vi/diagram/2.png",  "Bounds":{"x":0,"y":0,"w":200,"h":217},"Components": [{"ID":"Greater Or Equal?",
+"Type":"Function",
+"Bounds":{"x":43,"y":167,"w":21,"h":21}},{"ID":"Less Or Equal?",
+"Type":"Function",
+"Bounds":{"x":43,"y":78,"w":21,"h":21}}
+]},{"ID":"2 [0..4]", "Type": "Diagram","Image": "/referenceAssets/Stack_sequence/Stack_sequence/Stack_sequence.vi/diagram/3.png",  "Bounds":{"x":0,"y":0,"w":200,"h":217},"Components": [{"ID":"Select",
+"Type":"Function",
+"Bounds":{"x":147,"y":149,"w":27,"h":27}}
+]},{"ID":"3 [0..4]", "Type": "Diagram","Image": "/referenceAssets/Stack_sequence/Stack_sequence/Stack_sequence.vi/diagram/4.png",  "Bounds":{"x":0,"y":0,"w":200,"h":217},"Components": [{"ID":"Select",
+"Type":"Function",
+"Bounds":{"x":135,"y":156,"w":27,"h":27}}
+]},{"ID":"4 [0..4]", "Type": "Diagram","Image": "/referenceAssets/Stack_sequence/Stack_sequence/Stack_sequence.vi/diagram/5.png",  "Bounds":{"x":0,"y":0,"w":200,"h":217},"Components": [{"ID":"Not Equal?",
+"Type":"Function",
+"Bounds":{"x":20,"y":108,"w":21,"h":21}}
+]}
+]}
+]}]}}

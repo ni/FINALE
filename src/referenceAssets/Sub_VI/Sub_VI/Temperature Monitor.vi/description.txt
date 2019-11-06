@@ -1,0 +1,3 @@
+This VI is the solution to an exercise in the LabVIEW Core 1 course.
+
+It uses a While Loop and shift registers to average data.  No hardware is necessary.

@@ -1,0 +1,3 @@
+This VI simulates measuring a temperature using the temperature sensor on the DAQ BNC-2120 terminal block.
+
+If you have a DAQ board connected to the BNC-2120 and have configured the system in MAX, then use the Thermometer VI instead.

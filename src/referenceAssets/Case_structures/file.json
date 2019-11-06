@@ -1,0 +1,22 @@
+{
+    "NIDocument": {
+        "ID": "referenceAssets",
+        "Type": "dir",
+        "Path": "/referenceAssets",
+        "Components": [
+            {
+                "ID": "Case_structures",
+                "Type": "dir",
+                "Path": "/referenceAssets/Case_structures/Case_structures",
+                "Components": [
+                    {
+                        "ID": "Case_structures.vi",
+                        "Type": "vi",
+                        "Path": "/referenceAssets/Case_structures/Case_structures/Case_structures.vi",
+                        "Components": []
+                    }
+                ]
+            }
+        ]
+    }
+}

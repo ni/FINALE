@@ -1,0 +1,15 @@
+{	"NIDocument": {"ID": "Nested_Case_structure.vi",
+"Type": "VirtualInstrument",
+"Components": [{
+"ID":"FrontPanel",
+"Type": "Diagram",
+"Image": "/referenceAssets/Nested_case_structure/Nested_case_structure/Nested_Case_structure.vi/panel/panel.png",
+"Bounds":{"x":0,"y":0,"w":515,"h":44},
+"Components": []
+},{"ID":"BlockDiagram", "Type": "Diagram","Image": "/referenceAssets/Nested_case_structure/Nested_case_structure/Nested_Case_structure.vi/diagram/bd.png",  "Bounds":{"x":0,"y":0,"w":378,"h":147},"Components": [{"ID": "CaseStructure" , "Type": "MultiFrameStructure", "Bounds":{"x":59,"y":0,"w":265,"h":147}, "SelectorBounds": {"x":95,"y":0,"w":75,"h":17}, "Components":[{"ID":" 0..18 ", "Type": "Diagram","Image": "/referenceAssets/Nested_case_structure/Nested_case_structure/Nested_Case_structure.vi/diagram/1.png",  "Bounds":{"x":0,"y":0,"w":265,"h":147},"Components": []},{"ID":" Default ", "Type": "Diagram","Image": "/referenceAssets/Nested_case_structure/Nested_case_structure/Nested_Case_structure.vi/diagram/2.png",  "Bounds":{"x":0,"y":0,"w":265,"h":147},"Components": [{"ID":"Less Or Equal?",
+"Type":"Function",
+"Bounds":{"x":47,"y":38,"w":21,"h":21}},{"ID": "CaseStructure" , "Type": "MultiFrameStructure", "Bounds":{"x":78,"y":22,"w":147,"h":90}, "SelectorBounds": {"x":42,"y":0,"w":63,"h":17}, "Components":[{"ID":" False ", "Type": "Diagram","Image": "/referenceAssets/Nested_case_structure/Nested_case_structure/Nested_Case_structure.vi/diagram/3.png",  "Bounds":{"x":0,"y":0,"w":147,"h":90},"Components": []},{"ID":" True ", "Type": "Diagram","Image": "/referenceAssets/Nested_case_structure/Nested_case_structure/Nested_Case_structure.vi/diagram/4.png",  "Bounds":{"x":0,"y":0,"w":147,"h":90},"Components": []}
+]}
+]}
+]}
+]}]}}

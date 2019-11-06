@@ -1,0 +1,39 @@
+{   "topPath":"referenceAssets",
+    "inputPath": "testAssets/enabled/Case_structures",
+    "outputPath": "Case_structures",
+    "preloadedFiles": "",
+    "expectedOutput": [
+        {
+            "expectedPath": "referenceAssets/Case_structures/file.json",
+            "expectedContent": "referenceAssets/Case_structures/file.json"
+        },
+        {
+            "expectedPath": "referenceAssets/Case_structures/Case_structures/Case_structures.vi/metadata.json",
+            "expectedContent": "referenceAssets/Case_structures/Case_structures/Case_structures.vi/metadata.json"
+        },
+        {
+            "expectedPath": "referenceAssets/Case_structures/Case_structures/Case_structures.vi/description.txt",
+            "expectedContent": "referenceAssets/Case_structures/Case_structures/Case_structures.vi/description.txt"
+        },
+        {
+            "expectedPath": "referenceAssets/Case_structures/Case_structures/Case_structures.vi/connpane.png",
+            "expectedContent": "referenceAssets/Case_structures/Case_structures/Case_structures.vi/connpane.png"
+        },
+        {
+            "expectedPath": "referenceAssets/Case_structures/Case_structures/Case_structures.vi/panel/panel.png",
+            "expectedContent": "referenceAssets/Case_structures/Case_structures/Case_structures.vi/panel/panel.png"
+        },
+        {
+            "expectedPath": "referenceAssets/Case_structures/Case_structures/Case_structures.vi/diagram/bd.png",
+            "expectedContent": "referenceAssets/Case_structures/Case_structures/Case_structures.vi/diagram/bd.png"
+        },
+        {
+            "expectedPath": "referenceAssets/Case_structures/Case_structures/Case_structures.vi/diagram/1.png",
+            "expectedContent": "referenceAssets/Case_structures/Case_structures/Case_structures.vi/diagram/1.png"
+        },
+        {
+            "expectedPath": "referenceAssets/Case_structures/Case_structures/Case_structures.vi/diagram/2.png",
+            "expectedContent": "referenceAssets/Case_structures/Case_structures/Case_structures.vi/diagram/2.png"
+        }
+    ]
+}

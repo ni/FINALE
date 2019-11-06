@@ -1,0 +1,16 @@
+{	"NIDocument": {"ID": "PolyVI.vi",
+"Type": "Polymorphic VI",
+"Components": [ {
+"ID":"stringArrayInput.vi",
+"Type":"VI Instance",
+"Path":"/referenceAssets/Poly_VI/Poly_VI/stringArrayInput.vi",
+"Menu":"",
+"Selector":""
+}, {
+"ID":"numericArrayInput.vi",
+"Type":"VI Instance",
+"Path":"/referenceAssets/Poly_VI/Poly_VI/numericArrayInput.vi",
+"Menu":"",
+"Selector":""
+}
+]}}

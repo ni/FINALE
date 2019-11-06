@@ -1,0 +1,1 @@
+{"NIDocument": {"ID":"Class.lvclass", "Type":"LVClass", "Path": "/referenceAssets/Class/Class/Class.lvclass", "Components": [{"ID":"Class.lvclass:Class.ctl", "Type":"VirtualInstrument", "Path": "/referenceAssets/Class/Class/Class.lvclass/control", "Components": []},{"ID":"vehicle.vi", "Type":"VI", "Path": "/referenceAssets/Class/Class/vehicle.vi", "Components": []}]}}

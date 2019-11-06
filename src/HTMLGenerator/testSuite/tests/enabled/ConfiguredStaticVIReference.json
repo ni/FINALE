@@ -1,0 +1,52 @@
+{
+    "topPath": "referenceAssets",
+    "inputPath": "testAssets/enabled/StaticVI_reference",
+    "outputPath": "StaticVI_reference",
+    "preloadedFiles": "",
+    "expectedOutput": [
+        {
+            "expectedPath": "referenceAssets/StaticVI_reference/file.json",
+            "expectedContent": "referenceAssets/StaticVI_reference/file.json"
+        },
+        {
+            "expectedPath": "referenceAssets/StaticVI_reference/StaticVI_reference/Add and sub.vi/metadata.json",
+            "expectedContent": "referenceAssets/StaticVI_reference/StaticVI_reference/Add and sub.vi/metadata.json"
+        },
+        {
+            "expectedPath": "referenceAssets/StaticVI_reference/StaticVI_reference/StaticVI_reference.vi/metadata.json",
+            "expectedContent": "referenceAssets/StaticVI_reference/StaticVI_reference/StaticVI_reference.vi/metadata.json"
+        },
+        {
+            "expectedPath": "referenceAssets/StaticVI_reference/StaticVI_reference/Add and sub.vi/description.txt",
+            "expectedContent": "referenceAssets/StaticVI_reference/StaticVI_reference/Add and sub.vi/description.txt"
+        },
+        {
+            "expectedPath": "referenceAssets/StaticVI_reference/StaticVI_reference/StaticVI_reference.vi/description.txt",
+            "expectedContent": "referenceAssets/StaticVI_reference/StaticVI_reference/StaticVI_reference.vi/description.txt"
+        },
+        {
+            "expectedPath": "referenceAssets/StaticVI_reference/StaticVI_reference/Add and sub.vi/connpane.png",
+            "expectedContent": "referenceAssets/StaticVI_reference/StaticVI_reference/Add and sub.vi/connpane.png"
+        },
+        {
+            "expectedPath": "referenceAssets/StaticVI_reference/StaticVI_reference/Add and sub.vi/diagram/bd.png",
+            "expectedContent": "referenceAssets/StaticVI_reference/StaticVI_reference/Add and sub.vi/diagram/bd.png"
+        },
+        {
+            "expectedPath": "referenceAssets/StaticVI_reference/StaticVI_reference/Add and sub.vi/panel/panel.png",
+            "expectedContent": "referenceAssets/StaticVI_reference/StaticVI_reference/Add and sub.vi/panel/panel.png"
+        },    
+        {
+            "expectedPath": "referenceAssets/StaticVI_reference/StaticVI_reference/StaticVI_reference.vi/connpane.png",
+            "expectedContent": "referenceAssets/StaticVI_reference/StaticVI_reference/StaticVI_reference.vi/connpane.png"
+        },
+        {
+            "expectedPath": "referenceAssets/StaticVI_reference/StaticVI_reference/StaticVI_reference.vi/diagram/bd.png",
+            "expectedContent": "referenceAssets/StaticVI_reference/StaticVI_reference/StaticVI_reference.vi/diagram/bd.png"
+        },
+        {
+            "expectedPath": "referenceAssets/StaticVI_reference/StaticVI_reference/StaticVI_reference.vi/panel/panel.png",
+            "expectedContent": "referenceAssets/StaticVI_reference/StaticVI_reference/StaticVI_reference.vi/panel/panel.png"
+        }
+    ]
+}

@@ -1,0 +1,20 @@
+{	"NIDocument": {"ID": "LLB_with_function_node.vi",
+"Type": "VirtualInstrument",
+"Components": [{
+"ID":"FrontPanel",
+"Type": "Diagram",
+"Image": "/referenceAssets/LLB/LLB/LLB_with_function_node.llb/LLB_with_function_node.vi/panel/panel.png",
+"Bounds":{"x":0,"y":0,"w":381,"h":199},
+"Components": []
+},{"ID":"BlockDiagram", "Type": "Diagram","Image": "/referenceAssets/LLB/LLB/LLB_with_function_node.llb/LLB_with_function_node.vi/diagram/bd.png",  "Bounds":{"x":0,"y":0,"w":751,"h":209},"Components": [{"ID":"Divide",
+"Type":"Function",
+"Bounds":{"x":225,"y":73,"w":21,"h":21}},{"ID":"Subtract",
+"Type":"Function",
+"Bounds":{"x":328,"y":170,"w":21,"h":21}},{"ID":"Subtract",
+"Type":"Function",
+"Bounds":{"x":330,"y":103,"w":21,"h":21}},{"ID":"Subtract",
+"Type":"Function",
+"Bounds":{"x":330,"y":49,"w":21,"h":21}},{"ID":"Square Root",
+"Type":"Function",
+"Bounds":{"x":549,"y":53,"w":21,"h":21}}
+]}]}}

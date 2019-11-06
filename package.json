@@ -1,0 +1,64 @@
+{
+  "name": "finale",
+  "version": "1.0.0",
+  "description": "FINALE Is Not A LabVIEW Editor is a lightweight web viewer for G-code",
+  "main": "index.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "clean": "rmdir /Q /S build",
+    "lint": "tslint --project .",
+    "build-sourceGExample": "xcopy testAssets\\sourceVIs build\\sourceVIs\\example /E /y /I",
+    "build-jsonExample": "xcopy testAssets\\json build\\sourceVIs /E /y /I",
+    "build-example": "npm run build-sourceGExample && npm run build-jsonExample",
+    "build-html": "xcopy src\\html build /E /y /I",
+    "build-images": "xcopy src\\assets\\images build\\images /E /y /I",
+    "build-help": "xcopy src\\assets\\help.zip build\\assets /E /y /I",
+    "build-helpExtracted": "powershell.exe -nologo -noprofile -command \"Expand-Archive -Path src\\assets\\help.zip build\\assets -Force\"",
+    "build-converter": "xcopy src\\HTMLGenerator build\\HTMLGenerator /E /y /I",
+    "build-dependencies": "xcopy src\\dependencies build\\dependencies /E /y /I",
+    "build-style": "xcopy src\\style build\\style /E /y /I",
+    "build-testSuite": "xcopy src\\testSuite build\\testSuite /E /y /I",
+    "build-readme": "xcopy BUILDREADME.md build\\README.md /y /I",
+    "compile": "webpack-cli",
+    "build-webapp": "npm run lint && npm run compile && npm run build-html && npm run build-images && npm run build-converter && npm run build-dependencies && npm run build-style",
+    "build-release": "npm run build-webapp && npm run build-readme && npm run build-help",
+    "build-debug": "npm run build-webapp && npm run build-example && npm run build-helpExtracted && npm run build-testSuite",
+    "test": "karma start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://rajneeshlakkundi.visualstudio.com/_git/FINALE"
+  },
+  "author": "Rajneesh M. Lakkundi",
+  "license": "ISC",
+  "dependencies": {
+    "@types/jasmine": "^2.5.35",
+    "commander": "^2.15.1",
+    "file-exists": "^5.0.1",
+    "fs": "0.0.1-security",
+    "http-server": "^0.11.1",
+    "jasmine": "2.1.0",
+    "jasmine-core": "^2.4.1",
+    "karma": "^2.0.0",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-cli": "^1.0.1",
+    "karma-jasmine": "^1.0.2",
+    "karma-read-json": "^1.1.0",
+    "karma-typescript": "latest",
+    "node-cli": "^0.1.0",
+    "node-run-cmd": "^1.0.1",
+    "process": "^0.11.10",
+    "ts-loader": "^4.4.2",
+    "ts-node": "^5.0.1",
+    "typescript": "^2.9.2",
+    "webpack": "^4.16.1"
+  },
+  "devDependencies": {
+    "@types/commander": "^2.12.2",
+    "@types/node": "^9.4.7",
+    "gulp": "^3.9.1",
+    "webpack-cli": "^3.0.8"
+  }
+}

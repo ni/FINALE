@@ -1,0 +1,76 @@
+ol.tree, ul.tree {
+    padding-left: 30px;
+}
+
+.tree li {
+    list-style-type: none;
+    position: relative;
+    margin-left: -15px;
+}
+
+.tree li label {
+    padding-left: 37px;
+    cursor: pointer;
+    background: url("/images/dir.png") no-repeat 15px 0px;
+    display: block;
+}
+
+.tree li input {
+    position: absolute;
+    left: -0.5em;
+    top: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.tree li input+ul, .tree li input+ol {
+    height: auto;
+    margin: -21px 0 0 -44px;
+    padding: 15px 0 0 80px;
+    background: url("/images/expand.png") no-repeat 40px -2px;
+}
+
+.tree li input+ul>li, .tree li input+ol>li {
+    display: none;
+    margin-left: -14px !important;
+    padding-left: 1px
+}
+
+.tree li.file {
+    margin-left: -1px !important;
+}
+
+.tree li.vi {
+    background: url("/images/vi.png") no-repeat 0 0;
+}
+
+.tree li.ctl {
+    background: url("/images/ctl.png") no-repeat 0 0;
+}
+
+.tree li.bin {
+    background: url("/images/bin.png") no-repeat 0 0;
+}
+
+.tree li.file * {
+    display: inline-block;
+    padding-left: 21px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.tree li input:checked+ul, .tree li input:checked+ol {
+    height: auto;
+    margin: -21px 0 0 -44px;
+    padding: 15px 0 0 80px;
+    background: url("/images/collapse.png") no-repeat 40px -2px;
+}
+
+.tree li input:checked+ul>li, .tree li input:checked+ol>li {
+    display: block;
+    margin: 0 0 0.063em;
+}
+
+.tree li input:checked+ul>li:first-child, .tree li input:checked+ol>li:first-child {
+    margin: 0 0 0.125em;
+}
