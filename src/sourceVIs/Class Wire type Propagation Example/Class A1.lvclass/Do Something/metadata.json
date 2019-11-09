@@ -1,2 +1,0 @@
-{	"NIDocument": {"ID": "Class A1.lvclass:Do Something.vi","Type": "VirtualInstrument","Components": [{"ID":"FrontPanel","Type": "Diagram","Image": "\\Do Something\\fpanel\\fp.png","Bounds":{"x":0,"y":0,"w":578,"h":449},"Components": []},{"ID":"BlockDiagram", "Type": "Diagram","Image": "\\Do Something\\bdiagram\\bd.png",  "Bounds":{"x":0,"y":0,"w":456,"h":182},"Components": [{"ID":"Class B.lvclass:Set String.vi", "Type":"SubVI", "Bounds":{"x":261,"y":95,"w":32,"h":32}, "File_path": "C:\\Users\\radhikar\\Desktop\\Class A\\Class B\\Set String.vi"}
-]}]}}
