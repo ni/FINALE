@@ -3,24 +3,24 @@
 FINALE is a lightweight web app to view GCode. FINALE stands for FINALE Is Not A LabVIEW Editor.
 
 # Contents
-- Setting up FINALE for your code.
+
 - Features
+- Setting up FINALE for your code
 
 # Features
 
-  - A side view to display product hierarchy
-  - Search functionality for faster access to VIs
+  - A side view to display product hierarchy.
+  - Search functionality for faster access to VIs.
   - Access to support for multi frame structures like case structures, event structures, disable structures and stacked structures.
+  - Navigation to SubVIs and Dynamic Dispatch SubVIs.
+  - Context help for SubVIs and most of the function nodes.
 
-# Instructions of use
+# Setting up FINALE for your code
 
-1. Download the build [FINALE.1.0.zip](\\in-ban-fs2\rd_new\labview\finale\build.zip) .
-2. Unzip the folder
-3. (If you have LabVIEW) Run Main.vi at ./HTMLGenerator/Main.vi with the required VI path you want in the browser parameter
-3. Open folder at cmd
-4. type:
+The web app is developed using npm package manager. Run the following commands to produce a built deployment under a 'build' directory.
 ```sh
-python -m simplehttpserver # for python2.7
-python -m http.server # for python3
+git clone https://github.com/ni/finale
+npm install
+npm run clean
+npm run build-webapp
 ```
-5. Open browser at provided url.
