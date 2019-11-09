@@ -1,3 +1,5 @@
+// This code is based on aimaraJS - Pure Javascript TreeView Component (https://github.com/rafaelthca/aimaraJS).
+
 import { TreeHelper } from "./aimaratree";
 
 export class Node {

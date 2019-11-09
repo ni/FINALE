@@ -1,3 +1,5 @@
+// This code is based on aimaraJS - Pure Javascript TreeView Component (https://github.com/rafaelthca/aimaraJS).
+
 import { Main } from "../../main";
 import { Node } from "./node";
 
