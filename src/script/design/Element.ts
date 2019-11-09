@@ -11,7 +11,6 @@ export class ElementView {
         component.style.width = bounds.w + "px";
         component.style.height = bounds.h + "px";
         component.style.display = "none";
-        component.style.opacity = "0%";
         component.style.filter = "alpha(opacity=90)"; // IE fallback
         return component;
     }
