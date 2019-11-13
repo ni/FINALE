@@ -2,6 +2,11 @@
 
 FINALE is a lightweight web app to view GCode. FINALE stands for FINALE Is Not A LabVIEW Editor.
 
+This solves many use cases like:
+  - Code sharing : Sharing code with a person with no LV license necessitates printing/taking screenshot.
+  - Viewing VIs saved in incompatible version.
+  - Viewing G code being used with TestStand.
+
 # Contents
 
 - Features
