@@ -24,7 +24,7 @@ This solves many use cases like:
 
 The web app is developed using npm package manager. Run the following commands to produce a built deployment under a 'build' directory.
 ```sh
-git clone https://github.com/ni/finale
+git clone https://github.com/ni/finale && cd finale
 npm install
 npm run clean
 npm run build-webapp
