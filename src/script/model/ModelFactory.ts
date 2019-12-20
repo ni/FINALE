@@ -15,6 +15,7 @@ export class ModelFactory {
             case "Enum": return new model.Enum(id);
             case "TabControl": return new model.TabControl(id);
             case "Function": return new model.FunctionNode(id);
+            case "Node": return new model.Node(id);
             default: return new model.Component(id, type);
         }
     }

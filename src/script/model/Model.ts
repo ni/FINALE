@@ -23,3 +23,4 @@ export { VIInstance } from "./VIInstance";
 export { PolymorphicVI } from "./PolymorphicVI";
 export { TabControl } from "./TabControl";
 export { FunctionNode } from "./Function";
+export { Node } from "./Node";

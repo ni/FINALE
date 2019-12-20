@@ -43,6 +43,7 @@ export class ComponentView {
             case "Enum": return new view.EnumView();
             case "TabControl": return new view.TabControlView();
             case "Function": return new view.FunctionView();
+            case "Node": return new view.NodeView();
             default: return new ComponentView();
         }
     }

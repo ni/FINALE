@@ -213,7 +213,7 @@ export class TreeHelper {
 
     ///// Selecting node
     public selectNode(pNode: Node): void {
-        const supportedExt = ["vi", "ctl", "lvclass", "lvlibp"];
+        const supportedExt = ["vi", "ctl", "lvclass", "lvlibp", ".gvi", ".gtype", ".lvproj", ".dni", ".gcomp"];
         if (document.getElementsByClassName("node_selected")[0]) {
             document.getElementsByClassName("node_selected")[0].className = "node";
         }
@@ -485,7 +485,7 @@ export class TreeHelper {
         return (itemType === "dir" || itemType === "llb");
     }
     private IsFileTypeSupported(itemType: string): boolean {
-        const supportedExt = ["vi", "ctl", "lvclass", "lvlibp"];
+        const supportedExt = ["vi", "ctl", "lvclass", "lvlibp", ".gvi", "gvi", ".gtype", ".lvproj", ".dni", ".gcomp"];
         return supportedExt.indexOf(itemType.toLowerCase()) > -1;
     }
 }
