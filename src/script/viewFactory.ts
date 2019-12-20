@@ -10,6 +10,7 @@ export class ViewFactory {
             case "Control": viObj = new view.VirtualInstrumentView(); break;
             case "VirtualInstrument": viObj = new view.VirtualInstrumentView(); break;
             case "Polymorphic VI": viObj = new view.PolymorphicVIView(); break;
+            case "GType": viObj = new view.GTypeView(); break;
         }
         return viObj.generate(viModel);
     }

@@ -485,7 +485,7 @@ export class TreeHelper {
         return (itemType === "dir" || itemType === "llb");
     }
     private IsFileTypeSupported(itemType: string): boolean {
-        const supportedExt = ["vi", "ctl", "lvclass", "lvlibp", ".gvi", "gvi", ".gtype", ".lvproj", ".dni", ".gcomp"];
+        const supportedExt = ["vi", "ctl", "lvclass", "lvlibp", ".gvi", "gvi", "gtype", ".lvproj", ".dni", ".gcomp"];
         return supportedExt.indexOf(itemType.toLowerCase()) > -1;
     }
 }

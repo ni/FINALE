@@ -11,6 +11,7 @@ export class Model {
             case "Control": viObj = new model.VirtualInstrument(); break;
             case "VirtualInstrument": viObj = new model.VirtualInstrument(); break;
             case "Polymorphic VI": viObj = new model.PolymorphicVI(); break;
+            case "GType": viObj = new model.GType(); break;
         }
         model.VirtualInstrument.originPath = originPath;
         viObj.parse(jsonObj.NIDocument);

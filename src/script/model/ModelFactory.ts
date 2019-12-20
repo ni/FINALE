@@ -16,6 +16,7 @@ export class ModelFactory {
             case "TabControl": return new model.TabControl(id);
             case "Function": return new model.FunctionNode(id);
             case "Node": return new model.Node(id);
+            case "GType": return new model.GType();
             default: return new model.Component(id, type);
         }
     }

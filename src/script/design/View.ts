@@ -14,3 +14,4 @@ export { StructureView } from "./Structure";
 export { DynamicDispatchView } from "./DynamicDispatch";
 export { TabControlView } from "./TabControl";
 export { NodeView } from "./Node";
+export { GTypeView } from "./Gtype";
