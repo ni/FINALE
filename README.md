@@ -20,12 +20,13 @@ This solves many use cases like:
   - Navigation to SubVIs and Dynamic Dispatch SubVIs.
   - Context help for SubVIs and most of the function nodes.
 
+Note: FINALE is not supported and this is mostly internal tooling that we are exposing. This is more of a 'hack' that we built, this is not polished code/design.
+
 # Setting up FINALE for your code
 
 The web app is developed using npm package manager. Run the following commands to produce a built deployment under a 'build' directory.
 ```sh
 git clone https://github.com/ni/finale && cd finale
 npm install
-npm run clean
 npm run build-webapp
 ```
