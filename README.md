@@ -2,6 +2,11 @@
 
 FINALE is a lightweight web app to view GCode. FINALE stands for FINALE Is Not A LabVIEW Editor.
 
+This solves many use cases like:
+  - Code sharing : Sharing code with a person with no LV license necessitates printing/taking screenshot.
+  - Viewing VIs saved in incompatible version.
+  - Viewing G code being used with TestStand.
+
 # Contents
 
 - Features
@@ -19,7 +24,7 @@ FINALE is a lightweight web app to view GCode. FINALE stands for FINALE Is Not A
 
 The web app is developed using npm package manager. Run the following commands to produce a built deployment under a 'build' directory.
 ```sh
-git clone https://github.com/ni/finale
+git clone https://github.com/ni/finale && cd finale
 npm install
 npm run clean
 npm run build-webapp

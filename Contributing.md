@@ -36,7 +36,7 @@ npm run build-webapp
 
 > TODO: Include details about manual testing.
  
-For testing Jasmine and Karma are used on typescript. All the tests are writed in testAssests.
+For testing Jasmine and Karma are used on typescript. All the tests are located in testAssests.
 
 ```sh
 npm install
