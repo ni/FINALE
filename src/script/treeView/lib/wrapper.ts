@@ -31,7 +31,9 @@ function loadFile() {
                 filteredSubset = File.getJSON();
                 tree = new TreeHelper("divTree", "white", null, "tree");
 
-                rootNode = tree.directoryTreeView(File.getJSON());
+                for (const node of filteredSubset) {
+                   rootNode = tree.directoryTreeView(node);
+                }
 
                 // Rendering the tree
                 tree.drawTree();
