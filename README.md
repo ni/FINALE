@@ -1,6 +1,6 @@
 # FINALE
 
-FINALE is a lightweight WebApp to view G Code. FINALE stands for FINALE Is Not A LabVIEW Editor.
+FINALE is a lightweight WebApp to view G code. FINALE stands for FINALE Is Not A LabVIEW Editor.
 
 This solves many use cases like:
   - Code sharing: Sharing code with a person with no LV license necessitates printing/taking screenshot.
@@ -24,7 +24,7 @@ Note: FINALE is not supported and this is mostly internal tooling that we are ex
 
 # Setting up FINALE for your code
 
-FINALE has two parts, the HTML Generator and the WebApp. The HTML Generator converts G-Code to metadata in the form of JSONs, images etc. These are input to the WebApp which opens a web-based viewer for the files converted. 
+FINALE has two parts, the HTML Generator and the WebApp. The HTML Generator converts G code to metadata in the form of JSONs, images etc. These are input to the WebApp which opens a web-based viewer for the files converted. 
 ## Prerequisites: 
 - LabVIEW
 - Browser: Google Chrome 
@@ -45,18 +45,18 @@ npm run build-webapp
 Follow these instructions to run FINALE:
 - Once you have the repository built and set up according to the above commands, proceed to the next step.
 
-- ### Converting G-Code to JSON: 
+- ### Converting G code to JSON: 
    - Navigate to "buid/HTMLGenerator/".
 
    - Open Main.vi and enter values for the following:
-     - Source directory/files: Path to the source G-code file(s) or folders.
+     - Source directory/files: Path to the source G code file(s) or folders.
      - Destination Directory: Path to the destination directory. To view the files using the WebApp, make sure your destination is set to "<Path/to/FINALE/repo>/build/src".
      - Run Main.vi and click "Convert".
    ![Main.vi](./docs/Main.vi.png)
      > Note: If you require certain files/projects to be preloaded for converting  the files, open GeneratorUI-Advanced.vi and enter values for the following:
          > - Top level output path: <Path/to/FINALE/repo>/build/src
          > - Files to Preload: Array of files you want to preload. If this is  left empty it is equivalent to running Main.vi.
-         > - File(s)/Folder to convert: Path to the source G-code file(s) or  folders.
+         > - File(s)/Folder to convert: Path to the source G code file(s) or  folders.
          > - Destination Folder (relative to output path): This is an optional  terminal to specify an output path for the converted files. This must  be relative to the Top level output path.
 
 - ### Launching the WebApp:
