@@ -1,11 +1,12 @@
 # FINALE
 
-FINALE is a lightweight WebApp to view G code. FINALE stands for FINALE Is Not A LabVIEW Editor.
+FINALE is a lightweight WebApp to view [LabVIEW](https://www.ni.com/en-in/shop/labview.html) code. FINALE stands for FINALE Is Not A LabVIEW Editor.
 
 This solves many use cases like:
-  - Code sharing: Sharing code with a person with no LV license necessitates printing/taking screenshot.
-  - Viewing VIs saved in incompatible version.
-  - Viewing G code being used with TestStand.
+  - Code sharing: Sharing LabVIEW code with a person who does not have LabVIEW installed.
+  - Viewing LabVIEW code without launching LabVIEW.
+  - Viewing LabVIEW code saved in incompatible version.
+  - Viewing LabVIEW code that is being used with TestStand.
 
 # Contents
 
@@ -15,19 +16,29 @@ This solves many use cases like:
 # Features
 
   - A left pane to display project hierarchy.
-  - Search functionality for faster access to VIs.
-  - Support for viewing Multi Frame Structures like Case Structures, Event Structures, Disable Structures and Stacked Structures.
+  - Search functionality to find things of interest quickly.
+  - Support for viewing the following file types:
+    - VI
+    - CTLs
+    - LVClasses
+    - LLBs
+    - LVProjs
+    - Polymorphic VIs
+  - Support for viewing Multi Frame Structures like:
+    - Case Structures
+    - Event Structures
+    - Diagram Disable Structures
+    - Stacked Sequence Structures
   - Navigation to SubVIs and Dynamic Dispatch SubVIs.
-  - Context help for SubVIs and most of the primitive nodes.
 
-Note: FINALE is not supported and this is mostly internal tooling that we are exposing. This is more of a 'hack' that we built, this is not polished code/design.
+Note: FINALE is not supported by National Instruments and this is mostly internal tooling that we are exposing. This is a work in progress, and is not yet feature complete.
 
 # Setting up FINALE for your code
 
-FINALE has two parts, the HTML Generator and the WebApp. The HTML Generator converts G code to metadata in the form of JSONs, images etc. These are input to the WebApp which opens a web-based viewer for the files converted. 
+FINALE has two parts, the HTML Generator and the WebApp. The HTML Generator converts LabVIEW code to metadata in the form of JSONs, images etc. These are input to the WebApp which opens a web-based viewer for the files converted. 
 ## Prerequisites: 
-- LabVIEW
-- Browser: Google Chrome 
+- LabVIEW: Required only for converting the files.
+- Browser: Google Chrome/Firefox (Does not have complete support in Edge)
 - [npm](https://www.npmjs.com/get-npm)
 - [npm http-server](https://www.npmjs.com/package/http-server)
 >Note: If there are errors with the npm http-server, try installing at this version:
