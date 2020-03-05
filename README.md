@@ -65,10 +65,10 @@ Follow these instructions to run FINALE:
      - Run Main.vi and click "Convert".
    ![Main.vi](./docs/Main.vi.png)
      > Note: If you require certain files/projects to be preloaded for converting  the files, open GeneratorUI-Advanced.vi and enter values for the following:
-         > - Top level output path: <Path/to/FINALE/repo>/build/src
-         > - Files to Preload: Array of files you want to preload. If this is  left empty it is equivalent to running Main.vi.
-         > - File(s)/Folder to convert: Path to the source LabVIEW code file(s) or  folders.
-         > - Destination Folder (relative to output path): This is an optional  field to specify an output path for the converted files. This must  be relative to the Top level output path.
+     >  - Top level output path: <Path/to/FINALE/repo>/build/src
+     >  - Files to Preload: Array of files you want to preload. If this is  left empty it is equivalent to running Main.vi.
+     >  - File(s)/Folder to convert: Path to the source LabVIEW code file(s) or  folders.
+     >  - Destination Folder (relative to output path): This is an optional  field to specify an output path for the converted files. This must  be relative to the Top level output path.
 
 - ### Launching the WebApp:
    - On cmd or powershell, navigate to the "build" directory in the repo and start the npm http-server:
