@@ -52,6 +52,7 @@
     "process": "^0.11.10",
     "ts-loader": "^4.4.2",
     "ts-node": "^5.0.1",
+    "tslint": "^5.11.0",
     "typescript": "^2.9.2",
     "webpack": "^4.16.1"
   },
