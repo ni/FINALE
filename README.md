@@ -19,11 +19,11 @@ This solves many use cases like:
   - Search functionality to find things of interest quickly.
   - Support for viewing the following file types:
     - VI
-    - CTLs
-    - LVClasses
-    - LLBs
-    - LVProjs
-    - Polymorphic VIs
+    - CTL
+    - LVClass
+    - LLB
+    - LVProj
+    - Polymorphic VI
   - Support for viewing Multi Frame Structures like:
     - Case Structures
     - Event Structures
@@ -56,24 +56,24 @@ npm run build-webapp
 Follow these instructions to run FINALE:
 - Once you have the repository built and set up according to the above commands, proceed to the next step.
 
-- ### Converting G code to JSON: 
+- ### Converting LabVIEW code to JSON: 
    - Navigate to "buid/HTMLGenerator/".
 
    - Open Main.vi and enter values for the following:
-     - Source directory/files: Path to the source G code file(s) or folders.
+     - Source directory/files: Path to the source LabVIEW code file(s) or folder.
      - Destination Directory: Path to the destination directory. To view the files using the WebApp, make sure your destination is set to "<Path/to/FINALE/repo>/build/src".
      - Run Main.vi and click "Convert".
    ![Main.vi](./docs/Main.vi.png)
      > Note: If you require certain files/projects to be preloaded for converting  the files, open GeneratorUI-Advanced.vi and enter values for the following:
-         > - Top level output path: <Path/to/FINALE/repo>/build/src
-         > - Files to Preload: Array of files you want to preload. If this is  left empty it is equivalent to running Main.vi.
-         > - File(s)/Folder to convert: Path to the source G code file(s) or  folders.
-         > - Destination Folder (relative to output path): This is an optional  terminal to specify an output path for the converted files. This must  be relative to the Top level output path.
+     >  - Top level output path: <Path/to/FINALE/repo>/build/src
+     >  - Files to Preload: Array of files you want to preload. If this is  left empty it is equivalent to running Main.vi.
+     >  - File(s)/Folder to convert: Path to the source LabVIEW code file(s) or  folders.
+     >  - Destination Folder (relative to output path): This is an optional  field to specify an output path for the converted files. This must  be relative to the Top level output path.
 
 - ### Launching the WebApp:
    - On cmd or powershell, navigate to the "build" directory in the repo and start the npm http-server:
    >`http-server` 
-   - The above command will list the URLs at which the converted G source files can be viewed.
+   - The above command will list the converted files in the project hierarchy on the left pane.
    - FINALE should now be ready to use!
 
 # Contributing to the project
