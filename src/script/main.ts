@@ -1,17 +1,25 @@
+import { getCookie } from "./cookies";
+import { isNullOrUndefined } from "util";
+
 export class Main {
     public static viPath;
 
-    public static LoadFile(filePath: string) {
+    public     static LoadFile(filePath) {
         const currentState = history.state;
         const search = "?q=" + filePath;
+        const hashValue =  getCookie(filePath.slice(1));
         if (currentState !== null) {
-            const bdDiv: HTMLElement = document.getElementById("BlockDiagram");
+            const bdDiv = document.getElementById("BlockDiagram");
             if (bdDiv != null) {
                 currentState.xPos = bdDiv.scrollLeft;
                 currentState.yPos = bdDiv.scrollTop;
             }
         }
-        this.RedirectFinale(search);
+        if (hashValue == null) {
+            this.RedirectFinale(search);
+        } else {
+            this.RedirectFinale(search + "#" + hashValue);
+        }
     }
 
     public static RedirectFinale(search: string) {
