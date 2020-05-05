@@ -1,15 +1,14 @@
 import { getCookie } from "./cookies";
-import { isNullOrUndefined } from "util";
 
 export class Main {
     public static viPath;
 
-    public     static LoadFile(filePath) {
+    public static LoadFile(filePath: string) {
         const currentState = history.state;
         const search = "?q=" + filePath;
         const hashValue =  getCookie(filePath.slice(1));
         if (currentState !== null) {
-            const bdDiv = document.getElementById("BlockDiagram");
+            const bdDiv: HTMLElement = document.getElementById("BlockDiagram");
             if (bdDiv != null) {
                 currentState.xPos = bdDiv.scrollLeft;
                 currentState.yPos = bdDiv.scrollTop;
