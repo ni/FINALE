@@ -2,7 +2,6 @@ import { VirtualInstrument } from "../model/Model";
 import { HistoryManager } from "./HistoryManager";
 import { InputHelper } from "./inputHelper";
 import { DiagramView, ElementView } from "./View";
-import { setCookie } from "../cookies";
 
 export class VirtualInstrumentView {
     public static showHelp: boolean = true;
@@ -82,7 +81,6 @@ export class VirtualInstrumentView {
         for (const pane of tabPanes) {
             pane.className = pane.id === tabId ? "tab-pane active" : "tab-pane";
         }
-        setCookie(document.location.search.slice(4), tabId);
     }
 
     public generate(viModel: VirtualInstrument): HTMLElement {
