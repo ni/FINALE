@@ -1,4 +1,6 @@
+import { Main } from "../main";
 import { IRect } from "../model/Model";
+import { HistoryManager } from "./HistoryManager";
 
 export class ElementView {
     public static createElement(
@@ -16,8 +18,11 @@ export class ElementView {
     }
     public static toggleVisibility(domObj: HTMLElement): HTMLElement {
         domObj.style.display = domObj.style.display === "none" ? "inline-block" : "none";
+        const url = document.location.search + document.location.hash;
+        HistoryManager.UpdateHistory(url, Main.viModel);
         return domObj;
     }
+
     public static setVisible(domObj: HTMLElement, visibility: boolean): HTMLElement {
         if (visibility) {
             if (domObj.style.display === "inline-block") {

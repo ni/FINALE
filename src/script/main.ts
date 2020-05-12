@@ -1,11 +1,13 @@
 export class Main {
     public static viPath;
+    public static viModel;
 
     public static LoadFile(filePath: string) {
-        const currentState = history.state;
+        const currentState = top.history.state;
         const search = "?q=" + filePath;
         if (currentState !== null) {
             const bdDiv: HTMLElement = document.getElementById("BlockDiagram");
+            sessionStorage.setItem(currentState.filePath.split("#")[0], JSON.stringify(currentState.parsedContent));
             if (bdDiv != null) {
                 currentState.xPos = bdDiv.scrollLeft;
                 currentState.yPos = bdDiv.scrollTop;

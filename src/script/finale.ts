@@ -5,12 +5,13 @@ import { Model } from "./modelParser";
 import { PathHelper } from "./pathHelper";
 import { ViewFactory } from "./viewFactory";
 import { isNullOrUndefined } from "util";
+import { Main } from "./main";
 
 document.addEventListener("DOMContentLoaded", () => {
-    if (isNullOrUndefined(sessionStorage.getItem(document.location.search.slice(4)))) {
+    if (isNullOrUndefined(sessionStorage.getItem(document.location.search))) {
         generateDocument(document.location.search);
         } else {
-            parsedContent = JSON.parse(sessionStorage.getItem(document.location.search.slice(4)));
+            Main.viModel = JSON.parse(sessionStorage.getItem(document.location.search));
             LoadDOM(document.location.search);
         } 
     document.onkeyup = (e) => {
@@ -20,15 +21,14 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 }, false);
 
-let parsedContent = null;
 let originPath = "";
 
 function LoadDOM(query : string) {
     const viewObj = new ViewFactory();
-    const htmlDOM = viewObj.generate(parsedContent);
+    const htmlDOM = viewObj.generate(Main.viModel);
     if (htmlDOM) {
         const url = document.location.search + document.location.hash;
-        HistoryManager.UpdateHistory(url, parsedContent);
+        HistoryManager.UpdateHistory(url, Main.viModel);
         const finale = document.getElementById("divLog");
         while (finale.hasChildNodes()) {
             finale.removeChild(finale.lastChild);
@@ -46,8 +46,8 @@ function generateDocument(query: string) {
             if (xhr.readyState === 4) {
                 if (xhr.status === 200) {
                     if (xhr.responseText) {
-                        parsedContent = Model.parseJSON(xhr, originPath);
-                        sessionStorage.setItem(document.location.search.slice(4), JSON.stringify(parsedContent));
+                        Main.viModel = Model.parseJSON(xhr, originPath);
+                        //sessionStorage.setItem(document.location.search.slice(4), JSON.stringify(parsedContent));
                         LoadDOM(query);
                     }
                 } else {
