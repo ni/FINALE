@@ -1,19 +1,19 @@
+import { isNullOrUndefined } from "util";
 import { HistoryManager } from "./design/HistoryManager";
 import { InputHelper } from "./design/inputHelper";
 import { HelpProvider } from "./help/helpProvider";
+import { Main } from "./main";
 import { Model } from "./modelParser";
 import { PathHelper } from "./pathHelper";
 import { ViewFactory } from "./viewFactory";
-import { isNullOrUndefined } from "util";
-import { Main } from "./main";
 
 document.addEventListener("DOMContentLoaded", () => {
     if (isNullOrUndefined(sessionStorage.getItem(document.location.search))) {
         generateDocument(document.location.search);
         } else {
             Main.viModel = JSON.parse(sessionStorage.getItem(document.location.search));
-            LoadDOM(document.location.search);
-        } 
+            GenerateDOMForModel(document.location.search);
+        }
     document.onkeyup = (e) => {
         if (InputHelper.IsHelpKeyBinding(e)) {
             HelpProvider.toggleVisibility();
@@ -23,19 +23,20 @@ document.addEventListener("DOMContentLoaded", () => {
 
 let originPath = "";
 
-function LoadDOM(query : string) {
+function GenerateDOMForModel(query: string) {
     const viewObj = new ViewFactory();
     const htmlDOM = viewObj.generate(Main.viModel);
     if (htmlDOM) {
         const url = document.location.search + document.location.hash;
+        // TODO:Look at removing UpdateHistroy from here as updating history from LoadFile() in main.ts might suffice.
         HistoryManager.UpdateHistory(url, Main.viModel);
         const finale = document.getElementById("divLog");
         while (finale.hasChildNodes()) {
             finale.removeChild(finale.lastChild);
         }
-    finale.appendChild(htmlDOM);
-    top.postMessage({ highlight: true, id: query.slice(3).trim() }, "*");
-    }                                 
+        finale.appendChild(htmlDOM);
+        top.postMessage({ highlight: true, id: query.slice(3).trim() }, "*");
+    }
 }
 
 function generateDocument(query: string) {
@@ -47,8 +48,7 @@ function generateDocument(query: string) {
                 if (xhr.status === 200) {
                     if (xhr.responseText) {
                         Main.viModel = Model.parseJSON(xhr, originPath);
-                        //sessionStorage.setItem(document.location.search.slice(4), JSON.stringify(parsedContent));
-                        LoadDOM(query);
+                        GenerateDOMForModel(query);
                     }
                 } else {
                     alert("Invalid json file: " + query);

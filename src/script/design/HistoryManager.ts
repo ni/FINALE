@@ -7,9 +7,6 @@ export class HistoryManager {
         }
         const stateObj = { filePath: updatedPath, parsedContent };
         top.history.replaceState(stateObj, updatedPath, updatedPath);
-        if (document.referrer === "http://127.0.0.1:8081/results.html") {
-            sessionStorage.setItem(document.location.search, JSON.stringify(parsedContent));
-        }
     }
     private static queryHeader: string = "?q=";
     private static metadataFileName: string = "/metadata.json";
