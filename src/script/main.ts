@@ -1,3 +1,5 @@
+import { stat } from "fs";
+
 export class Main {
     public static viPath;
     public static viModel;
@@ -7,7 +9,8 @@ export class Main {
         const search = "?q=" + filePath;
         if (currentState !== null) {
             const bdDiv: HTMLElement = document.getElementById("BlockDiagram");
-            sessionStorage.setItem(currentState.filePath.split("#")[0], JSON.stringify(currentState.parsedContent));
+            const stateObj = {hashValue: currentState.filePath.split("#")[1], sourceModel: currentState.parsedContent};
+            sessionStorage.setItem(currentState.filePath.split("#")[0], JSON.stringify(stateObj));
             if (bdDiv != null) {
                 currentState.xPos = bdDiv.scrollLeft;
                 currentState.yPos = bdDiv.scrollTop;

@@ -11,7 +11,8 @@ document.addEventListener("DOMContentLoaded", () => {
     if (isNullOrUndefined(sessionStorage.getItem(document.location.search))) {
         generateDocument(document.location.search);
         } else {
-            Main.viModel = JSON.parse(sessionStorage.getItem(document.location.search));
+            document.location.hash = JSON.parse(sessionStorage.getItem(document.location.search)).hashValue;
+            Main.viModel = JSON.parse(sessionStorage.getItem(document.location.search)).sourceModel;
             GenerateDOMForModel(document.location.search);
         }
     document.onkeyup = (e) => {
