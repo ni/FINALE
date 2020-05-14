@@ -27,8 +27,9 @@ export class Main {
 top.addEventListener("DOMContentLoaded", () => {
     if (document.location.search && top.frames.length === 3) {
         Main.RedirectFinale(document.location.search);
-        top.onmessage = (e) => {
-            top.frames[1].postMessage(e.data, "*");
-        };
     }
 });
+
+top.onmessage = (e) => {
+    top.frames[1].postMessage(e.data, "*");
+};

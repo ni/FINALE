@@ -35,7 +35,7 @@ function loadFile() {
 
                 // Rendering the tree
                 tree.drawTree();
-                tree.givenTreeExpandAtTopLevel("divTree");
+                tree.getTreeAndCallDblEvent("divTree");
                 const getParams = window.location.href.split(/=|#/);
                 if (getParams.length >= 2) {
                     const fixedStr = decodeURIComponent(getParams[1]);
@@ -111,30 +111,63 @@ function updateTreeViewAndSearchResults(searchStr: string) {
     }
     searchStrOldValue = searchStr;
 }
+function focusGivenNode(focusNode) {
+    if (focusNode.className !== "node_selected") {
+        document.getElementsByClassName("node_selected")[0].className = "node";
+        focusNode.className = "node_selected";
+    }
+}
+function expandUpwardTree(decodedJsonPath) {
+    const pathList = decodedJsonPath.split("/");
+    // tslint:disable-next-line:prefer-const
+    let pathPlaceHolder = [""];
+    // tslint:disable-next-line:prefer-for-of
+    for (let i = 1; i < pathList.length - 1; i++) {
+        pathPlaceHolder[pathPlaceHolder.length] = pathList[i];
+        const pathPlaceHolderString = pathPlaceHolder.join("/");
+        const ulElement = document.getElementById(pathPlaceHolderString);
+        const img = ulElement.firstElementChild;
+        const spanElement = img.nextSibling;
+        if (img.id !== "toggle_off") {
+            const evt = new Event("dblclick");
+            spanElement.dispatchEvent(evt);
+        }
+    }
+    const selectNodeParent = document.getElementById(decodeURI(decodedJsonPath));
+    const selectedNode = selectNodeParent.getElementsByTagName("span")[0];
+    selectedNode.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "start" });
+    focusGivenNode(selectedNode);
+}
 
 export function toggleSelectedNode(jsonPath) {
-    const focusNode = document.getElementById(jsonPath);
-    if (focusNode == null) {
-        return "";
-    }
-    const selectedNode = document.getElementsByClassName("node_selected");
-    if (selectedNode.length > 0) {
-        selectedNode[0].className = "node";
-    }
-    const nodeToSelect = document.getElementById(jsonPath).parentNode;
-    (nodeToSelect.childNodes[1] as HTMLSpanElement).className = "node_selected";
-    let nodeToExpand = document.getElementById(jsonPath);
-    while (nodeToExpand.id !== escape(rootNode.path)) {
-        nodeToExpand = (nodeToExpand.parentNode.parentNode) as HTMLUListElement;
-        (nodeToExpand as HTMLUListElement).style.display = "block";
-        const nodeExpColImg = nodeToExpand.getElementsByTagName("img")[0];
-        nodeExpColImg.id = "toggle_off";
-        nodeExpColImg.src = "images/collapse.png";
+    const decodedJsonPath = decodeURIComponent(jsonPath);
+    if (decodedJsonPath.split("/").pop() === "control") {
+        document.getElementsByClassName("node_selected")[0].className = "node";
+    } else {
+        const focusNode = document.getElementById(decodedJsonPath);
+        let focusNodeTemp = focusNode;
+        if (focusNodeTemp == null) {
+            expandUpwardTree(jsonPath);
+        } else if (focusNodeTemp.getElementsByTagName("span")[0].className !== "node_selected") {
+            const focusNodeSpan = focusNodeTemp.getElementsByTagName("span")[0];
+            while (focusNodeTemp.parentNode.parentNode !== null) {
+                const parentSpanElement = focusNodeTemp.parentElement.previousElementSibling;
+                const parentImageElement = parentSpanElement.previousElementSibling;
+                if (parentImageElement.id !== "toggle_off") {
+                    const evt = new Event("dblclick");
+                    parentSpanElement.dispatchEvent(evt);
+                } else {
+                    focusGivenNode(focusNodeSpan);
+                    break;
+                }
+                focusNodeTemp = focusNodeTemp.parentNode.parentElement;
+            }
+            focusNode.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "start" });
+        }
     }
     document.getElementById("filteredTree").style.display = "none";
     document.getElementById("divTree").style.display = "block";
 }
-
 export function openVI(viPath) {
     if (viPath) {
         Main.viPath = viPath;
