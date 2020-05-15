@@ -8,9 +8,11 @@ export class Main {
         const currentState = top.history.state;
         const search = "?q=" + filePath;
         if (currentState !== null) {
-            const bdDiv: HTMLElement = document.getElementById("BlockDiagram");
+
             const stateObj = {hashValue: currentState.filePath.split("#")[1], sourceModel: currentState.parsedContent};
             sessionStorage.setItem(currentState.filePath.split("#")[0], JSON.stringify(stateObj));
+
+            const bdDiv: HTMLElement = document.getElementById("BlockDiagram");
             if (bdDiv != null) {
                 currentState.xPos = bdDiv.scrollLeft;
                 currentState.yPos = bdDiv.scrollTop;

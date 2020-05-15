@@ -36,7 +36,7 @@ function GenerateDOMForModel(query: string) {
             finale.removeChild(finale.lastChild);
         }
         finale.appendChild(htmlDOM);
-        top.postMessage({ highlight: true, id: query.slice(3).trim() }, "*");
+        top.postMessage({ highlight: true, id: Main.viPath }, "*");
     }
 }
 

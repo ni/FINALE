@@ -19,6 +19,7 @@ export class ElementView {
     public static toggleVisibility(domObj: HTMLElement): HTMLElement {
         domObj.style.display = domObj.style.display === "none" ? "inline-block" : "none";
         const url = document.location.search + document.location.hash;
+        // TODO(Pratheeksha): Look for a better location to update history
         HistoryManager.UpdateHistory(url, Main.viModel);
         return domObj;
     }
