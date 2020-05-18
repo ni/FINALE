@@ -10,8 +10,7 @@ export class Main {
         const search = "?q=" + filePath;
         if (currentState !== null) {
             /* As few file models(like LVClass/ PolyVi) donot have # values.
-            So, the #value for them in session storage is set as empty string.
-            Otherwise, it gets automatically assigned to undefined.*/
+            So, we store a empty string instead of an undefined value.*/
             if (isNullOrUndefined(currentState.filePath.split("#")[1])) {
                 const stateObj = {hashValue: "", sourceModel: currentState.parsedContent};
                 sessionStorage.setItem(currentState.filePath.split("#")[0], JSON.stringify(stateObj));
