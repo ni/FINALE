@@ -1,4 +1,5 @@
 import { stat } from "fs";
+import { isNullOrUndefined } from "util";
 
 export class Main {
     public static viPath;
@@ -8,9 +9,17 @@ export class Main {
         const currentState = top.history.state;
         const search = "?q=" + filePath;
         if (currentState !== null) {
-
-            const stateObj = {hashValue: currentState.filePath.split("#")[1], sourceModel: currentState.parsedContent};
-            sessionStorage.setItem(currentState.filePath.split("#")[0], JSON.stringify(stateObj));
+            /* As few file models(like LVClass/ PolyVi) donot have # values.
+            So, the #value for them in session storage is set as empty string.
+            Otherwise, it gets automatically assigned to undefined.*/
+            if (isNullOrUndefined(currentState.filePath.split("#")[1])) {
+                const stateObj = {hashValue: "", sourceModel: currentState.parsedContent};
+                sessionStorage.setItem(currentState.filePath.split("#")[0], JSON.stringify(stateObj));
+            } else {
+                const stateObj = {hashValue: currentState.filePath.split("#")[1],
+                                  sourceModel: currentState.parsedContent};
+                sessionStorage.setItem(currentState.filePath.split("#")[0], JSON.stringify(stateObj));
+            }
 
             const bdDiv: HTMLElement = document.getElementById("BlockDiagram");
             if (bdDiv != null) {
