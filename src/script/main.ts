@@ -11,14 +11,10 @@ export class Main {
         if (currentState !== null) {
             /* As few file models(like LVClass/ PolyVi) donot have # values.
             So, we store a empty string instead of an undefined value.*/
-            if (isNullOrUndefined(currentState.filePath.split("#")[1])) {
-                const stateObj = {hashValue: "", sourceModel: currentState.parsedContent};
-                sessionStorage.setItem(currentState.filePath.split("#")[0], JSON.stringify(stateObj));
-            } else {
-                const stateObj = {hashValue: currentState.filePath.split("#")[1],
-                                  sourceModel: currentState.parsedContent};
-                sessionStorage.setItem(currentState.filePath.split("#")[0], JSON.stringify(stateObj));
-            }
+            const hash = isNullOrUndefined(currentState.filePath.split("#")[1]) ?
+                                                "" : currentState.filePath.split("#")[1];
+            const stateObj = {hashValue : hash, sourceModel : currentState.parsedContent};
+            sessionStorage.setItem(currentState.filePath.split("#")[0], JSON.stringify(stateObj));
 
             const bdDiv: HTMLElement = document.getElementById("BlockDiagram");
             if (bdDiv != null) {
