@@ -35,7 +35,7 @@ function loadFile() {
 
                 // Rendering the tree
                 tree.drawTree();
-                tree.getTreeAndCallDblEvent("divTree");
+                tree.getTreeAndExpandTopLevel("divTree");
                 const getParams = window.location.href.split(/=|#/);
                 if (getParams.length >= 2) {
                     const fixedStr = decodeURIComponent(getParams[1]);
@@ -117,15 +117,13 @@ function focusGivenNode(focusNode) {
         focusNode.className = "node_selected";
     }
 }
-function expandUpwardTree(decodedJsonPath) {
-    const pathList = decodedJsonPath.split("/");
-    // tslint:disable-next-line:prefer-const
-    let pathPlaceHolder = [""];
-    // tslint:disable-next-line:prefer-for-of
-    for (let i = 1; i < pathList.length - 1; i++) {
-        pathPlaceHolder[pathPlaceHolder.length] = pathList[i];
-        const pathPlaceHolderString = pathPlaceHolder.join("/");
-        const ulElement = document.getElementById(pathPlaceHolderString);
+function expandUpwardTree(jsonPath) {
+    const jsonPathList = jsonPath.split("/");
+    const partialPath = [""];
+    for (let i = 1; i < jsonPathList.length - 1; i++) {
+        partialPath[partialPath.length] = jsonPathList[i];
+        const jsonTreePathString = partialPath.join("/");
+        const ulElement = document.getElementById(jsonTreePathString);
         const img = ulElement.firstElementChild;
         const spanElement = img.nextSibling;
         if (img.id !== "toggle_off") {
@@ -133,7 +131,7 @@ function expandUpwardTree(decodedJsonPath) {
             spanElement.dispatchEvent(evt);
         }
     }
-    const selectNodeParent = document.getElementById(decodeURI(decodedJsonPath));
+    const selectNodeParent = document.getElementById(jsonPath);
     const selectedNode = selectNodeParent.getElementsByTagName("span")[0];
     selectedNode.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "start" });
     focusGivenNode(selectedNode);
@@ -146,8 +144,12 @@ export function toggleSelectedNode(jsonPath) {
     } else {
         const focusNode = document.getElementById(decodedJsonPath);
         let focusNodeTemp = focusNode;
+        /* If the tree strcuture for the file that we request is not expanded then,
+        we expand it first. Then, we highlight(node_selected) the file in the file-pane.
+        Else, we just do the node selection in the file pane for the requested file,
+        as the file tree is already open */
         if (focusNodeTemp == null) {
-            expandUpwardTree(jsonPath);
+            expandUpwardTree(decodedJsonPath);
         } else if (focusNodeTemp.getElementsByTagName("span")[0].className !== "node_selected") {
             const focusNodeSpan = focusNodeTemp.getElementsByTagName("span")[0];
             while (focusNodeTemp.parentNode.parentNode !== null) {

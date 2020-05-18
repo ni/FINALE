@@ -1,3 +1,4 @@
+// This code is based on aimaraJS - Pure Javascript TreeView Component (https://github.com/rafaelthca/aimaraJS)
 import { Main } from "../../main";
 import { Node } from "./node";
 
@@ -432,7 +433,7 @@ export class TreeHelper {
         return parentObj;
     }
 
-    public getTreeAndCallDblEvent(treeType) {
+    public getTreeAndExpandTopLevel(treeType) {
             const searchTree = document.getElementById(treeType).getElementsByClassName("tree");
             const lastElement = searchTree[0].getElementsByClassName("last");
             const spanElement = lastElement[0].getElementsByTagName("span");
@@ -458,7 +459,7 @@ export class TreeHelper {
             );
             rootNode = this.populateTree(newTree, searchNode, topDirectory.Components);
             newTree.drawTree();
-            this.getTreeAndCallDblEvent("filteredTree");
+            this.getTreeAndExpandTopLevel("filteredTree");
         } else {
             let icon = "";
             if (topDirectory.Type === "dir") {
