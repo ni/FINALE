@@ -117,7 +117,7 @@ function focusGivenNode(focusNode) {
         focusNode.className = "node_selected";
     }
 }
-function expandUpwardTree(jsonPath) {
+function createSubTreeAndExpandBranchForPath(jsonPath) {
     const jsonPathList = jsonPath.split("/");
     const partialPathsList = [""];
     for (let i = 1; i < jsonPathList.length - 1; i++) {
@@ -137,39 +137,44 @@ function expandUpwardTree(jsonPath) {
     focusGivenNode(selectedNode);
 }
 
+function expandBranchForPath(focusNode) {
+    let focusNodeTemp = focusNode;
+    const focusNodeSpan = focusNodeTemp.getElementsByTagName("span")[0];
+    while (focusNodeTemp.parentNode.parentNode !== null) {
+        const parentSpanElement = focusNodeTemp.parentElement.previousElementSibling;
+        const parentImageElement = parentSpanElement.previousElementSibling;
+        if (parentImageElement.id !== "toggle_off") {
+            const evt = new Event("dblclick");
+            parentSpanElement.dispatchEvent(evt);
+        } else {
+            focusGivenNode(focusNodeSpan);
+            break;
+        }
+        focusNodeTemp = focusNodeTemp.parentNode.parentElement;
+    }
+    focusNode.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "start" });
+}
+
 export function toggleSelectedNode(jsonPath) {
     const decodedJsonPath = decodeURIComponent(jsonPath);
     if (decodedJsonPath.split("/").pop() === "control") {
         document.getElementsByClassName("node_selected")[0].className = "node";
     } else {
         const focusNode = document.getElementById(decodedJsonPath);
-        let focusNodeTemp = focusNode;
-        /* If the tree strcuture for the file that we request is not expanded then,
-        we expand it first. Then, we highlight(node_selected) the file in the file-pane.
-        Else, we just do the node selection in the file pane for the requested file,
-        as the file tree is already open */
-        if (focusNodeTemp == null) {
-            expandUpwardTree(decodedJsonPath);
-        } else if (focusNodeTemp.getElementsByTagName("span")[0].className !== "node_selected") {
-            const focusNodeSpan = focusNodeTemp.getElementsByTagName("span")[0];
-            while (focusNodeTemp.parentNode.parentNode !== null) {
-                const parentSpanElement = focusNodeTemp.parentElement.previousElementSibling;
-                const parentImageElement = parentSpanElement.previousElementSibling;
-                if (parentImageElement.id !== "toggle_off") {
-                    const evt = new Event("dblclick");
-                    parentSpanElement.dispatchEvent(evt);
-                } else {
-                    focusGivenNode(focusNodeSpan);
-                    break;
-                }
-                focusNodeTemp = focusNodeTemp.parentNode.parentElement;
-            }
-            focusNode.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "start" });
+        /* If the requested node is not created we create the sub tree and and expand it the along the path.
+        Then, we perform focusNode() to highlight(set "node_selected") for the desired file.
+        Else the collapsed tree is expaned and then,
+        focusNode() is performed to highlight(set "node_selected") the the desired file.*/
+        if (focusNode == null) {
+            createSubTreeAndExpandBranchForPath(decodedJsonPath);
+        } else if (focusNode.getElementsByTagName("span")[0].className !== "node_selected") {
+            expandBranchForPath(focusNode);
         }
     }
     document.getElementById("filteredTree").style.display = "none";
     document.getElementById("divTree").style.display = "block";
 }
+
 export function openVI(viPath) {
     if (viPath) {
         Main.viPath = viPath;
