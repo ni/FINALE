@@ -119,11 +119,11 @@ function focusGivenNode(focusNode) {
 }
 function expandUpwardTree(jsonPath) {
     const jsonPathList = jsonPath.split("/");
-    const partialPath = [""];
+    const partialPathsList = [""];
     for (let i = 1; i < jsonPathList.length - 1; i++) {
-        partialPath[partialPath.length] = jsonPathList[i];
-        const jsonTreePathString = partialPath.join("/");
-        const ulElement = document.getElementById(jsonTreePathString);
+        partialPathsList[partialPathsList.length] = jsonPathList[i];
+        const partialPath = partialPathsList.join("/");
+        const ulElement = document.getElementById(partialPath);
         const img = ulElement.firstElementChild;
         const spanElement = img.nextSibling;
         if (img.id !== "toggle_off") {
