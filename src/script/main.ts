@@ -9,8 +9,8 @@ export class Main {
         const currentState = top.history.state;
         const search = "?q=" + filePath;
         if (currentState !== null) {
-            /* As few file models(like LVClass/ PolyVi) donot have # values.
-            So, we store a empty string instead of an undefined value.*/
+            /* As a few file types (like LVClass/ PolyVI) do not have # values,
+            we store an empty string in the session storage instead of storing an undefined value. */
             const hash = isNullOrUndefined(currentState.filePath.split("#")[1]) ?
                                                 "" : currentState.filePath.split("#")[1];
             const stateObj = {hashValue : hash, sourceModel : currentState.parsedContent};
