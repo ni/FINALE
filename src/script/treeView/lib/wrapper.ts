@@ -35,7 +35,7 @@ function loadFile() {
 
                 // Rendering the tree
                 tree.drawTree();
-                tree.givenTreeExpandAtTopLevel("divTree");
+                tree.getTreeAndExpandTopLevel("divTree");
                 const getParams = window.location.href.split(/=|#/);
                 if (getParams.length >= 2) {
                     const fixedStr = decodeURIComponent(getParams[1]);
@@ -111,25 +111,65 @@ function updateTreeViewAndSearchResults(searchStr: string) {
     }
     searchStrOldValue = searchStr;
 }
+function focusGivenNode(focusNode) {
+    if (focusNode.className !== "node_selected") {
+        document.getElementsByClassName("node_selected")[0].className = "node";
+        focusNode.className = "node_selected";
+    }
+}
+function createSubTreeAndExpandBranchForPath(jsonPath) {
+    const jsonPathList = jsonPath.split("/");
+    const partialPathsList = [""];
+    for (let i = 1; i < jsonPathList.length - 1; i++) {
+        partialPathsList[partialPathsList.length] = jsonPathList[i];
+        const partialPath = partialPathsList.join("/");
+        const ulElement = document.getElementById(partialPath);
+        const img = ulElement.firstElementChild;
+        const spanElement = img.nextSibling;
+        if (img.id !== "toggle_off") {
+            const evt = new Event("dblclick");
+            spanElement.dispatchEvent(evt);
+        }
+    }
+    const selectNodeParent = document.getElementById(jsonPath);
+    const selectedNode = selectNodeParent.getElementsByTagName("span")[0];
+    selectedNode.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "start" });
+    focusGivenNode(selectedNode);
+}
+
+function expandBranchForPath(focusNode) {
+    let focusNodeTemp = focusNode;
+    const focusNodeSpan = focusNodeTemp.getElementsByTagName("span")[0];
+    while (focusNodeTemp.parentNode.parentNode !== null) {
+        const parentSpanElement = focusNodeTemp.parentElement.previousElementSibling;
+        const parentImageElement = parentSpanElement.previousElementSibling;
+        if (parentImageElement.id !== "toggle_off") {
+            const evt = new Event("dblclick");
+            parentSpanElement.dispatchEvent(evt);
+        } else {
+            focusGivenNode(focusNodeSpan);
+            break;
+        }
+        focusNodeTemp = focusNodeTemp.parentNode.parentElement;
+    }
+    focusNode.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "start" });
+}
 
 export function toggleSelectedNode(jsonPath) {
-    const focusNode = document.getElementById(jsonPath);
-    if (focusNode == null) {
-        return "";
-    }
-    const selectedNode = document.getElementsByClassName("node_selected");
-    if (selectedNode.length > 0) {
-        selectedNode[0].className = "node";
-    }
-    const nodeToSelect = document.getElementById(jsonPath).parentNode;
-    (nodeToSelect.childNodes[1] as HTMLSpanElement).className = "node_selected";
-    let nodeToExpand = document.getElementById(jsonPath);
-    while (nodeToExpand.id !== escape(rootNode.path)) {
-        nodeToExpand = (nodeToExpand.parentNode.parentNode) as HTMLUListElement;
-        (nodeToExpand as HTMLUListElement).style.display = "block";
-        const nodeExpColImg = nodeToExpand.getElementsByTagName("img")[0];
-        nodeExpColImg.id = "toggle_off";
-        nodeExpColImg.src = "images/collapse.png";
+    const decodedJsonPath = decodeURIComponent(jsonPath);
+    if (decodedJsonPath.split("/").pop() === "control") {
+        document.getElementsByClassName("node_selected")[0].className = "node";
+    } else {
+        const focusNode = document.getElementById(decodedJsonPath);
+        /* If the requested node is not created we create the sub tree and and expand it the along the path.
+        Then, we perform focusNode() to highlight(set "node_selected") for the desired file.
+        Else the collapsed tree is expaned and then,
+        focusNode() is performed to highlight(set "node_selected") the the desired file.*/
+        if (focusNode == null) {
+            createSubTreeAndExpandBranchForPath(decodedJsonPath);
+        } else if (focusNode.getElementsByTagName("span")[0].className !== "node_selected") {
+            expandBranchForPath(focusNode);
+        }
     }
     document.getElementById("filteredTree").style.display = "none";
     document.getElementById("divTree").style.display = "block";

@@ -1,5 +1,4 @@
 // This code is based on aimaraJS - Pure Javascript TreeView Component (https://github.com/rafaelthca/aimaraJS).
-
 import { Main } from "../../main";
 import { Node } from "./node";
 
@@ -240,6 +239,7 @@ export class TreeHelper {
         }
 
         const vLI: HTMLLIElement = document.createElement("li");
+        vLI.id = pNode.path;
         pNode.elementLi = vLI;
 
         const vSpan: HTMLSpanElement = this.createSimpleElement("span", null, "node");
@@ -258,7 +258,7 @@ export class TreeHelper {
         }
         const currElement = this;
         const lazyLoad = () => {
-            const vUL: HTMLElement = currElement.createSimpleElement("ul", path, path);
+            const vUL: HTMLElement = currElement.createSimpleElement("ul", "", "");
             vLI.appendChild(vUL);
             if (pNode.childNodes.length > 0) {
                 if (!pNode.expanded) {
@@ -433,7 +433,7 @@ export class TreeHelper {
         return parentObj;
     }
 
-    public givenTreeExpandAtTopLevel(treeType) {
+    public getTreeAndExpandTopLevel(treeType) {
             const searchTree = document.getElementById(treeType).getElementsByClassName("tree");
             const lastElement = searchTree[0].getElementsByClassName("last");
             const spanElement = lastElement[0].getElementsByTagName("span");
@@ -442,7 +442,6 @@ export class TreeHelper {
             // simulate double click event at the first level of the tree
             spanElement[0].dispatchEvent(evt);
     }
-
     // create tree view
     public directoryTreeView(topDirectory) {
         let rootNode = null;
@@ -460,7 +459,7 @@ export class TreeHelper {
             );
             rootNode = this.populateTree(newTree, searchNode, topDirectory.Components);
             newTree.drawTree();
-            this.givenTreeExpandAtTopLevel("filteredTree");
+            this.getTreeAndExpandTopLevel("filteredTree");
         } else {
             let icon = "";
             if (topDirectory.Type === "dir") {
