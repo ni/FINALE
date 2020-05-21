@@ -65,8 +65,8 @@ def convert(top_level_output_directory, top_level_input_directory, json_with_fil
 def convertFromCli(jsonFilePath) :
     with open(jsonFilePath) as jsonFile:
             json_with_filepaths = json.load(jsonFile)
-            converter_path = Path(Path("C:/FINALE/src/HTMLGenerator") / "ConvertFromConfigurationFile.vi")
-            current_configuration_absolute_path = Path(Path(Path("C:/FINALE/src/HTMLGenerator")) / CURRENT_CONFIGURATION_PATH)
+            converter_path = Path(Path.cwd() / "ConvertFromConfigurationFile.vi")
+            current_configuration_absolute_path = Path(Path.cwd() / CURRENT_CONFIGURATION_PATH)
             notification_absolute_path = Path(Path(json_with_filepaths["outputPath"]) / NOTIFICATION_PATH)
             call_converter_command = str(LABVIEW_PATH) + " " + str(converter_path)
             try:
