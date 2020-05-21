@@ -65,7 +65,7 @@ def convert(json_with_filepaths, top_level_output_directory = Path(""), top_leve
 
     return
 
-def convertFromCli(jsonFilePath) :
+def convert_from_JSON(jsonFilePath) :
     with open(jsonFilePath) as jsonFile:
             json_with_filepaths = json.load(jsonFile)
             convert(json_with_filepaths)
