@@ -15,7 +15,7 @@ def _get_path_relative_to_username(filename):
     filename_path = Path(filename)
     return str(filename_path.relative_to(s.expanduser()))
 
-def convert(top_level_output_directory, top_level_input_directory, json_with_filepaths, path_to_current_working_directory = Path.cwd()):    
+def convert(json_with_filepaths, top_level_output_directory = Path(""), top_level_input_directory = Path(""), path_to_current_working_directory = Path.cwd()):    
     converter_path = Path(path_to_current_working_directory / "ConvertFromConfigurationFile.vi")
     current_configuration_absolute_path = Path(path_to_current_working_directory / CURRENT_CONFIGURATION_PATH)
     notification_absolute_path = Path(path_to_current_working_directory / NOTIFICATION_PATH)
@@ -68,4 +68,4 @@ def convert(top_level_output_directory, top_level_input_directory, json_with_fil
 def convertFromCli(jsonFilePath) :
     with open(jsonFilePath) as jsonFile:
             json_with_filepaths = json.load(jsonFile)
-            convert(Path(""),Path(""),json_with_filepaths,Path.cwd())
+            convert(json_with_filepaths)
