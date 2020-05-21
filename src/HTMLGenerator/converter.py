@@ -82,6 +82,9 @@ def convertFromCli(jsonFilePath) :
                         '/top:' + str(json_with_filepaths["topPath"]) + "\n")
                     current_configuration_file.write(
                     '/input:' + str(json_with_filepaths["inputPath"]) + "\n")
+                    if "preloadedFiles" in json_with_filepaths:    
+                        current_configuration_file.write(
+                        '/preload:' + str(Path(json_with_filepaths["preloadedFiles"])) + "\n")
                     if "outputPath" in json_with_filepaths:
                         current_configuration_file.write(
                         '/out:' + str(json_with_filepaths["outputPath"]) + "\n")
@@ -110,8 +113,3 @@ def convertFromCli(jsonFilePath) :
             os.remove(current_configuration_absolute_path)
 
             return
-
-def hello():
-    print('Hi:)')
-
-# convertFromCli("C:\\temp\\file.json")
