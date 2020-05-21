@@ -111,4 +111,7 @@ def convertFromCli(jsonFilePath) :
 
             return
 
-convertFromCli("C:\\temp\\file.json")
+def hello():
+    print('Hi:)')
+
+# convertFromCli("C:\\temp\\file.json")
