@@ -71,6 +71,6 @@ def convert(path_to_current_working_directory = Path.cwd()):
 
 def convert_from_JSON(jsonFilePath) :
     with open(jsonFilePath) as jsonFile:
-            json_with_filepaths = json.load(jsonFile)
-            write_configuration_file(json_with_filepaths)
-            convert()
+        json_with_filepaths = json.load(jsonFile)
+        write_configuration_file(json_with_filepaths)
+        convert()

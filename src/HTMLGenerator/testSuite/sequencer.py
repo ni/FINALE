@@ -37,12 +37,12 @@ def main():
                     try:
                         with open(json_tests_directory/json_test) as json_test_file:
                             test_cases_json = json.load(json_test_file)
+                            
                             configuration_file_error = write_configuration_file(test_cases_json, top_level_output_directory, test_assets, Path.cwd().parent)
-                            converter_error = convert(Path.cwd().parent)
-
                             if configuration_file_error:
                                 test_failures = write_to_dict(test_failures, json_test, configuration_file_error)
-                                
+                            
+                            converter_error = convert(Path.cwd().parent)
                             if converter_error:
                                 test_failures = write_to_dict(test_failures, json_test, converter_error)
                                 continue
