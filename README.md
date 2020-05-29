@@ -35,10 +35,11 @@ Note: FINALE is not supported by National Instruments and this is mostly interna
 
 # Setting up FINALE for your code
 
-FINALE has two parts, the HTML Generator and the WebApp. The HTML Generator converts LabVIEW code to metadata in the form of JSONs, images etc. These are input to the WebApp which opens a web-based viewer for the files converted. 
+FINALE has two parts, the HTML Generator and the WebApp. The HTML Generator converts LabVIEW code to a FINALE format(A composition of JSON documents,images,etc. which is understood by the WebApp). These are input to the WebApp which opens a web-based viewer for the files converted. 
 ## Prerequisites: 
 - LabVIEW: Required only for converting the files.
 - Browser: Google Chrome/Firefox (Does not have complete support in Edge)
+- Python 3+ (For CLI tool)
 - [npm](https://www.npmjs.com/get-npm)
 - [npm http-server](https://www.npmjs.com/package/http-server)
 >Note: If there are errors with the npm http-server, try installing at this version:
@@ -56,7 +57,7 @@ npm run build-webapp
 Follow these instructions to run FINALE:
 - Once you have the repository built and set up according to the above commands, proceed to the next step.
 
-- ### Converting LabVIEW code to JSON: 
+- ### Converting LabVIEW code to FINALE format: 
    - Navigate to "buid/HTMLGenerator/".
 
    - Open Main.vi and enter values for the following:
@@ -69,6 +70,21 @@ Follow these instructions to run FINALE:
      >  - Files to Preload: Array of files you want to preload. If this is  left empty it is equivalent to running Main.vi.
      >  - File(s)/Folder to convert: Path to the source LabVIEW code file(s) or  folders.
      >  - Destination Folder (relative to output path): This is an optional  field to specify an output path for the converted files. This must  be relative to the Top level output path.
+
+- ### Converting LabVIEW code to FINALE format using the CLI:
+  - On cmd or powershell, navigate to <Path/of/FINALE/repo>/build/HTMLGenerator.
+  - Run command:
+  > `python -c "import converter; converter.convert_from_JSON('<Absolute/Path/For/JSON/file>')"`
+  - The JSON file mentioned above should be of the structure:
+    ```json
+      {
+      "topPath": <"Absolute path where you want the converted JSON to be stored">,
+      "inputPath": <"Absolute Path to the source files/directory that needs to be converted">
+      }
+    ```
+
+  > Note: May need to install PathLib module (https://pypi.org/project/pathlib/)
+
 
 - ### Launching the WebApp:
    - On cmd or powershell, navigate to the "build" directory in the repo and start the npm http-server:
