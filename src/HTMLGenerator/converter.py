@@ -21,22 +21,31 @@ def write_configuration_file(json_with_filepaths, top_level_output_directory = P
     try:
         with open(current_configuration_absolute_path, 'w') as current_configuration_file:
             if "topPath" in json_with_filepaths:
+                topDirectoryPath = json_with_filepaths["topPath"]
+            else:
+                raise Exception("topPath cannot be null/empty")
+            for configuration in json_with_filepaths["configurations"]:
                 current_configuration_file.write(
-                '/top:' + str(top_level_output_directory / json_with_filepaths["topPath"]) + "\n")
-            if "preloadedFiles" in json_with_filepaths:
-                current_configuration_file.write(
-                '/preload:' + str(Path(json_with_filepaths["preloadedFiles"])) + "\n")
-            if "inputPath" in json_with_filepaths:
-                current_configuration_file.write(
-                '/input:' + str(top_level_input_directory / json_with_filepaths["inputPath"]) + "\n")
-            if "outputPath" in json_with_filepaths:    
-                current_configuration_file.write(
-                '/out:' + str(Path(json_with_filepaths["outputPath"])) + "\n")
-            current_configuration_file.flush()
+                '/top:' + str(top_level_output_directory / topDirectoryPath) + "\n")
+                if "preloadedFiles" in configuration:
+                    current_configuration_file.write(
+                    '/preload:' + str(Path(configuration["preloadedFiles"])) + "\n")
+                if "inputPath" in configuration:
+                    current_configuration_file.write(
+                    '/input:' + str(top_level_input_directory / configuration["inputPath"]) + "\n")
+                else:
+                    raise Exception("inputPath cannot be null/empty")
+                if "outputPath" in configuration:    
+                    current_configuration_file.write(
+                    '/out:' + str(Path(configuration["outputPath"])) + "\n")
+                current_configuration_file.flush()
+                current_configuration_file.close()
+                convert()
 
     except FileNotFoundError as f:
         error_message = str(f.strerror, _get_path_relative_to_username(f.filename))
         return error_message
+
 
 def convert(path_to_current_working_directory = Path.cwd()):    
     converter_path = Path(path_to_current_working_directory / "ConvertFromConfigurationFile.vi")
@@ -73,4 +82,3 @@ def convert_from_JSON(jsonFilePath) :
     with open(jsonFilePath) as jsonFile:
         json_with_filepaths = json.load(jsonFile)
         write_configuration_file(json_with_filepaths)
-        convert()
