@@ -15,7 +15,7 @@ def _get_path_relative_to_username(filename):
     filename_path = Path(filename)
     return str(filename_path.relative_to(s.expanduser()))
 
-def write_configuration_file(json_with_filepaths, top_level_output_directory = Path(""), top_level_input_directory = Path(""), path_to_current_working_directory = Path.cwd()):
+def write_configuration_file_and_run_converter(json_with_filepaths, path_to_current_working_directory = Path.cwd()):
     current_configuration_absolute_path = Path(path_to_current_working_directory / CURRENT_CONFIGURATION_PATH)
     # Writing the top, preload, input and output path to the currentConfiguration.txt file.
     try:
@@ -26,13 +26,13 @@ def write_configuration_file(json_with_filepaths, top_level_output_directory = P
                 raise Exception("topPath cannot be null/empty")
             for configuration in json_with_filepaths["configurations"]:
                 current_configuration_file.write(
-                '/top:' + str(top_level_output_directory / topDirectoryPath) + "\n")
-                if "preloadedFiles" in configuration:
+                '/top:' + str(topDirectoryPath) + "\n")
+                if "preloadFiles" in configuration:
                     current_configuration_file.write(
-                    '/preload:' + str(Path(configuration["preloadedFiles"])) + "\n")
+                    '/preload:' + str(Path(configuration["preloadFiles"])) + "\n")
                 if "inputPath" in configuration:
                     current_configuration_file.write(
-                    '/input:' + str(top_level_input_directory / configuration["inputPath"]) + "\n")
+                    '/input:' + str(configuration["inputPath"]) + "\n")
                 else:
                     raise Exception("inputPath cannot be null/empty")
                 if "outputPath" in configuration:    
@@ -40,14 +40,14 @@ def write_configuration_file(json_with_filepaths, top_level_output_directory = P
                     '/out:' + str(Path(configuration["outputPath"])) + "\n")
                 current_configuration_file.flush()
                 current_configuration_file.close()
-                convert()
+                run_converter()
 
     except FileNotFoundError as f:
         error_message = str(f.strerror, _get_path_relative_to_username(f.filename))
         return error_message
 
 
-def convert(path_to_current_working_directory = Path.cwd()):    
+def run_converter(path_to_current_working_directory = Path.cwd()):    
     converter_path = Path(path_to_current_working_directory / "ConvertFromConfigurationFile.vi")
     current_configuration_absolute_path = Path(path_to_current_working_directory / CURRENT_CONFIGURATION_PATH)
     notification_absolute_path = Path(path_to_current_working_directory / NOTIFICATION_PATH)
@@ -81,4 +81,4 @@ def convert(path_to_current_working_directory = Path.cwd()):
 def convert_from_JSON(jsonFilePath) :
     with open(jsonFilePath) as jsonFile:
         json_with_filepaths = json.load(jsonFile)
-        write_configuration_file(json_with_filepaths)
+        write_configuration_file_and_run_converter(json_with_filepaths)

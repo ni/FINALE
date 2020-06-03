@@ -12,23 +12,17 @@ import subprocess
 from utils import *
 import sys
 sys.path.append("..")
+import converter
+from converter import run_converter
 
 CURRENT_CONFIGURATION_PATH = "currentConfiguration.txt"
 NOTIFICATION_PATH = "complete.txt"
 LABVIEW_PATH = Path("C:/Program Files/National Instruments/LabVIEW 2017/LabVIEW.exe")
 ERROR_REPORT_JSON = r'errorReport.json'
 
-def _get_path_relative_to_username(filename):
-    # Return a path that is relative to the ~user
-    s = Path("~") 
-    filename_path = Path(filename)
-    return str(filename_path.relative_to(s.expanduser()))
-
 def convert_test_suite(top_level_output_directory, top_level_input_directory, json_with_filepaths, path_to_current_working_directory = Path.cwd()):
-    converter_path = Path(path_to_current_working_directory / "ConvertFromConfigurationFile.vi")
     current_configuration_absolute_path = Path(path_to_current_working_directory / CURRENT_CONFIGURATION_PATH)
     notification_absolute_path = Path(path_to_current_working_directory / NOTIFICATION_PATH)
-    call_converter_command = str(LABVIEW_PATH) + " " + str(converter_path)
 
     try:
         if os.path.isfile(notification_absolute_path):
@@ -49,30 +43,12 @@ def convert_test_suite(top_level_output_directory, top_level_input_directory, js
             current_configuration_file.flush()
 
     except FileNotFoundError as f:
-        error_message = str(f.strerror, _get_path_relative_to_username(f.filename))
+        error_message = str(f.strerror, get_path_relative_to_username(f.filename))
         return error_message
 
     else:
-        # convert(path_to_current_working_directory)
-        try:
-            process = subprocess.Popen(call_converter_command, stdin=subprocess.PIPE)
-        except OSError as e:
-            error_message = str(e)
-            print(error_message , "\n")
-            return error_message   
-
-    while(True):
-        if(os.path.isfile(notification_absolute_path)): 
-            process.stdin.close()
-            process.wait()
-            break
-        else:
-            time.sleep(3)
-    os.remove(notification_absolute_path)
-    os.remove(current_configuration_absolute_path)
-
-    return
-
+        run_converter(path_to_current_working_directory)
+        
 def main():
     test_failures = {}
     test_assets = Path.cwd().parent.parent 
