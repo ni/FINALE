@@ -81,12 +81,25 @@ Follow these instructions to run FINALE:
       - The JSON file mentioned above should be of the structure:
         ```json
           {
-          "topPath": <"Absolute path where you want the converted JSON to be stored">,
-          "inputPath": <"Absolute Path to the source files/directory that needs to be converted">
+          "topPath": <"Absolute path where you want the FINALE format to be stored">,
+          "configurations": [
+            {
+                "inputPath": <"Absolute Path of the source files/directory that needs to be converted">,
+                "outputPath": <"Relative Path to <topPath> so that the output of the converter can be redirected to this path instead of the topPath">,
+                "preloadFiles": "File/Project that need to be preloaded to load up the actual files that need to be converted"
+            },
+            {
+                "inputPath": "...",
+                "outputPath": "...",
+                "preloadFiles": "..."
+            },
+              ...
+            ]
           }
         ```
-
-      > Note: May need to install PathLib module (https://pypi.org/project/pathlib/)
+      >  - Note: "Configurations" can take project values for multiple project conversion.
+      >  - Note: Only "inputPath" is a mandatory field in the "Configurations". The other keys like "outputPath" and "preloadFiles" can be used when converting multiple projects.
+      >  - Note: May need to install PathLib module (https://pypi.org/project/pathlib/)
 
 
 - ### Launching the WebApp:
