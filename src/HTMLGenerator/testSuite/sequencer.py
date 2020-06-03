@@ -3,12 +3,10 @@ import tempfile
 import pathlib
 import errno
 import json
-import time
 from pathlib import Path
 from asserter import TestCase
 from tqdm import tqdm
 import utils
-import subprocess
 from utils import *
 import sys
 sys.path.append("..")
@@ -16,8 +14,6 @@ import converter
 from converter import run_converter
 
 CURRENT_CONFIGURATION_PATH = "currentConfiguration.txt"
-NOTIFICATION_PATH = "complete.txt"
-LABVIEW_PATH = Path("C:/Program Files/National Instruments/LabVIEW 2017/LabVIEW.exe")
 ERROR_REPORT_JSON = r'errorReport.json'
 
 def convert_test_case(top_level_output_directory, top_level_input_directory, json_with_filepaths, path_to_current_working_directory = Path.cwd()):
