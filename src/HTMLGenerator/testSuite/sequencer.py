@@ -20,15 +20,9 @@ NOTIFICATION_PATH = "complete.txt"
 LABVIEW_PATH = Path("C:/Program Files/National Instruments/LabVIEW 2017/LabVIEW.exe")
 ERROR_REPORT_JSON = r'errorReport.json'
 
-def convert_test_suite(top_level_output_directory, top_level_input_directory, json_with_filepaths, path_to_current_working_directory = Path.cwd()):
+def convert_test_case(top_level_output_directory, top_level_input_directory, json_with_filepaths, path_to_current_working_directory = Path.cwd()):
     current_configuration_absolute_path = Path(path_to_current_working_directory / CURRENT_CONFIGURATION_PATH)
-    notification_absolute_path = Path(path_to_current_working_directory / NOTIFICATION_PATH)
 
-    try:
-        if os.path.isfile(notification_absolute_path):
-            os.remove(notification_absolute_path)                
-    except:
-        pass
     # Writing the top, preload, input and output path to the currentConfiguration.txt file.
     try:
         with open(current_configuration_absolute_path, 'w') as current_configuration_file:
@@ -71,7 +65,7 @@ def main():
                         with open(json_tests_directory/json_test) as json_test_file:
                             test_cases_json = json.load(json_test_file)
                             
-                            converter_error = convert_test_suite(top_level_output_directory, test_assets, test_cases_json, Path.cwd().parent)
+                            converter_error = convert_test_case(top_level_output_directory, test_assets, test_cases_json, Path.cwd().parent)
                             if converter_error:
                                 test_failures = write_to_dict(test_failures, json_test, converter_error)
                                 continue
