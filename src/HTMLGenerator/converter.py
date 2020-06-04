@@ -27,6 +27,7 @@ def write_configuration_file_and_run_converter(json_with_filepaths, path_to_curr
             for configuration in json_with_filepaths["configurations"]:
                 current_configuration_file.write(
                 '/top:' + str(topDirectoryPath) + "\n")
+                # TODO: Look at making preloadFiles to an array.
                 if "preloadFiles" in configuration:
                     current_configuration_file.write(
                     '/preload:' + str(Path(configuration["preloadFiles"])) + "\n")

@@ -74,19 +74,19 @@ Follow these instructions to run FINALE:
         >  - File(s)/Folder to convert: Path to the source LabVIEW code file(s) or  folders.
         >  - Destination Folder (relative to output path): This is an optional  field to specify an output path for the converted files. This must  be relative to the Top level output path.
 
-    - #### Using CLI command:
+    - #### Using CLI:
       - On cmd or powershell, navigate to <Path/of/FINALE/repo>/build/HTMLGenerator.
       - Run command:
       > `python -c "import converter; converter.convert_from_JSON('<Absolute/Path/For/JSON/file>')"`
       - The JSON file mentioned above should be of the structure:
         ```json
           {
-          "topPath": <"Absolute path where you want the FINALE format to be stored">,
+          "topPath": <"Absolute Path where you want the FINALE format to be stored">,
           "configurations": [
             {
                 "inputPath": <"Absolute Path of the source files/directory that needs to be converted">,
                 "outputPath": <"Relative Path to <topPath> so that the output of the converter can be redirected to this path instead of the topPath">,
-                "preloadFiles": "File/Project that need to be preloaded to load up the actual files that need to be converted"
+                "preloadFiles": "File/Project that need to be preloaded to load up the actual files, that need to be converted"
             },
             {
                 "inputPath": "...",
@@ -97,9 +97,9 @@ Follow these instructions to run FINALE:
             ]
           }
         ```
-      >  - Note: "Configurations" can take project values for multiple project conversion.
-      >  - Note: Only "inputPath" is a mandatory field in the "Configurations". The other keys like "outputPath" and "preloadFiles" can be used when converting multiple projects.
-      >  - Note: May need to install PathLib module (https://pypi.org/project/pathlib/)
+      >  - Note: "configurations" takes project values for multiple project conversion.
+      >  - Only "inputPath" is a mandatory key in the "configurations". The other keys like "outputPath" and "preloadFiles" can be used when converting multiple projects.
+      >  - May need to install PathLib module (https://pypi.org/project/pathlib/)
 
 
 - ### Launching the WebApp:
