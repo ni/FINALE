@@ -19,12 +19,12 @@ def write_configuration_file_and_run_converter(json_with_filepaths, path_to_curr
     current_configuration_absolute_path = Path(path_to_current_working_directory / CURRENT_CONFIGURATION_PATH)
     # Writing the top, preload, input and output path to the currentConfiguration.txt file.
     try:
-        with open(current_configuration_absolute_path, 'w') as current_configuration_file:
-            if "topPath" in json_with_filepaths:
-                topDirectoryPath = json_with_filepaths["topPath"]
-            else:
-                raise Exception("topPath cannot be null/empty")
-            for configuration in json_with_filepaths["configurations"]:
+        if "topPath" in json_with_filepaths:
+            topDirectoryPath = json_with_filepaths["topPath"]
+        else:
+            raise Exception("topPath cannot be null/empty")
+        for configuration in json_with_filepaths["configurations"]:
+            with open(current_configuration_absolute_path, 'w') as current_configuration_file:
                 current_configuration_file.write(
                 '/top:' + str(topDirectoryPath) + "\n")
                 # TODO: Look at making preloadFiles to an array.
