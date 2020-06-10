@@ -12,7 +12,7 @@ let searchStrOldValue = "";
 tree = new TreeHelper("divTree", "white", null, "tree");
 
 window.onload = () => {
-    loadProjectFileInfo();
+    loadProjectFilesFromConfig();
     window.onmessage = (event) => {
         if (event.data.highlight) {
             toggleSelectedNode(event.data.id);
@@ -22,7 +22,7 @@ window.onload = () => {
     };
 };
 
-function loadProjectFileInfo() {
+function loadProjectFilesFromConfig() {
     const xhr = new XMLHttpRequest();
     xhr.open("GET", PathHelper.getSourcePath("/src/config.txt"));
     xhr.send();
