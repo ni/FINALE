@@ -35,7 +35,7 @@ Note: FINALE is not supported by National Instruments and this is mostly interna
 
 # Setting up FINALE for your code
 
-FINALE has two parts, the HTML Generator and the WebApp.The HTML Generator converts LabVIEW code to the FINALE format (a composition of JSON documents, images, etc., which is understood by the WebApp). These are input to the WebApp which opens a web-based viewer for the files converted. 
+FINALE has two parts, the HTML Generator and the WebApp. The HTML Generator converts LabVIEW code to the FINALE format (a composition of JSON documents, images, etc., which is understood by the WebApp). These are input to the WebApp which opens a web-based viewer for the files converted. 
 ## Prerequisites: 
 - LabVIEW: Required only for converting the files.
 - Browser: Google Chrome/Firefox (Does not have complete support in Edge)
@@ -68,42 +68,45 @@ Follow these instructions to run FINALE:
         - Destination Directory: Path to the destination directory. To view the files using the WebApp, make sure your destination is set to "<Path/to/FINALE/repo>/build/src".
         - Run Main.vi and click "Convert".
       ![Main.vi](./docs/Main.vi.png)
-        > Note: If you require certain files/projects to be preloaded for converting  the files, open GeneratorUI-Advanced.vi and enter values for the following:
-        >  - Top level output path: <Path/to/FINALE/repo>/build/src
-        >  - Files to Preload: Array of files you want to preload. If this is  left empty it is equivalent to running Main.vi.
-        >  - File(s)/Folder to convert: Path to the source LabVIEW code file(s) or  folders.
-        >  - Destination Folder (relative to output path): This is an optional field to specify an output path for the converted files. This must  be relative to the Top level output path.
+      ##### Converting multiple projects:
+        - Open GenerateUI-Advanced.vi at "build/HTMLGenerator/" and enter values for the following:
+           - Top level output path: <Path/to/FINALE/repo>/build/src
+           - Files to Preload: Array of files you want to preload.
+           - File(s)/Folder to convert: Path to the source LabVIEW code file(s) or  folders.
+           - Destination Folder (relative to output path): This is an optional field to specify an output path for the converted files. This must be relative to the Top level output path.
+           > Note: "Files to Preload" and "Destination Folder (relative to output path)" are optional. If left empty, it is equivalent to running Main.vi. This VI can be used to convert single projects as well.
 
     - #### Using CLI:
-      - On cmd or Powershell, navigate to <Path/of/FINALE/repo>/build/HTMLGenerator.
+      Prerequisite: PathLib module (https://pypi.org/project/pathlib/)
+
+      - On cmd or PowerShell, navigate to "<Path/to/FINALE/repo>/build/HTMLGenerator".
       - Run command:
-      > `python -c "import converter; converter.convert_from_JSON('<Absolute/Path/For/JSON/file>')"`
+      > `python -c "import converter; converter.convert_from_JSON(<Absolute/path/to/JSON/file>)"`
       - The JSON file mentioned above should be of the structure:
         ```json
           {
-          "topPath": <"Absolute Path where you want the FINALE format to be stored">,
-          "configurations": [
-            {
-                "inputPath": <"Absolute Path of the source files/directory that needs to be converted">,
-                "outputPath": <"Relative Path to <topPath> so that the output of the converter can be redirected to this path instead of the topPath">,
-                "preloadFiles": "File/Project that need to be preloaded to load up the actual files, that need to be converted"
-            },
-            {
+            "topPath": "Absolute path where you want the FINALE format to be stored",
+            "configurations": [
+              {
+                "inputPath": "Absolute path of the source files/directory that needs to be converted",
+                "outputPath": "Relative path to `topPath` so that the output of the converter can be redirected to this path instead of the `topPath`",
+                "preloadFiles": "File/Project that needs to be preloaded to load up the actual files that need to be converted"
+              },
+              {
                 "inputPath": "...",
                 "outputPath": "...",
                 "preloadFiles": "..."
-            },
+              },
               ...
             ]
           }
         ```
-      >  - Note: "configurations" takes project values for multiple project conversion.
-      >  - Only "inputPath" is a mandatory key in the "configurations". The other keys like "outputPath" and "preloadFiles" can be used when converting multiple projects.
-      >  - May need to install PathLib module (https://pypi.org/project/pathlib/)
+      >  - Add more elements to the "configurations" array to convert multiple projects.
+      >  - "topPath" and "inputPath" (in "configurations" array) are required keys, the other keys "outputPath" and "preloadFiles" are optional.
 
 
 - ### Launching the WebApp:
-   - On cmd or Powershell, navigate to the "build" directory in the repo and start the npm http-server:
+   - On cmd or PowerShell, navigate to the "build" directory in the repo and start the npm http-server:
    >`http-server` 
    - The above command will list the converted files in the project hierarchy on the left pane.
    - FINALE should now be ready to use!
