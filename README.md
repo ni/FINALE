@@ -35,7 +35,7 @@ Note: FINALE is not supported by National Instruments and this is mostly interna
 
 # Setting up FINALE for your code
 
-FINALE has two parts, the HTML Generator and the WebApp.The HTML Generator converts LabVIEW code to a FINALE format (a composition of JSON documents, images, etc., which is understood by the WebApp). These are input to the WebApp which opens a web-based viewer for the files converted. 
+FINALE has two parts, the HTML Generator and the WebApp.The HTML Generator converts LabVIEW code to the FINALE format (a composition of JSON documents, images, etc., which is understood by the WebApp). These are input to the WebApp which opens a web-based viewer for the files converted. 
 ## Prerequisites: 
 - LabVIEW: Required only for converting the files.
 - Browser: Google Chrome/Firefox (Does not have complete support in Edge)
@@ -61,7 +61,7 @@ Follow these instructions to run FINALE:
   This can be done in two ways:
 
     - #### Running the Converter VI: 
-      - Navigate to "buid/HTMLGenerator/".
+      - Navigate to "build/HTMLGenerator/".
 
       - Open Main.vi and enter values for the following:
         - Source directory/files: Path to the source LabVIEW code file(s) or folder.
@@ -72,10 +72,10 @@ Follow these instructions to run FINALE:
         >  - Top level output path: <Path/to/FINALE/repo>/build/src
         >  - Files to Preload: Array of files you want to preload. If this is  left empty it is equivalent to running Main.vi.
         >  - File(s)/Folder to convert: Path to the source LabVIEW code file(s) or  folders.
-        >  - Destination Folder (relative to output path): This is an optional  field to specify an output path for the converted files. This must  be relative to the Top level output path.
+        >  - Destination Folder (relative to output path): This is an optional field to specify an output path for the converted files. This must  be relative to the Top level output path.
 
     - #### Using CLI:
-      - On cmd or powershell, navigate to <Path/of/FINALE/repo>/build/HTMLGenerator.
+      - On cmd or Powershell, navigate to <Path/of/FINALE/repo>/build/HTMLGenerator.
       - Run command:
       > `python -c "import converter; converter.convert_from_JSON('<Absolute/Path/For/JSON/file>')"`
       - The JSON file mentioned above should be of the structure:
@@ -103,7 +103,7 @@ Follow these instructions to run FINALE:
 
 
 - ### Launching the WebApp:
-   - On cmd or powershell, navigate to the "build" directory in the repo and start the npm http-server:
+   - On cmd or Powershell, navigate to the "build" directory in the repo and start the npm http-server:
    >`http-server` 
    - The above command will list the converted files in the project hierarchy on the left pane.
    - FINALE should now be ready to use!
