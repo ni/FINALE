@@ -1,12 +1,20 @@
+import { isNullOrUndefined } from "util";
 import { HistoryManager } from "./design/HistoryManager";
 import { InputHelper } from "./design/inputHelper";
 import { HelpProvider } from "./help/helpProvider";
+import { Main } from "./main";
 import { Model } from "./modelParser";
 import { PathHelper } from "./pathHelper";
 import { ViewFactory } from "./viewFactory";
 
 document.addEventListener("DOMContentLoaded", () => {
-    generateDocument(document.location.search);
+    if (isNullOrUndefined(sessionStorage.getItem(document.location.search))) {
+        generateDocument(document.location.search);
+        } else {
+            document.location.hash = JSON.parse(sessionStorage.getItem(document.location.search)).hashValue;
+            Main.viModel = JSON.parse(sessionStorage.getItem(document.location.search)).sourceModel;
+            GenerateDOMForModel(document.location.search);
+        }
     document.onkeyup = (e) => {
         if (InputHelper.IsHelpKeyBinding(e)) {
             HelpProvider.toggleVisibility();
@@ -15,6 +23,23 @@ document.addEventListener("DOMContentLoaded", () => {
 }, false);
 
 let originPath = "";
+
+function GenerateDOMForModel(query: string) {
+    const viewObj = new ViewFactory();
+    const htmlDOM = viewObj.generate(Main.viModel);
+    if (htmlDOM) {
+        const url = document.location.search + document.location.hash;
+        // TODO:Look at removing UpdateHistroy from here as updating history from LoadFile() in main.ts might suffice.
+        HistoryManager.UpdateHistory(url, Main.viModel);
+        const finale = document.getElementById("divLog");
+        while (finale.hasChildNodes()) {
+            finale.removeChild(finale.lastChild);
+        }
+        finale.appendChild(htmlDOM);
+        top.postMessage({ highlight: true, id: Main.viPath }, "*");
+    }
+}
+
 function generateDocument(query: string) {
     if (query && query.slice(0, 3) === "?q=") {
         originPath = PathHelper.getMetadataFilePath(query.slice(3).trim());
@@ -23,19 +48,8 @@ function generateDocument(query: string) {
             if (xhr.readyState === 4) {
                 if (xhr.status === 200) {
                     if (xhr.responseText) {
-                        const parsedContent = Model.parseJSON(xhr, originPath);
-                        const viewObj = new ViewFactory();
-                        const htmlDOM = viewObj.generate(parsedContent);
-                        if (htmlDOM) {
-                            const url = document.location.search + document.location.hash;
-                            HistoryManager.UpdateHistory(url, parsedContent);
-                            const finale = document.getElementById("divLog");
-                            while (finale.hasChildNodes()) {
-                                finale.removeChild(finale.lastChild);
-                            }
-                            finale.appendChild(htmlDOM);
-                            top.postMessage({ highlight: true, id: query.slice(3).trim() }, "*");
-                        }
+                        Main.viModel = Model.parseJSON(xhr, originPath);
+                        GenerateDOMForModel(query);
                     }
                 } else {
                     alert("Invalid json file: " + query);
