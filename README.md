@@ -70,11 +70,22 @@ Follow these instructions to run FINALE:
      >  - File(s)/Folder to convert: Path to the source LabVIEW code file(s) or  folders.
      >  - Destination Folder (relative to output path): This is an optional  field to specify an output path for the converted files. This must  be relative to the Top level output path.
 
-- ### Launching the WebApp:
-   - On cmd or powershell, navigate to the "build" directory in the repo and start the npm http-server:
-   >`http-server` 
-   - The above command will list the converted files in the project hierarchy on the left pane.
-   - FINALE should now be ready to use!
+- ### Using the WebApp:
+  The WebApp reads the FINALE format stored in the "build" directory. To launch the WebApp:
+  - On cmd or PowerShell, navigate to the "build" directory in the repo and start the npm http-server:
+  >`http-server [-p PORTNUMBER]`
+  - The above command launches the server at the displayed address where the FINALE format files can be viewed.
+  - FINALE should now be ready to use!
+  - #### Adding more converted files
+    If more converted files/folders need to be added at this point,
+    - Convert the new projects to a different location using Main.vi. (Main.vi first deletes the destination directory.)
+    - Copy these FINALE format files "<Path/to/FINALE/repo>/build/src". Make sure to rename the new file.json so that the existing file.json does not get replaced.
+    - Create a config.txt file that lists these .json files. The paths should be relative to the root of the server, that is, the "build" directory.
+      For example, if their are 3 FINALE format files (foo + foo.json), (bar + bar.json) and (baz + baz.json), and "foo" and "bar" need to be viewed, config.txt should list these .json files like so:
+    ```sh
+      /src/foo.json
+      /src/bar.json
+    ```
 
 # Contributing to the project
 

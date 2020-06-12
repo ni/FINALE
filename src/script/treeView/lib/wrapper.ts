@@ -30,7 +30,7 @@ function loadProjectFilesFromConfig() {
         if (xhr.readyState === 4) {
             let jsonFiles;
             if (xhr.status === 200) {
-                jsonFiles = xhr.responseText.split(",");
+                jsonFiles = xhr.responseText.split(/\r?\n/);
             } else if (xhr.status === 404) {
                 jsonFiles = ["/src/file.json"];
             }
