@@ -113,9 +113,12 @@ function updateTreeViewAndSearchResults(searchStr: string) {
 }
 function focusGivenNode(focusNode) {
     if (focusNode.className !== "node_selected") {
-        document.getElementsByClassName("node_selected")[0].className = "node";
-        focusNode.className = "node_selected";
+        const selectedNode = document.getElementsByClassName("node_selected")[0];
+        if (selectedNode) {
+            selectedNode.className = "node";
+        }
     }
+    focusNode.className = "node_selected";
 }
 function createSubTreeAndExpandBranchForPath(jsonPath) {
     const jsonPathList = jsonPath.split("/");
