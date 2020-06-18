@@ -65,6 +65,7 @@ Follow these instructions to run FINALE:
 
       - Open Main.vi and enter values for the following:
         - Source directory/files: Path to the source LabVIEW code file(s) or folder.
+          >Note: When converting a folder containing LV projects, the converted folder in the WebApp does not have information about the projects. This is expected behaviour.
         - Destination Directory: Path to the destination directory. To view the files using the WebApp, make sure your destination is set to "<Path/to/FINALE/repo>/build/src".
         - Run Main.vi and click "Convert".
       ![Main.vi](./docs/Main.vi.png)
