@@ -88,12 +88,11 @@ def convert_from_JSON(jsonFilePath) :
     except Exception as e:
         print (e)
 
-if __name__ == "__main__":
-    if len(sys.argv) != 2:
-        print ("Missing argument!")
-        print ("Usage: py converter.py <path to JSON file>")
-        print ("\n\nThe JSON should be of the form:")
-        print ("""
+def _print_usage_instructions():
+    print ("Missing argument!")
+    print ("Usage: python converter.py <path to JSON file>")
+    print ("\n\nThe JSON should be of the form:")
+    print ("""
 {
     "topPath": "Absolute path where you want the FINALE format to be stored",
     "configurations": [
@@ -109,6 +108,11 @@ if __name__ == "__main__":
         }
     ]
 }
-        """)
+    """)
+
+
+if __name__ == "__main__":
+    if len(sys.argv) != 2:
+        _print_usage_instructions()
     else:
         convert_from_JSON(sys.argv[1])

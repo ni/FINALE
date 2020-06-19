@@ -82,7 +82,7 @@ Follow these instructions to run FINALE:
 
       - On cmd or PowerShell, navigate to "<Path/to/FINALE/repo>/build/HTMLGenerator".
       - Run command:
-      > `python -c "import converter; converter.convert_from_JSON(<Absolute/path/to/JSON/file>)"`
+      > `python converter.py <path to JSON file>"`
       - The JSON file mentioned above should be of the structure:
         ```json
           {
@@ -97,8 +97,7 @@ Follow these instructions to run FINALE:
                 "inputPath": "...",
                 "outputPath": "...",
                 "preloadFiles": "..."
-              },
-              ...
+              }
             ]
           }
         ```
