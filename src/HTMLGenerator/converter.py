@@ -85,7 +85,7 @@ def convert_from_JSON(jsonFilePath) :
         with open(jsonFilePath) as jsonFile:
             json_with_filepaths = json.load(jsonFile)
             write_configuration_file_and_run_converter(json_with_filepaths)
-    except FileNotFoundError as e:
+    except Exception as e:
         print (e)
 
 if __name__ == "__main__":
