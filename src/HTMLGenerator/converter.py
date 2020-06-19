@@ -4,6 +4,7 @@ import subprocess
 import pathlib
 from pathlib import Path
 import json
+import sys
 
 CURRENT_CONFIGURATION_PATH = "currentConfiguration.txt"
 NOTIFICATION_PATH = "complete.txt"
@@ -80,6 +81,34 @@ def run_converter(path_to_current_working_directory = Path.cwd()):
     return
 
 def convert_from_JSON(jsonFilePath) :
-    with open(jsonFilePath) as jsonFile:
-        json_with_filepaths = json.load(jsonFile)
-        write_configuration_file_and_run_converter(json_with_filepaths)
+    try:
+        with open(jsonFilePath) as jsonFile:
+            json_with_filepaths = json.load(jsonFile)
+            write_configuration_file_and_run_converter(json_with_filepaths)
+    except FileNotFoundError as e:
+        print (e)
+
+if __name__ == "__main__":
+    if len(sys.argv) != 2:
+        print ("Missing argument!")
+        print ("Usage: py converter.py <path to JSON file>")
+        print ("\n\nThe JSON should be of the form:")
+        print ("""
+{
+    "topPath": "Absolute path where you want the FINALE format to be stored",
+    "configurations": [
+        {
+            "inputPath": "Absolute path of the source files/directory that needs to be converted",
+            "outputPath": "Relative path to `topPath` so that the output of the converter can be redirected to this path instead of the `topPath`",
+            "preloadFiles": "File/Project that needs to be preloaded to load up the actual files that need to be converted"
+        },
+        {
+            "inputPath": "...",
+            "outputPath": "...",
+            "preloadFiles": "..."
+        }
+    ]
+}
+        """)
+    else:
+        convert_from_JSON(sys.argv[1])
