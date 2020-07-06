@@ -8,7 +8,7 @@ import sys
 
 CURRENT_CONFIGURATION_PATH = "currentConfiguration.txt"
 NOTIFICATION_PATH = "complete.txt"
-LABVIEW_PATH = Path("C:/Program Files (x86)/National Instruments/LabVIEW 2017/LabVIEW.exe")
+LABVIEW_PATH = Path("C:/Program Files/National Instruments/LabVIEW 2017/LabVIEW.exe")
 
 def _get_path_relative_to_username(filename):
     # Return a path that is relative to the ~user
@@ -16,9 +16,8 @@ def _get_path_relative_to_username(filename):
     filename_path = Path(filename)
     return str(filename_path.relative_to(s.expanduser()))
 
-def write_configuration_file_and_run_converter(json_with_filepaths, path_to_current_working_directory = Path(os.path.dirname(os.path.realpath(__file__)))):
+def write_configuration_file_and_run_converter(json_with_filepaths, path_to_current_working_directory = Path.cwd()):
     current_configuration_absolute_path = Path(path_to_current_working_directory / CURRENT_CONFIGURATION_PATH)
-
     # Writing the top, preload, input and output path to the currentConfiguration.txt file.
     try:
         if "topPath" in json_with_filepaths:
@@ -50,7 +49,7 @@ def write_configuration_file_and_run_converter(json_with_filepaths, path_to_curr
         return error_message
 
 
-def run_converter(path_to_current_working_directory = Path(os.path.dirname(os.path.realpath(__file__)))):
+def run_converter(path_to_current_working_directory = Path.cwd()):    
     converter_path = Path(path_to_current_working_directory / "ConvertFromConfigurationFile.vi")
     current_configuration_absolute_path = Path(path_to_current_working_directory / CURRENT_CONFIGURATION_PATH)
     notification_absolute_path = Path(path_to_current_working_directory / NOTIFICATION_PATH)
