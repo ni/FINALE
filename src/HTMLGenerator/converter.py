@@ -8,7 +8,7 @@ import sys
 
 CURRENT_CONFIGURATION_PATH = "currentConfiguration.txt"
 NOTIFICATION_PATH = "complete.txt"
-LABVIEW_PATH = Path("C:/Program Files (x86)/National Instruments/LabVIEW 2017/LabVIEW.exe")
+LABVIEW_PATH = Path("C:/Program Files/National Instruments/LabVIEW 2017/LabVIEW.exe")
 
 def _get_path_relative_to_username(filename):
     # Return a path that is relative to the ~user
