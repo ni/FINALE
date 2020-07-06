@@ -1,6 +1,8 @@
+import { Main } from "../main";
 import { IRect } from "../model/Model";
 import { TabControl } from "../model/TabControl";
 import { ElementView } from "./Element";
+import { HistoryManager } from "./HistoryManager";
 
 export class PageLabel {
     public pageArr: HTMLElement[];
@@ -20,13 +22,11 @@ export class PageLabel {
     public selectPage(event, obj: PageLabel) {
         const owningTab: TabControl = obj.modelObj;
         const selectedPage: number = owningTab.visiblePage;
-        ElementView.setVisible(obj.page, true);
-        owningTab.visiblePage = owningTab.pageSelectorNameArr.indexOf(obj.pageSelectorName);
         for (let i = 0; i < owningTab.tabLength; i++) {
-            if (i !== owningTab.visiblePage) {
-                ElementView.setVisible(obj.pageArr[i], false);
-            }
+            ElementView.setVisible(obj.pageArr[i], false);
         }
+        owningTab.visiblePage = owningTab.pageSelectorNameArr.indexOf(obj.pageSelectorName);
+        ElementView.toggleVisibility(obj.page);
     }
     public deselectPage(event) {
         const btnDeselect: HTMLButtonElement = event.target;

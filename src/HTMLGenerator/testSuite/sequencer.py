@@ -11,10 +11,34 @@ from utils import *
 import sys
 sys.path.append("..")
 import converter
-from converter import convert
+from converter import run_converter
 
+CURRENT_CONFIGURATION_PATH = "currentConfiguration.txt"
 ERROR_REPORT_JSON = r'errorReport.json'
 
+def convert_test_case(top_level_output_directory, top_level_input_directory, json_with_filepaths, path_to_current_working_directory = Path.cwd()):
+    current_configuration_absolute_path = Path(path_to_current_working_directory / CURRENT_CONFIGURATION_PATH)
+
+    # Writing the top, preload, input and output path to the currentConfiguration.txt file.
+    try:
+        with open(current_configuration_absolute_path, 'w') as current_configuration_file:
+            current_configuration_file.write(
+                '/top:' + str(top_level_output_directory / json_with_filepaths["topPath"]) + "\n")
+            current_configuration_file.write(
+                '/preload:' + str(Path(json_with_filepaths["preloadedFiles"])) + "\n")
+            current_configuration_file.write(
+                '/input:' + str(top_level_input_directory / json_with_filepaths["inputPath"]) + "\n")
+            current_configuration_file.write(
+                '/out:' + str(Path(json_with_filepaths["outputPath"])) + "\n")
+            current_configuration_file.flush()
+
+    except FileNotFoundError as f:
+        error_message = str(f.strerror, get_path_relative_to_username(f.filename))
+        return error_message
+
+    else:
+        run_converter(path_to_current_working_directory)
+        
 def main():
     test_failures = {}
     test_assets = Path.cwd().parent.parent 
@@ -36,8 +60,8 @@ def main():
                     try:
                         with open(json_tests_directory/json_test) as json_test_file:
                             test_cases_json = json.load(json_test_file)
-                            converter_error = convert(top_level_output_directory, test_assets, test_cases_json, Path.cwd().parent)
-
+                            
+                            converter_error = convert_test_case(top_level_output_directory, test_assets, test_cases_json, Path.cwd().parent)
                             if converter_error:
                                 test_failures = write_to_dict(test_failures, json_test, converter_error)
                                 continue
@@ -67,6 +91,7 @@ def main():
 
     except OSError as e:
         print("<ERROR>: ", e.strerror)
+
 if __name__ == "__main__":
     main()
         

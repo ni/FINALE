@@ -27,7 +27,7 @@ export class TabControlView extends ComponentView {
         for (let i = 0; i < obj.tabLength; i++) {
             componentElement = ElementView.addElement(componentElement, this.pageSelectorElemArr[i]);
         }
-        ElementView.toggleVisibility(this.diagramElemArr[0]);
+        ElementView.toggleVisibility(this.diagramElemArr[obj.visiblePage]);
         return componentElement;
     }
 }
