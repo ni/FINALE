@@ -37,11 +37,11 @@ Note: FINALE is not supported by National Instruments and this is mostly interna
 
 FINALE has two parts, the HTML Generator and the WebApp. The HTML Generator converts LabVIEW code to the FINALE format (a composition of JSON documents, images, etc., which is understood by the WebApp). These are input to the WebApp which opens a web-based viewer for the files converted. 
 ## Prerequisites: 
-- LabVIEW: Required only for converting the files.
+- LabVIEW: Required only for converting the files
 - Browser: Google Chrome/Firefox (Does not have complete support in Edge)
-- Python 3+ : For CLI tool.
+- Python 3+ : For CLI tool
 - [npm](https://www.npmjs.com/get-npm)
-- [npm http-server](https://www.npmjs.com/package/http-server)
+- [npm http-server](https://www.npmjs.com/package/http-server) or IIS
 >Note: If there are errors with the npm http-server, try installing at this version:
 >
 >`npm install –g http-server@0.9.0`
@@ -108,7 +108,8 @@ Follow these instructions to run FINALE:
 - ### Using the WebApp:
   The WebApp reads the FINALE format stored in the "build" directory. To launch the WebApp:
   - On cmd or PowerShell, navigate to the "build" directory in the repo and start the npm http-server:
-  >`http-server [-p PORTNUMBER]`
+  > `http-server [-p PORTNUMBER]`
+  - Alternatively, IIS can also be used to host the server.
   - The above command launches the server at the displayed address where the FINALE format files can be viewed.
   - FINALE should now be ready to use!
   - #### Adding more converted files
