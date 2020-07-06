@@ -9,8 +9,10 @@ export let preDefinedHelp = null;
 export let userDefinedHelp = null;
 let filteredSubset = null;
 let searchStrOldValue = "";
+tree = new TreeHelper("divTree", "white", null, "tree");
+
 window.onload = () => {
-    loadFile();
+    loadProjectFilesFromConfig();
     window.onmessage = (event) => {
         if (event.data.highlight) {
             toggleSelectedNode(event.data.id);
@@ -20,16 +22,35 @@ window.onload = () => {
     };
 };
 
-function loadFile() {
+function loadProjectFilesFromConfig() {
     const xhr = new XMLHttpRequest();
-    xhr.open("GET", PathHelper.getSourcePath("/src/file.json"));
+    xhr.open("GET", PathHelper.getSourcePath("/src/config.txt"));
+    xhr.send();
+    xhr.onreadystatechange = () => {
+        if (xhr.readyState === 4) {
+            let jsonFiles;
+            if (xhr.status === 200) {
+                jsonFiles = xhr.responseText.split(/\r?\n/);
+            } else if (xhr.status === 404) {
+                jsonFiles = ["/src/file.json"];
+            }
+            for (const file of jsonFiles) {
+                loadFile(file);
+            }
+        }
+
+    };
+}
+
+function loadFile(file) {
+    const xhr = new XMLHttpRequest();
+    xhr.open("GET", PathHelper.getSourcePath(file));
     xhr.send();
     xhr.onreadystatechange = () => {
         if (xhr.readyState === 4) {
             if (xhr.status === 200) {
                 File.jsonObj = JSON.parse(xhr.responseText);
                 filteredSubset = File.getJSON();
-                tree = new TreeHelper("divTree", "white", null, "tree");
 
                 rootNode = tree.directoryTreeView(File.getJSON());
 
@@ -41,12 +62,13 @@ function loadFile() {
                     const fixedStr = decodeURIComponent(getParams[1]);
                     openVI(fixedStr);
                 }
+            } else if (xhr.status === 404) {
+                alert("error 404");
             } else {
                 alert("No source LabVIEW files found. Please run the converter before launching this tool.");
             }
         }
     };
-
 }
 
 window.onpopstate = () => {
