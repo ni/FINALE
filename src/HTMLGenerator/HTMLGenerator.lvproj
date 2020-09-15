@@ -86,6 +86,13 @@
 		<Item Name="Tests" Type="Folder">
 			<Item Name="CallGenerator.vi" Type="VI" URL="../Tests/CallGenerator.vi"/>
 		</Item>
+		<Item Name="Util" Type="Folder">
+			<Item Name="CloseProgressBar.vi" Type="VI" URL="../Util/CloseProgressBar.vi"/>
+			<Item Name="GetAbort.vi" Type="VI" URL="../Util/GetAbort.vi"/>
+			<Item Name="InitProgressBar.vi" Type="VI" URL="../Util/InitProgressBar.vi"/>
+			<Item Name="ProgressBar.vi" Type="VI" URL="../Util/ProgressBar.vi"/>
+			<Item Name="UpdateProgressBar.vi" Type="VI" URL="../Util/UpdateProgressBar.vi"/>
+		</Item>
 		<Item Name="GenerateHTML.vi" Type="VI" URL="../GenerateHTML.vi"/>
 		<Item Name="GeneratorUI-Advanced.vi" Type="VI" URL="../GeneratorUI-Advanced.vi"/>
 		<Item Name="Main.vi" Type="VI" URL="../Main.vi"/>
@@ -102,6 +109,7 @@
 				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
 				<Item Name="Get File Extension.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Get File Extension.vi"/>
 				<Item Name="imagedata.ctl" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/imagedata.ctl"/>
+				<Item Name="Is Path and Not Empty.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Is Path and Not Empty.vi"/>
 				<Item Name="LVRectTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVRectTypeDef.ctl"/>
 				<Item Name="NI_FileType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/lvfile.llb/NI_FileType.lvlib"/>
 				<Item Name="NI_PackedLibraryUtility.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/LVLibp/NI_PackedLibraryUtility.lvlib"/>
