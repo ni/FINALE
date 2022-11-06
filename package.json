@@ -39,7 +39,7 @@
     "file-exists": "^5.0.1",
     "fs": "0.0.1-security",
     "http-server": "^0.11.1",
-    "jasmine": "2.1.0",
+    "jasmine": "2.99.0",
     "jasmine-core": "^2.4.1",
     "karma": "^2.0.0",
     "karma-chrome-launcher": "^2.2.0",
@@ -59,7 +59,7 @@
   "devDependencies": {
     "@types/commander": "^2.12.2",
     "@types/node": "^9.4.7",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "webpack-cli": "^3.0.8"
   }
 }
