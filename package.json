@@ -50,16 +50,16 @@
     "node-cli": "^0.1.0",
     "node-run-cmd": "^1.0.1",
     "process": "^0.11.10",
-    "ts-loader": "^4.4.2",
+    "ts-loader": "^9.4.2",
     "ts-node": "^5.0.1",
     "tslint": "^5.11.0",
     "typescript": "^2.9.2",
-    "webpack": "^4.16.1"
+    "webpack": "^5.75.0"
   },
   "devDependencies": {
     "@types/commander": "^2.12.2",
     "@types/node": "^9.4.7",
     "gulp": "^3.9.1",
-    "webpack-cli": "^3.0.8"
+    "webpack-cli": "^5.0.1"
   }
 }
